@@ -5,6 +5,8 @@ type: software
 license: Apache-2.0
 repository-code: "https://github.com/Dylan1229/PPoPP-27-AE-HyperGen"
 version: "1.0"
+doi: 10.5281/zenodo.24079619
+date-released: 2026-11-09
 # TODO(authors): complete the author list to match the camera-ready paper.
 authors:
   - family-names: Ye

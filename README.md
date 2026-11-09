@@ -2,7 +2,7 @@
 
 **Paper:** *HyperGen: Empowering Ultra-high-resolution Video Generation Framework with Sketch-Tile
 Collaboration*, PPoPP 2027.
-**Archived artifact (DOI):** *to be added at release*.
+**Archived artifact (DOI):** [10.5281/zenodo.24079619](https://doi.org/10.5281/zenodo.24079619) (v1.0, the evaluated version).
 **Badges sought:** Artifacts Available, Artifacts Evaluated (Functional / Reusable).
 
 HyperGen generates 2K and 4K video with pretrained 720p video diffusion models and no retraining.

@@ -47,6 +47,9 @@ Software: Linux x86-64, an NVIDIA driver that supports CUDA 12.4, `git`, `curl`,
 `env/setup_envs.sh` installs if needed. Our test machine was a GCP `a3-megagpu-8g` (8x H100 80GB
 HBM3) with Ubuntu 22.04. The paper's numbers were measured on nodes of the same GPU type.
 
+**No such machine?** Artifact evaluators can ask us on HotCRP for SSH access to an 8x H100 node
+with the environments, weights and artifact pre-installed, and a one-command runner.
+
 Every path is configurable through environment variables (`scripts/config.sh`), e.g.
 `CKPT_ROOT=/mnt/ckpts ENV_ROOT=/mnt/envs WORK=/mnt/work`. Use `GPU_LIST=0,1,2,3` to restrict the GPUs.
 

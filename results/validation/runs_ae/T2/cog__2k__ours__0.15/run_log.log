@@ -1,0 +1,297 @@
+[W1109 01:54:58.202206298 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+WARNING:root:[1;31mThe width(2560) and height(1440) are not recommended for cogvideox1.5-5b-i2v. The best resolution is (768, 1360).[0m
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 70.56it/s]
+Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00, 15.57it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s][A
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  3.45it/s][A
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  3.44it/s][A
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  3.48it/s][A
+Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.57it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:01<00:00,  3.41it/s]
+Communication method: allgather
+INFO:root:VAE tiling: diffusers defaults (its tiled encode/decode change output size when the overlap factor changes)
+INFO:root:== Finish Loading, start to generate video ==
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: === Starting Two-Stage Generation ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Stage 1: 50 steps at 720x1280
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Stage 2: 35 steps at 1440x2560
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Loaded low-res latents with shape: torch.Size([1, 12, 16, 90, 160])
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Saved Stage 1 video to /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T2/cog__2k__ours__0.15/stage1_lowres_video.mp4
+INFO:pipeline_cogvideox_i2v_TVG:=== Stage 2: Upscale and Refine (1440x2560) ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Upsampling Running time: 24.382875442504883 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Re-noised latents for Stage 2 denoising (to_timestep: 699)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Re-noising Running time: 0.013444900512695312 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: detail re-injection ladder built (50 steps, cosine_scale=2.0)
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 180x320
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Intra-Tile Cache for 4 tiles has been set up with threshold=0.15 and ret_steps=5.
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Region-aware cache initialized for 4 tiles with base threshold 0.150
+self.rank=0 indices=[[0, 1, 2, 3]]
+  0%|          | 0/35 [00:00<?, ?it/s]INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 0 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 0 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 0 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 0 should recalculate tile 3
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] detail re-inject step 0 t=699 c1=0.6282
+  3%|▎         | 1/35 [00:11<06:40, 11.78s/it]INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 1 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 1 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 1 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 1 should recalculate tile 3
+  6%|▌         | 2/35 [00:23<06:28, 11.77s/it]INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 2 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 2 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 2 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 2 should recalculate tile 3
+  9%|▊         | 3/35 [00:35<06:16, 11.76s/it]INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 3 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 3 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 3 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 3 should recalculate tile 3
+ 11%|█▏        | 4/35 [00:47<06:04, 11.76s/it]INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 4 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 4 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 4 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 4 should recalculate tile 3
+ 14%|█▍        | 5/35 [00:58<05:52, 11.76s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 5: k=1.34375, raw_input_change=0.0189208984375, output_norm=0.62109375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 5 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 5: k=1.171875, raw_input_change=0.018310546875, output_norm=0.59765625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 5 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 5: k=1.375, raw_input_change=0.0186767578125, output_norm=0.6015625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 5 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 5: k=1.1953125, raw_input_change=0.018310546875, output_norm=0.59375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 5 is skipped for tile 3
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 6: k=1.34375, raw_input_change=0.0162353515625, output_norm=0.62109375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 6 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 6: k=1.171875, raw_input_change=0.01531982421875, output_norm=0.59765625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 6 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 6: k=1.375, raw_input_change=0.0159912109375, output_norm=0.6015625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 6 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 6: k=1.1953125, raw_input_change=0.01531982421875, output_norm=0.58984375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 6 is skipped for tile 3
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 7: k=1.34375, raw_input_change=0.0162353515625, output_norm=0.62109375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 7 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 7: k=1.171875, raw_input_change=0.01513671875, output_norm=0.59375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 7 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 7: k=1.375, raw_input_change=0.0159912109375, output_norm=0.60546875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 7 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 7: k=1.1953125, raw_input_change=0.01513671875, output_norm=0.58984375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 7 is skipped for tile 3
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 8: k=1.34375, raw_input_change=0.0162353515625, output_norm=0.6171875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 8 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 8: k=1.171875, raw_input_change=0.0152587890625, output_norm=0.59375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 8 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 8: k=1.375, raw_input_change=0.01611328125, output_norm=0.609375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 8 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 8: k=1.1953125, raw_input_change=0.01519775390625, output_norm=0.58984375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 8 is skipped for tile 3
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 9: k=1.34375, raw_input_change=0.0172119140625, output_norm=0.6171875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 9 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 9: k=1.171875, raw_input_change=0.0162353515625, output_norm=0.59375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 9 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 9: k=1.375, raw_input_change=0.0172119140625, output_norm=0.6171875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 9 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 9: k=1.1953125, raw_input_change=0.0159912109375, output_norm=0.5859375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 9 is skipped for tile 3
+ 29%|██▊       | 10/35 [01:04<01:43,  4.14s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 10: k=6.75, raw_input_change=0.0194091796875, output_norm=0.63671875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 10 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 10: k=1.171875, raw_input_change=0.016357421875, output_norm=0.59375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 10 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 10: k=6.84375, raw_input_change=0.0194091796875, output_norm=0.63671875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 10 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 10: k=1.1953125, raw_input_change=0.01611328125, output_norm=0.5859375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 10 should recalculate tile 3
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] detail re-inject step 10 t=499 c1=0.2484
+ 31%|███▏      | 11/35 [01:13<01:58,  4.94s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 11: k=2.6875, raw_input_change=0.0205078125, output_norm=0.640625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 11 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 11: k=1.171875, raw_input_change=0.0174560546875, output_norm=0.59375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 11 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 11: k=2.90625, raw_input_change=0.020751953125, output_norm=0.64453125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 11 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 11: k=7.75, raw_input_change=0.0194091796875, output_norm=0.6015625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 11 should recalculate tile 3
+ 34%|███▍      | 12/35 [01:16<01:44,  4.55s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 12: k=2.6875, raw_input_change=0.0198974609375, output_norm=0.640625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 12 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 12: k=1.171875, raw_input_change=0.0174560546875, output_norm=0.59765625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 12 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 12: k=2.90625, raw_input_change=0.0201416015625, output_norm=0.64453125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 12 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 12: k=2.25, raw_input_change=0.0191650390625, output_norm=0.6015625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 12 is skipped for tile 3
+ 37%|███▋      | 13/35 [01:22<01:46,  4.84s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 13: k=3.53125, raw_input_change=0.021484375, output_norm=0.65234375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 13 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 13: k=1.171875, raw_input_change=0.0179443359375, output_norm=0.59765625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 13 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 13: k=2.921875, raw_input_change=0.021484375, output_norm=0.65625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 13 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 13: k=2.25, raw_input_change=0.0191650390625, output_norm=0.6015625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 13 is skipped for tile 3
+ 40%|████      | 14/35 [01:25<01:32,  4.39s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 14: k=3.53125, raw_input_change=0.02099609375, output_norm=0.65234375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 14 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 14: k=8.0625, raw_input_change=0.021484375, output_norm=0.62890625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 14 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 14: k=2.921875, raw_input_change=0.02099609375, output_norm=0.65625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 14 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 14: k=2.25, raw_input_change=0.0189208984375, output_norm=0.60546875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 14 should recalculate tile 3
+ 43%|████▎     | 15/35 [01:37<02:05,  6.27s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 15: k=2.15625, raw_input_change=0.0223388671875, output_norm=0.63671875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 15 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 15: k=3.078125, raw_input_change=0.02294921875, output_norm=0.6640625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 15 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 15: k=4.4375, raw_input_change=0.02197265625, output_norm=0.62890625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 15 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 15: k=3.140625, raw_input_change=0.0228271484375, output_norm=0.66796875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 15 is skipped for tile 3
+ 46%|████▌     | 16/35 [01:40<01:42,  5.38s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 16: k=2.15625, raw_input_change=0.02099609375, output_norm=0.640625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 16 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 16: k=3.078125, raw_input_change=0.0216064453125, output_norm=0.66015625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 16 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 16: k=1.9140625, raw_input_change=0.0213623046875, output_norm=0.640625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 16 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 16: k=3.140625, raw_input_change=0.0216064453125, output_norm=0.6640625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 16 should recalculate tile 3
+ 49%|████▊     | 17/35 [01:43<01:24,  4.71s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 17: k=2.15625, raw_input_change=0.02197265625, output_norm=0.64453125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 17 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 17: k=3.078125, raw_input_change=0.0234375, output_norm=0.671875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 17 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 17: k=1.9140625, raw_input_change=0.021484375, output_norm=0.640625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 17 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 17: k=2.90625, raw_input_change=0.02197265625, output_norm=0.66015625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 17 should recalculate tile 3
+ 51%|█████▏    | 18/35 [01:48<01:25,  5.04s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 18: k=2.15625, raw_input_change=0.0211181640625, output_norm=0.6484375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 18 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 18: k=3.078125, raw_input_change=0.0220947265625, output_norm=0.66796875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 18 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 18: k=3.65625, raw_input_change=0.02294921875, output_norm=0.66015625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 18 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 18: k=3.734375, raw_input_change=0.0233154296875, output_norm=0.67578125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 18 is skipped for tile 3
+ 54%|█████▍    | 19/35 [01:51<01:11,  4.44s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 19: k=3.65625, raw_input_change=0.0238037109375, output_norm=0.67578125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 19 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 19: k=3.078125, raw_input_change=0.02197265625, output_norm=0.66796875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 19 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 19: k=3.65625, raw_input_change=0.022705078125, output_norm=0.6640625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 19 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 19: k=3.734375, raw_input_change=0.02294921875, output_norm=0.671875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 19 should recalculate tile 3
+ 57%|█████▋    | 20/35 [02:00<01:25,  5.72s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 20: k=3.65625, raw_input_change=0.023681640625, output_norm=0.6796875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 20 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 20: k=3.625, raw_input_change=0.0245361328125, output_norm=0.6796875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 20 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 20: k=2.546875, raw_input_change=0.0244140625, output_norm=0.6796875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 20 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 20: k=2.625, raw_input_change=0.024658203125, output_norm=0.68359375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 20 is skipped for tile 3
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] detail re-inject step 20 t=299 c1=0.0420
+ 60%|██████    | 21/35 [02:03<01:08,  4.91s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 21: k=2.484375, raw_input_change=0.025390625, output_norm=0.6953125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 21 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 21: k=3.625, raw_input_change=0.024169921875, output_norm=0.6796875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 21 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 21: k=2.546875, raw_input_change=0.024169921875, output_norm=0.6796875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 21 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 21: k=2.625, raw_input_change=0.024169921875, output_norm=0.68359375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 21 should recalculate tile 3
+ 63%|██████▎   | 22/35 [02:12<01:18,  6.07s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 22: k=2.484375, raw_input_change=0.02490234375, output_norm=0.6953125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 22 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 22: k=2.296875, raw_input_change=0.025634765625, output_norm=0.69140625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 22 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 22: k=2.21875, raw_input_change=0.025634765625, output_norm=0.69140625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 22 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 22: k=2.25, raw_input_change=0.025634765625, output_norm=0.69140625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 22 is skipped for tile 3
+ 66%|██████▌   | 23/35 [02:15<01:01,  5.14s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 23: k=2.265625, raw_input_change=0.0262451171875, output_norm=0.70703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 23 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 23: k=2.296875, raw_input_change=0.02490234375, output_norm=0.69140625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 23 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 23: k=2.21875, raw_input_change=0.02490234375, output_norm=0.69140625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 23 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 23: k=2.25, raw_input_change=0.0247802734375, output_norm=0.69140625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 23 is skipped for tile 3
+ 69%|██████▊   | 24/35 [02:18<00:49,  4.49s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 24: k=2.265625, raw_input_change=0.0255126953125, output_norm=0.7109375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 24 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 24: k=2.296875, raw_input_change=0.024169921875, output_norm=0.69140625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 24 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 24: k=2.203125, raw_input_change=0.026123046875, output_norm=0.703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 24 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 24: k=2.25, raw_input_change=0.024169921875, output_norm=0.69140625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 24 should recalculate tile 3
+ 71%|███████▏  | 25/35 [02:27<00:57,  5.78s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 25: k=2.3125, raw_input_change=0.02685546875, output_norm=0.71875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 25 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 25: k=3.21875, raw_input_change=0.0264892578125, output_norm=0.703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 25 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 25: k=2.203125, raw_input_change=0.0252685546875, output_norm=0.703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 25 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 25: k=3.21875, raw_input_change=0.0262451171875, output_norm=0.703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 25 is skipped for tile 3
+ 74%|███████▍  | 26/35 [02:30<00:44,  4.94s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 26: k=2.3125, raw_input_change=0.02587890625, output_norm=0.71875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 26 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 26: k=3.21875, raw_input_change=0.025390625, output_norm=0.70703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 26 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 26: k=2.328125, raw_input_change=0.026611328125, output_norm=0.7109375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 26 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 26: k=3.21875, raw_input_change=0.0252685546875, output_norm=0.703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 26 should recalculate tile 3
+ 77%|███████▋  | 27/35 [02:38<00:48,  6.10s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 27: k=2.25, raw_input_change=0.027587890625, output_norm=0.72265625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 27 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 27: k=2.1875, raw_input_change=0.0272216796875, output_norm=0.7109375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 27 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 27: k=2.328125, raw_input_change=0.0262451171875, output_norm=0.71484375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 27 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 27: k=2.203125, raw_input_change=0.0269775390625, output_norm=0.70703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 27 is skipped for tile 3
+ 80%|████████  | 28/35 [02:41<00:36,  5.16s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 28: k=2.25, raw_input_change=0.027099609375, output_norm=0.72265625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 28 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 28: k=2.1875, raw_input_change=0.0267333984375, output_norm=0.7109375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 28 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 28: k=2.234375, raw_input_change=0.0279541015625, output_norm=0.71875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 28 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 28: k=2.203125, raw_input_change=0.026611328125, output_norm=0.70703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 28 is skipped for tile 3
+ 83%|████████▎ | 29/35 [02:44<00:26,  4.50s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 29: k=2.25, raw_input_change=0.02880859375, output_norm=0.71875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 29 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 29: k=2.1875, raw_input_change=0.0264892578125, output_norm=0.7109375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 29 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 29: k=2.234375, raw_input_change=0.0277099609375, output_norm=0.71875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 29 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 29: k=2.203125, raw_input_change=0.0263671875, output_norm=0.70703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 29 should recalculate tile 3
+ 86%|████████▌ | 30/35 [02:53<00:28,  5.80s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 30: k=2.25, raw_input_change=0.0284423828125, output_norm=0.71875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 30 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 30: k=3.21875, raw_input_change=0.0289306640625, output_norm=0.70703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 30 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 30: k=2.375, raw_input_change=0.0294189453125, output_norm=0.71875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 30 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 30: k=3.265625, raw_input_change=0.0289306640625, output_norm=0.703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 30 is skipped for tile 3
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] detail re-inject step 30 t=99 c1=0.0006
+ 89%|████████▊ | 31/35 [02:56<00:19,  4.94s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 31: k=2.9375, raw_input_change=0.0291748046875, output_norm=0.70703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 31 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 31: k=3.21875, raw_input_change=0.0306396484375, output_norm=0.7109375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 31 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 31: k=2.375, raw_input_change=0.029052734375, output_norm=0.703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 31 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 31: k=3.265625, raw_input_change=0.0296630859375, output_norm=0.71875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 31 should recalculate tile 3
+ 91%|█████████▏| 32/35 [03:05<00:18,  6.11s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 32: k=2.40625, raw_input_change=0.0322265625, output_norm=0.69140625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 32 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 32: k=3.21875, raw_input_change=0.03173828125, output_norm=0.7109375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 32 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 32: k=2.375, raw_input_change=0.0322265625, output_norm=0.6875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 32 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 32: k=2.453125, raw_input_change=0.03271484375, output_norm=0.703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 32 is skipped for tile 3
+ 94%|█████████▍| 33/35 [03:08<00:10,  5.16s/it]INFO:modules.cogvideo_transformer_3d:Tile 0 at step 33: k=2.40625, raw_input_change=0.033935546875, output_norm=0.69140625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 33 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 33: k=2.546875, raw_input_change=0.034912109375, output_norm=0.68359375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 33 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 33: k=2.375, raw_input_change=0.033935546875, output_norm=0.69140625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 33 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 33: k=2.453125, raw_input_change=0.034423828125, output_norm=0.703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 33 should recalculate tile 3
+ 97%|█████████▋| 34/35 [03:17<00:06,  6.26s/it]INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 34 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 34 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 34 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 34 should recalculate tile 3
+100%|██████████| 35/35 [03:29<00:00,  5.97s/it]
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] Second Stage Running time: 209.9461808204651 seconds
+INFO:modules.cogvideo_transformer_3d:CACHE_SKIP_RATE 0.4929 skipped=69 checked=140
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: === Two-Stage Generation Completed ===
+INFO:root:Saved final video to: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T2/cog__2k__ours__0.15/video.mp4
+INFO:root:Total running time is 314.51 seconds
+[rank0]:[W1109 02:00:12.064927238 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+exit=0

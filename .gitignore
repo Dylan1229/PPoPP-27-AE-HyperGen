@@ -1,0 +1,22 @@
+# large or machine-specific: created by the setup scripts and the runners
+/envs/
+/ckpts/
+/third_party/
+/work/
+/out/
+hypergen/HunyuanVideoI2V/ckpts
+# results of your own runs (results/paper is the paper's data and is tracked)
+/results/*
+!/results/paper/
+!/results/validation/
+!/results/README.md
+# never commit videos or weights
+*.mp4
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

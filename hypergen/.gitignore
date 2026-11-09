@@ -1,0 +1,11 @@
+output/ 
+# scripts/
+__pycache__
+*/ckpts/
+*egg-info
+
+test
+/*.log
+/*.err
+# Local checkpoint symlink: site-specific, and the target is a multi-GB download.
+HunyuanVideoI2V/ckpts

@@ -1,0 +1,19 @@
+{
+  "key": "wan_t2v__2k__nocache__a_room_with_a_desk_and_a_chair_in_it",
+  "video_sha256": "fb756e4fbe774ddc51d0d8835f367741d058e22beb03a4a6123d5464463900a5",
+  "host": "node3",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "6ddb1cbf5b75715afa7bbef176e24627e24f792d",
+  "experiments_commit": "5a7a17e838d0858695e1d508f9308a75d228cfd9",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-02T08:25:29Z",
+  "remote_script": "#!/usr/bin/env bash\nset -uo pipefail\nmkdir -p \"/tmp/T1/wan_t2v_2k_nocache/a_room_with_a_desk_and_a_chair_in_it\" \"/home/ubuntu/stage1_cache\"\ncd /home/ubuntu/repo/SuperGen\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \\\nCUDA_VISIBLE_DEVICES=0,1,2,3 \\\n/home/ubuntu/envs/easycache/bin/torchrun --nproc_per_node=$(echo 0,1,2,3 | tr ',' '\\n' | wc -l) \\\n  --master_port 32310 WanI2V/pipeline_t2v.py \\\n  --prompt \"a room with a desk and a chair in it\" --task t2v-14B --ckpt_dir /home/ubuntu/ckpts/Wan2.1-T2V-14B \\\n  --width 2560 --height 1440 --upscale_factor 2 \\\n  --num_frames 41 --num_inference_steps 50 --upscale_res_steps 35 --seed 0 \\\n  --output_path \"/tmp/T1/wan_t2v_2k_nocache/a_room_with_a_desk_and_a_chair_in_it/out.mp4\" --stage1_latents_path \"/home/ubuntu/stage1_cache/wan_t2v_2k_a_room_with_a_desk_and_a_chair_in_it.pt\" --loop_step 16 \\\n   > \"/tmp/T1/wan_t2v_2k_nocache/a_room_with_a_desk_and_a_chair_in_it/run_log.log\" 2>&1\nrc=$?; echo \"exit=$rc\" >> \"/tmp/T1/wan_t2v_2k_nocache/a_room_with_a_desk_and_a_chair_in_it/run_log.log\"; exit $rc\n",
+  "cell": {"config": "wan_t2v", "resolution": "2k", "variant": "nocache", "prompt": "a room with a desk and a chair in it"}
+}

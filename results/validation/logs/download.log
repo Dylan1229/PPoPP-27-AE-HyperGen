@@ -1,0 +1,35 @@
+--> tencent/HunyuanVideo-I2V  ->  /home/fanjiang/ckpts/HunyuanVideo-I2V
+[90mHint: The `hf-cli` skill is not installed. Run `hf skills add -g` to teach your AI agents how to use the `hf` CLI.[0m
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 10 files: 100%|██████████| 10/10 [01:35<00:00,  9.55s/it]
+[32m✓ Downloaded[0m
+  path: /home/fanjiang/ckpts/HunyuanVideo-I2V
+--> xtuner/llava-llama-3-8b-v1_1-transformers  ->  /home/fanjiang/ckpts/HunyuanVideo-I2V/text_encoder_i2v
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Still waiting to acquire lock on /home/fanjiang/ckpts/HunyuanVideo-I2V/text_encoder_i2v/.cache/huggingface/.gitignore.lock (elapsed: 0.1 seconds)
+Still waiting to acquire lock on /home/fanjiang/ckpts/HunyuanVideo-I2V/text_encoder_i2v/.cache/huggingface/.gitignore.lock (elapsed: 0.1 seconds)
+Fetching 13 files: 100%|██████████| 13/13 [00:41<00:00,  3.21s/it]
+[32m✓ Downloaded[0m
+  path: /home/fanjiang/ckpts/HunyuanVideo-I2V/text_encoder_i2v
+--> openai/clip-vit-large-patch14  ->  /home/fanjiang/ckpts/HunyuanVideo-I2V/text_encoder_2
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 13 files: 100%|██████████| 13/13 [00:15<00:00,  1.19s/it]
+[32m✓ Downloaded[0m
+  path: /home/fanjiang/ckpts/HunyuanVideo-I2V/text_encoder_2
+--> Wan-AI/Wan2.1-I2V-14B-720P  ->  /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P
+Fetching 32 files:   0%|          | 0/32 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 32 files: 100%|██████████| 32/32 [02:02<00:00,  3.84s/it]
+[32m✓ Downloaded[0m
+  path: /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P
+--> Wan-AI/Wan2.1-T2V-14B-Diffusers  ->  /home/fanjiang/ckpts/Wan2.1-T2V-14B-Diffusers
+Fetching 41 files:   0%|          | 0/41 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 41 files: 100%|██████████| 41/41 [02:48<00:00,  4.10s/it]
+[32m✓ Downloaded[0m
+  path: /home/fanjiang/ckpts/Wan2.1-T2V-14B-Diffusers
+29G	/home/fanjiang/ckpts/CogVideoX1.5-5B-I2V
+51G	/home/fanjiang/ckpts/HunyuanVideo-I2V
+77G	/home/fanjiang/ckpts/Wan2.1-I2V-14B-720P
+65G	/home/fanjiang/ckpts/Wan2.1-T2V-14B
+75G	/home/fanjiang/ckpts/Wan2.1-T2V-14B-Diffusers
+done. Next: bash scripts/check.sh
+DL_DONE rc=0

@@ -1,0 +1,425 @@
+W1109 00:32:31.750000 15418 torch/distributed/run.py:793] 
+W1109 00:32:31.750000 15418 torch/distributed/run.py:793] *****************************************
+W1109 00:32:31.750000 15418 torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1109 00:32:31.750000 15418 torch/distributed/run.py:793] *****************************************
+[W1109 00:32:36.369265207 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[W1109 00:32:36.387113271 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[W1109 00:32:36.447074198 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[W1109 00:32:36.542054410 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+WARNING:root:[1;31mThe width(3840) and height(2160) are not recommended for cogvideox1.5-5b-i2v. The best resolution is (768, 1360).[0m
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 52.84it/s]
+Loading pipeline components...:  20%|██        | 1/5 [00:00<00:00,  9.91it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s][AWARNING:root:[1;31mThe width(3840) and height(2160) are not recommended for cogvideox1.5-5b-i2v. The best resolution is (768, 1360).[0m
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]WARNING:root:[1;31mThe width(3840) and height(2160) are not recommended for cogvideox1.5-5b-i2v. The best resolution is (768, 1360).[0m
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]WARNING:root:[1;31mThe width(3840) and height(2160) are not recommended for cogvideox1.5-5b-i2v. The best resolution is (768, 1360).[0m
+Loading pipeline components...:  20%|██        | 1/5 [00:00<00:00,  7.99it/s]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s][A
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 69.12it/s]
+Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00,  6.05it/s]
+Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  5.62it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s][A
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.75s/it][A
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.81s/it][A
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.72s/it][A
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.95s/it][A
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.76s/it][A
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.78s/it][A
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.69s/it][A
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.87s/it][A
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.81s/it][A
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.73s/it][A
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.67s/it][A
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.87s/it][A
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.75s/it]
+Loading pipeline components...:  40%|████      | 2/5 [00:07<00:12,  4.19s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.67s/it]
+Loading pipeline components...:  40%|████      | 2/5 [00:06<00:11,  3.99s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 68.75it/s]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.61s/it]
+Loading pipeline components...: 100%|██████████| 5/5 [00:06<00:00,  1.40s/it]
+Loading pipeline components...: 100%|██████████| 5/5 [00:07<00:00,  1.52s/it]
+Loading pipeline components...: 100%|██████████| 5/5 [00:07<00:00,  1.45s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.80s/it]
+Loading pipeline components...:  80%|████████  | 4/5 [00:07<00:01,  2.00s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 63.88it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:07<00:00,  1.56s/it]
+Communication method: allgather
+Communication method: allgather
+Communication method: allgather
+INFO:root:VAE tiling: diffusers defaults (its tiled encode/decode change output size when the overlap factor changes)
+INFO:root:== Finish Loading, start to generate video ==
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: === Starting Two-Stage Generation ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Stage 1: 50 steps at 720x1280
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Stage 2: 35 steps at 2160x3840
+Communication method: allgather
+INFO:root:VAE tiling: diffusers defaults (its tiled encode/decode change output size when the overlap factor changes)
+INFO:root:== Finish Loading, start to generate video ==
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: === Starting Two-Stage Generation ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Stage 1: 50 steps at 720x1280
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Stage 2: 35 steps at 2160x3840
+INFO:root:VAE tiling: diffusers defaults (its tiled encode/decode change output size when the overlap factor changes)
+INFO:root:== Finish Loading, start to generate video ==
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: === Starting Two-Stage Generation ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Stage 1: 50 steps at 720x1280
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Stage 2: 35 steps at 2160x3840
+INFO:root:VAE tiling: diffusers defaults (its tiled encode/decode change output size when the overlap factor changes)
+INFO:root:== Finish Loading, start to generate video ==
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: === Starting Two-Stage Generation ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Stage 1: 50 steps at 720x1280
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Stage 2: 35 steps at 2160x3840
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: No low-resolution latents path provided or not found. Running Stage 1 generation.
+INFO:pipeline_cogvideox_i2v_TVG:Resized input image from (3840, 2160) to (1280, 720) for Stage 1
+100%|██████████| 50/50 [02:28<00:00,  2.97s/it]
+INFO:pipeline_cogvideox_i2v_TVG:First Stage Running time: 149.04014992713928 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Saved low-res latents to /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/stage1/cog_4k_a_bunch_of_houses_that_are_on_a_hillside.pt
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Saved Stage 1 video to /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig12__cog__4k__tilepar__4gpu__a_bunch_of_houses_that_are_on_a_hillside/stage1_lowres_video.mp4
+INFO:pipeline_cogvideox_i2v_TVG:=== Stage 2: Upscale and Refine (2160x3840) ===
+INFO:pipeline_cogvideox_i2v_TVG:=== Stage 2: Upscale and Refine (2160x3840) ===
+INFO:pipeline_cogvideox_i2v_TVG:=== Stage 2: Upscale and Refine (2160x3840) ===
+INFO:pipeline_cogvideox_i2v_TVG:=== Stage 2: Upscale and Refine (2160x3840) ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Upsampling Running time: 44.08293151855469 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Re-noised latents for Stage 2 denoising (to_timestep: 699)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Re-noising Running time: 0.0012242794036865234 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: detail re-injection ladder built (50 steps, cosine_scale=2.0)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Upsampling Running time: 44.1789116859436 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Re-noised latents for Stage 2 denoising (to_timestep: 699)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Re-noising Running time: 0.005500078201293945 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: detail re-injection ladder built (50 steps, cosine_scale=2.0)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Upsampling Running time: 44.22391057014465 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Re-noised latents for Stage 2 denoising (to_timestep: 699)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Re-noising Running time: 0.005551576614379883 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: detail re-injection ladder built (50 steps, cosine_scale=2.0)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Upsampling Running time: 44.294551610946655 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Re-noised latents for Stage 2 denoising (to_timestep: 699)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Re-noising Running time: 0.005556344985961914 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: detail re-injection ladder built (50 steps, cosine_scale=2.0)
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 270x480
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(3, 3), step_sizes=(5, 10)
+self.rank=0 indices=[[0, 1], [2, 3], [4, 5], [6, 7, 8]]
+  0%|          | 0/35 [00:00<?, ?it/s]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0009 seconds
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 270x480
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(3, 3), step_sizes=(5, 10)
+self.rank=2 indices=[[0, 1], [2, 3], [4, 5], [6, 7, 8]]
+  0%|          | 0/35 [00:00<?, ?it/s]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0009 seconds
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 270x480
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(3, 3), step_sizes=(5, 10)
+self.rank=1 indices=[[0, 1], [2, 3], [4, 5], [6, 7, 8]]
+  0%|          | 0/35 [00:00<?, ?it/s]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0008 seconds
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 270x480
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(3, 3), step_sizes=(5, 10)
+self.rank=3 indices=[[0, 1], [2, 3], [4, 5], [6, 7, 8]]
+  0%|          | 0/35 [00:00<?, ?it/s]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3] detail re-inject step 0 t=699 c1=0.6282
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2] detail re-inject step 0 t=699 c1=0.6282
+  3%|▎         | 1/35 [00:08<05:03,  8.92s/it]INFO:pipeline_cogvideox_i2v_TVG:[rank=1] detail re-inject step 0 t=699 c1=0.6282
+self.rank=3 start_idx=0 end_idx=0
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] detail re-inject step 0 t=699 c1=0.6282
+  3%|▎         | 1/35 [00:09<05:08,  9.07s/it]self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+  3%|▎         | 1/35 [00:09<05:14,  9.25s/it]self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0009 seconds
+  6%|▌         | 2/35 [00:17<04:56,  8.97s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+  6%|▌         | 2/35 [00:18<04:58,  9.04s/it]self.rank=2 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0008 seconds
+  9%|▊         | 3/35 [00:26<04:44,  8.90s/it]self.rank=3 start_idx=0 end_idx=0
+  9%|▊         | 3/35 [00:26<04:45,  8.93s/it]self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+  9%|▊         | 3/35 [00:26<04:45,  8.94s/it]self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank1 Communicate time consumption 0.0007 seconds
+rank0 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0009 seconds
+ 11%|█▏        | 4/35 [00:35<04:35,  8.90s/it]self.rank=3 start_idx=0 end_idx=0
+ 11%|█▏        | 4/35 [00:35<04:36,  8.92s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+ 11%|█▏        | 4/35 [00:35<04:37,  8.94s/it]self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank1 Communicate time consumption 0.0007 seconds
+rank2 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0009 seconds
+ 14%|█▍        | 5/35 [00:44<04:26,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 14%|█▍        | 5/35 [00:44<04:27,  8.92s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+ 14%|█▍        | 5/35 [00:44<04:27,  8.91s/it]self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank1 Communicate time consumption 0.0007 seconds
+rank0 Communicate time consumption 0.0007 seconds
+rank2 Communicate time consumption 0.0009 seconds
+ 17%|█▋        | 6/35 [00:53<04:17,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 17%|█▋        | 6/35 [00:53<04:18,  8.90s/it]self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank2 Communicate time consumption 0.0007 seconds
+rank0 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0008 seconds
+ 20%|██        | 7/35 [01:02<04:08,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 20%|██        | 7/35 [01:02<04:09,  8.90s/it]self.rank=0 start_idx=0 end_idx=0
+ 20%|██        | 7/35 [01:02<04:09,  8.89s/it]self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank0 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0008 seconds
+ 23%|██▎       | 8/35 [01:11<04:00,  8.89s/it]self.rank=2 start_idx=0 end_idx=0
+ 23%|██▎       | 8/35 [01:11<04:00,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+ 23%|██▎       | 8/35 [01:11<03:59,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0007 seconds
+rank0 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank3 Communicate time consumption 0.0009 seconds
+ 26%|██▌       | 9/35 [01:20<03:51,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+ 26%|██▌       | 9/35 [01:20<03:51,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+ 26%|██▌       | 9/35 [01:20<03:51,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank2 Communicate time consumption 0.0007 seconds
+rank0 Communicate time consumption 0.0007 seconds
+rank1 Communicate time consumption 0.0009 seconds
+ 29%|██▊       | 10/35 [01:29<03:42,  8.89s/it]self.rank=3 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+self.rank=1 start_idx=0 end_idx=0
+ 29%|██▊       | 10/35 [01:29<03:42,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0009 seconds
+rank2 Communicate time consumption 0.0009 seconds
+rank1 Communicate time consumption 0.0009 seconds
+rank0 Communicate time consumption 0.0009 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2] detail re-inject step 10 t=499 c1=0.2484
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3] detail re-inject step 10 t=499 c1=0.2484
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] detail re-inject step 10 t=499 c1=0.2484
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1] detail re-inject step 10 t=499 c1=0.2484
+ 31%|███▏      | 11/35 [01:37<03:33,  8.89s/it]self.rank=2 start_idx=0 end_idx=0
+ 31%|███▏      | 11/35 [01:38<03:33,  8.90s/it]self.rank=3 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+ 31%|███▏      | 11/35 [01:37<03:33,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0009 seconds
+rank1 Communicate time consumption 0.0009 seconds
+ 34%|███▍      | 12/35 [01:46<03:24,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 34%|███▍      | 12/35 [01:46<03:24,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+ 34%|███▍      | 12/35 [01:47<03:24,  8.89s/it]self.rank=2 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0008 secondsrank0 Communicate time consumption 0.0008 seconds
+
+ 37%|███▋      | 13/35 [01:55<03:15,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 37%|███▋      | 13/35 [01:55<03:15,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0009 seconds
+rank2 Communicate time consumption 0.0009 seconds
+ 40%|████      | 14/35 [02:04<03:06,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+ 40%|████      | 14/35 [02:04<03:06,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+ 40%|████      | 14/35 [02:04<03:06,  8.89s/it]self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0009 seconds
+rank2 Communicate time consumption 0.0009 seconds
+ 43%|████▎     | 15/35 [02:13<02:57,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0009 seconds
+rank1 Communicate time consumption 0.0009 seconds
+ 46%|████▌     | 16/35 [02:22<02:48,  8.89s/it]self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+ 46%|████▌     | 16/35 [02:22<02:48,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0009 seconds
+rank2 Communicate time consumption 0.0010 seconds
+rank0 Communicate time consumption 0.0010 seconds
+ 49%|████▊     | 17/35 [02:31<02:40,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+ 49%|████▊     | 17/35 [02:31<02:40,  8.89s/it]
+self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0009 seconds
+rank2 Communicate time consumption 0.0009 secondsrank0 Communicate time consumption 0.0009 seconds
+
+rank1 Communicate time consumption 0.0009 seconds
+ 51%|█████▏    | 18/35 [02:40<02:31,  8.89s/it]self.rank=3 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+ 51%|█████▏    | 18/35 [02:40<02:31,  8.89s/it]
+self.rank=2 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0008 seconds
+ 54%|█████▍    | 19/35 [02:48<02:22,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 54%|█████▍    | 19/35 [02:49<02:22,  8.89s/it]self.rank=2 start_idx=0 end_idx=0
+ 54%|█████▍    | 19/35 [02:49<02:22,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+ 54%|█████▍    | 19/35 [02:49<02:22,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0009 seconds
+rank0 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0008 seconds
+ 57%|█████▋    | 20/35 [02:57<02:13,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+ 57%|█████▋    | 20/35 [02:58<02:13,  8.89s/it]self.rank=2 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0009 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3] detail re-inject step 20 t=299 c1=0.0420
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1] detail re-inject step 20 t=299 c1=0.0420
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2] detail re-inject step 20 t=299 c1=0.0420
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] detail re-inject step 20 t=299 c1=0.0420
+ 60%|██████    | 21/35 [03:06<02:04,  8.89s/it]self.rank=1 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+ 60%|██████    | 21/35 [03:07<02:04,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0008 seconds
+ 63%|██████▎   | 22/35 [03:15<01:55,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+ 63%|██████▎   | 22/35 [03:15<01:55,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0009 seconds
+ 66%|██████▌   | 23/35 [03:24<01:46,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 66%|██████▌   | 23/35 [03:24<01:46,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+ 66%|██████▌   | 23/35 [03:24<01:46,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0009 seconds
+ 69%|██████▊   | 24/35 [03:33<01:37,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 69%|██████▊   | 24/35 [03:33<01:37,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0009 seconds
+rank0 Communicate time consumption 0.0009 seconds
+rank2 Communicate time consumption 0.0009 seconds
+ 71%|███████▏  | 25/35 [03:42<01:28,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 71%|███████▏  | 25/35 [03:42<01:28,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+ 71%|███████▏  | 25/35 [03:42<01:28,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+ 71%|███████▏  | 25/35 [03:42<01:28,  8.89s/it]self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0007 seconds
+ 74%|███████▍  | 26/35 [03:51<01:20,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 74%|███████▍  | 26/35 [03:51<01:20,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0008 seconds
+ 77%|███████▋  | 27/35 [04:00<01:11,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 77%|███████▋  | 27/35 [04:00<01:11,  8.89s/it]self.rank=2 start_idx=0 end_idx=0
+ 77%|███████▋  | 27/35 [04:00<01:11,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+ 77%|███████▋  | 27/35 [04:00<01:11,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0009 seconds
+rank1 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0009 seconds
+ 80%|████████  | 28/35 [04:09<01:02,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+ 80%|████████  | 28/35 [04:08<01:02,  8.89s/it]self.rank=0 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+self.rank=3 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0009 seconds
+rank3 Communicate time consumption 0.0008 seconds
+ 83%|████████▎ | 29/35 [04:17<00:53,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+ 83%|████████▎ | 29/35 [04:18<00:53,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0009 seconds
+rank2 Communicate time consumption 0.0009 seconds
+rank1 Communicate time consumption 0.0009 seconds
+rank0 Communicate time consumption 0.0009 seconds
+ 86%|████████▌ | 30/35 [04:26<00:44,  8.89s/it]
+self.rank=3 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+rank0 Communicate time consumption 0.0007 seconds
+rank3 Communicate time consumption 0.0007 seconds
+rank2 Communicate time consumption 0.0008 secondsrank1 Communicate time consumption 0.0008 seconds
+
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3] detail re-inject step 30 t=99 c1=0.0006
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] detail re-inject step 30 t=99 c1=0.0006
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2] detail re-inject step 30 t=99 c1=0.0006
+ 89%|████████▊ | 31/35 [04:35<00:35,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 89%|████████▊ | 31/35 [04:35<00:35,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1] detail re-inject step 30 t=99 c1=0.0006
+ 89%|████████▊ | 31/35 [04:35<00:35,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank0 Communicate time consumption 0.0007 seconds
+rank2 Communicate time consumption 0.0008 seconds
+rank1 Communicate time consumption 0.0009 seconds
+ 91%|█████████▏| 32/35 [04:44<00:26,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 91%|█████████▏| 32/35 [04:44<00:26,  8.89s/it]self.rank=2 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+ 91%|█████████▏| 32/35 [04:44<00:26,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank2 Communicate time consumption 0.0007 seconds
+rank0 Communicate time consumption 0.0007 seconds
+rank1 Communicate time consumption 0.0008 seconds
+ 94%|█████████▍| 33/35 [04:53<00:17,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 94%|█████████▍| 33/35 [04:53<00:17,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+ 94%|█████████▍| 33/35 [04:53<00:17,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0007 seconds
+rank0 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0009 seconds
+rank1 Communicate time consumption 0.0009 seconds
+ 97%|█████████▋| 34/35 [05:02<00:08,  8.89s/it]self.rank=3 start_idx=0 end_idx=0
+ 97%|█████████▋| 34/35 [05:02<00:08,  8.89s/it]self.rank=2 start_idx=0 end_idx=0
+ 97%|█████████▋| 34/35 [05:02<00:08,  8.89s/it]self.rank=1 start_idx=0 end_idx=0
+ 97%|█████████▋| 34/35 [05:02<00:08,  8.89s/it]self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+rank2 Communicate time consumption 0.0010 seconds
+rank1 Communicate time consumption 0.0010 seconds
+rank0 Communicate time consumption 0.0009 seconds
+100%|██████████| 35/35 [05:11<00:00,  8.89s/it]
+100%|██████████| 35/35 [05:11<00:00,  8.89s/it]
+100%|██████████| 35/35 [05:11<00:00,  8.90s/it]
+100%|██████████| 35/35 [05:11<00:00,  8.89s/it]
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3] Second Stage Running time: 312.9567770957947 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2] Second Stage Running time: 313.06960129737854 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1] Second Stage Running time: 313.0283553600311 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] Second Stage Running time: 313.1722548007965 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: === Two-Stage Generation Completed ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: === Two-Stage Generation Completed ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: === Two-Stage Generation Completed ===
+INFO:root:Total running time is 573.53 seconds
+INFO:root:Total running time is 573.55 seconds
+INFO:root:Total running time is 573.61 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: === Two-Stage Generation Completed ===
+INFO:root:Saved final video to: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig12__cog__4k__tilepar__4gpu__a_bunch_of_houses_that_are_on_a_hillside/video.mp4
+INFO:root:Total running time is 657.79 seconds
+[rank0]:[W1109 00:43:34.737680414 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+exit=0

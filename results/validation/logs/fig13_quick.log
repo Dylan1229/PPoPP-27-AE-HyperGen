@@ -1,0 +1,12 @@
+================================================================================
+ Figure 13: tile-parallel scalability   (mode: quick)
+ host=hypergen-rebuttal-h100x8 gpu=NVIDIA H100 80GB HBM3 x8 driver=580.178.04 torch(cogvideo)=2.5.1+cu124 artifact=1ef94ae date=2026-11-09T01:20:14Z
+ results -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae    videos -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/videos
+================================================================================
+[01:20:14] run   fig13  cog 2k nocache 1GPU ENABLE_REDISTRIBUTE=0
+[01:28:58]       rc=0  stage2=412.5508940219879s  skip=n/a  wall=523s
+[01:28:58] run   fig13  cog 2k nocache 2GPU ENABLE_REDISTRIBUTE=0
+[01:34:33]       rc=0  stage2=208.82779955863953s  skip=n/a  wall=335s
+[01:34:33] run   fig13  cog 2k nocache 4GPU ENABLE_REDISTRIBUTE=0
+[01:38:26]       rc=0  stage2=105.08298087120056s  skip=n/a  wall=233s
+[01:38:26] done. Next: bash plots/make_all.sh --results /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae

@@ -1,0 +1,86 @@
+block	config	res	variant	ngpu	prompt	host	wall_s	stage1_s	upscale_s	stage2_s	skip_rate	rc	collected	clocks	exclusive	thresh	rebalance
+quality	cog	2k	cache	4	a person is putting sauce on a burger	node1	212		24.900294065475464	61.012577533721924	0.4286	0	1	345/345/0	1	0.20	0
+quality	hunyuan	2k	cache	4	a person is putting sauce on a burger	node2	266		0.008890628814697266	141.43090343475342	0.2571	0	1	345/345/0	1	0.06	0
+quality	cog	2k	cache	4	a man and a child riding bumper cars in an amusement park	node1	208		24.866852521896362	61.03553867340088	0.4286	0	1	345/390/0	1	0.20	0
+fig10	cog	2k	origin	1	a person is putting sauce on a burger	node5	540		24.475606203079224	418.8280334472656		0	1	480/480/0	1		0
+quality	wan_i2v	2k	cache	4	a person is putting sauce on a burger	node3	573	0.0046	12.9711	384.97153067588806	0.3143	0	1	345/345/0	1	0.15	0
+quality	wan_t2v	2k	cache	4	a person is putting sauce on a burger	node4	583	0.0109	47.5491	366.16634011268616	0.3714	0	1	345/345/0	1	0.20	0
+quality	cog	2k	cache	4	a mountain range with a sky background	node1	205		24.79678177833557	60.932535886764526	0.4286	0	1	345/345/0	1	0.20	0
+fig10	cog	2k	parallel	4	a person is putting sauce on a burger	node5	246		24.73810124397278	106.3927731513977		0	1	345/435/0	0		1
+quality	hunyuan	2k	cache	4	a man and a child riding bumper cars in an amusement park	node2	530	267.7122299671173	0.0012853145599365234	141.37334942817688	0.2571	0	1	345/345/0	1	0.06	0
+quality	cog	2k	cache	4	a room with a desk and a chair in it	node1	381	149.3060164451599	24.7691867351532	87.77479839324951	0.4571	0	1	345/375/0	1	0.20	0
+quality	hunyuan	2k	cache	4	a mountain range with a sky background	node2	531	267.41857624053955	0.00237274169921875	141.10418176651	0.2571	0	1	345/345/0	1	0.06	0
+quality	cog	2k	cache	4	a close up of leaves with water droplets on them	node1	366	149.28712439537048	24.860185146331787	76.08138918876648	0.4286	0	1	345/405/0	1	0.20	0
+quality	wan_t2v	2k	cache	4	a man and a child riding bumper cars in an amusement park	node4	1256	690.2196	12.8705	382.44844794273376	0.3143	0	1	345/345/0	1	0.20	0
+quality	hunyuan	2k	cache	4	a room with a desk and a chair in it	node2	552	267.4827585220337	0.0015034675598144531	162.36641573905945	0.2571	0	1	345/345/0	1	0.06	0
+quality	wan_i2v	2k	cache	4	a man and a child riding bumper cars in an amusement park	node3	1346	727.3617	12.7988	430.86426544189453	0.2286	0	1	345/345/0	1	0.15	0
+quality	cog	4k	cache	4	a bunch of houses that are on a hillside	node1	564	149.25440073013306	44.58168125152588	206.86275219917297	0.4429	0	1	345/345/0	1	0.20	0
+fig12	cog	4k	baseline	1	a bunch of houses that are on a hillside	node5	1274	148.71617150306702	44.04173707962036	939.0031559467316		0	1	390/390/0	1		0
+fig10	cog	2k	parcache	4	a person is putting sauce on a burger	node5	210		24.745363235473633	67.4398877620697	0.6286	0	1	345/375/0	1	0.20	1
+quality	hunyuan	2k	cache	4	a close up of leaves with water droplets on them	node2	561	267.5046648979187	0.015761852264404297	167.6218225955963	0.2429	0	1	345/345/0	1	0.06	0
+quality	cog	4k	cache	4	the parthenon in acropolis, greece	node1	540	149.14669585227966	44.536914110183716	183.50948357582092	0.5000	0	1	345/345/0	1	0.20	0
+fig12	cog	4k	tilepar	4	a bunch of houses that are on a hillside	node5	525		44.782288789749146	320.0991106033325		0	1	345/345/0	1		0
+fig12	cog	4k	cache	4	a bunch of houses that are on a hillside	node5	435		44.367964029312134	227.60386037826538	0.3286	0	1	345/345/0	1	0.20	0
+quality	cog	4k	cache	4	a white and blue airplane flying in the sky	node1	553	149.13257575035095	44.41090226173401	194.98781633377075	0.4286	0	1	345/435/0	1	0.20	0
+fig10	cog	4k	origin	1	a bunch of houses that are on a hillside	node5	1130		44.15887093544006	943.0326690673828		0	1	345/345/0	1		0
+quality	wan_i2v	2k	cache	4	a mountain range with a sky background	node3	1337	740.9259	12.8004	405.85774540901184	0.3429	0	1	345/345/0	1	0.15	0
+fig12	cog	4k	regionaware	4	a bunch of houses that are on a hillside	node5	399		44.347346782684326	189.00759482383728	0.4429	0	1	345/345/0	1		0
+quality	hunyuan	4k	cache	4	a bunch of houses that are on a hillside	node2	955	267.5020840167999	0.00861215591430664	501.0336711406708	0.1746	0	1	345/345/0	1	0.06	0
+fig10	wan_i2v	2k	origin	1	a person is putting sauce on a burger	node6	1979	0.0037	12.9090	1803.9596066474915		0	1	345/345/0	1		0
+quality	hunyuan	4k	cache	4	the parthenon in acropolis, greece	node2	893	267.3358414173126	0.007092714309692383	441.9824969768524	0.2413	0	1	345/345/0	1	0.06	0
+fig10	cog	4k	parcache	8	a bunch of houses that are on a hillside	node5	339		44.3958101272583	111.16881895065308	0.2571	0	1	345/345/0	1	0.20	1
+quality	wan_i2v	2k	cache	4	a room with a desk and a chair in it	node3	1280	726.2698	12.8238	362.39379501342773	0.3429	0	1	345/345/0	1	0.15	0
+fig10	wan_i2v	2k	parallel	4	a person is putting sauce on a burger	node6	658	0.0040	12.9108	471.8880522251129		0	1	345/345/0	1		1
+quality	wan_i2v	2k	cache	4	a close up of leaves with water droplets on them	node3	578	0.0037	12.9609	398.1516275405884	0.3429	0	1	345/345/0	1	0.15	0
+fig10	wan_i2v	2k	parcache	4	a person is putting sauce on a burger	node6	593	0.0038	12.9292	382.90818428993225	0.3143	0	1	345/345/0	1	0.15	1
+quality	hunyuan	4k	cache	4	a white and blue airplane flying in the sky	node2	891	267.24645805358887	0.0071713924407958984	442.1642096042633	0.2825	0	1	345/345/0	1	0.06	0
+fig12	cog	4k	rebalance	4	a bunch of houses that are on a hillside	node2	529	148.6803674697876	44.545259952545166	172.5877468585968	0.4000	0	1	345/360/0	1		1
+quality	wan_i2v	4k	cache	4	a bunch of houses that are on a hillside	node3	1350	0.0035	26.3341	1128.8421368598938	0.3143	0	1	345/345/0	1	0.15	0
+quality	wan_i2v	4k	cache	4	the parthenon in acropolis, greece	node3	1252	0.0037	26.3247	1026.581305027008	0.3143	0	1	345/345/0	1	0.15	0
+fig10	hunyuan	2k	origin	1	a person is putting sauce on a burger	node4	1108	266.7574017047882	0.0010128021240234375	749.353208065033		0	1	345/345/0	1		0
+fig10	hunyuan	2k	parallel	4	a person is putting sauce on a burger	node4	581	267.16610074043274	0.0049839019775390625	190.55765962600708		0	1	345/345/0	1		1
+quality	wan_i2v	4k	cache	4	a white and blue airplane flying in the sky	node3	2046	735.8641	26.2908	1085.2767379283905	0.3143	0	1	345/345/0	1	0.15	0
+fig10	hunyuan	2k	parcache	4	a person is putting sauce on a burger	node4	540	267.6325662136078	0.0053174495697021484	145.8985936641693	0.5286	0	1	345/345/0	1	0.06	1
+quality	wan_t2v	2k	cache	4	a mountain range with a sky background	node2	1187	688.2040	12.8392	317.5347559452057	0.4571	0	1	345/345/0	1	0.20	0
+fig10	hunyuan	4k	origin	1	a bunch of houses that are on a hillside	node4	2100	267.2762966156006	0.0010313987731933594	1688.1358470916748		0	1	345/345/0	1		0
+quality	wan_t2v	2k	cache	4	a close up of leaves with water droplets on them	node2	1192	688.1535	12.8380	321.82953906059265	0.3143	0	1	345/345/0	1	0.20	0
+fig10	cog	4k	parallel	8	a bunch of houses that are on a hillside	node3	572	150.48298001289368	44.43649911880493	210.34132409095764		0	1	345/345/0	1		1
+fig10	wan_i2v	4k	origin	1	a bunch of houses that are on a hillside	node5	5067	723.4341	26.3464	4111.710998535156		0	1	345/345/0	1		0
+fig10	hunyuan	4k	parallel	8	a bunch of houses that are on a hillside	node4	837	267.3281161785126	0.03226804733276367	375.770800113678		0	1	345/345/0	1		1
+fig10	hunyuan	4k	parcache	8	a bunch of houses that are on a hillside	node4	662	267.0331723690033	0.0263364315032959	206.80226683616638	0.3333	0	1	345/345/0	1	0.06	1
+quality	wan_t2v	4k	cache	4	a bunch of houses that are on a hillside	node2	1777	691.0110	26.2171	866.0810277462006	0.3571	0	1	345/345/0	1	0.20	0
+quality	wan_t2v	2k	cache	4	a room with a desk and a chair in it	node6	1251	688.4249	12.7801	374.4301562309265	0.4286	0	1	345/345/0	1	0.20	0
+fig10	wan_i2v	4k	parallel	8	a bunch of houses that are on a hillside	node5	1939	721.7224	26.3827	965.5380482673645		0	1	345/345/0	1		1
+quality	wan_t2v	4k	cache	4	the parthenon in acropolis, greece	node2	1768	691.0080	26.2110	855.4217336177826	0.4143	0	1	345/345/0	1	0.20	0
+quality	wan_t2v	4k	cache	4	the parthenon in acropolis, greece	node6	1757	686.8854	26.1098	850.8167440891266	0.4000	0	1	345/345/0	1	0.20	0
+fig10	wan_i2v	4k	parcache	8	a bunch of houses that are on a hillside	node5	1738	721.2532	26.3887	757.3442680835724	0.2857	0	1	345/345/0	1	0.15	1
+quality	wan_t2v	4k	cache	4	a white and blue airplane flying in the sky	node6	342	0.0012	0.0011			1	0	345/345/0	1	0.20	0
+quality	wan_t2v	4k	cache	4	a white and blue airplane flying in the sky	node2	1855	683.6777	26.2206	954.2806327342987	0.4286	0	1	345/345/0	1	0.20	0
+fig11	cog	2k	nocache	4	a person is putting sauce on a burger	node1	249		24.838074445724487	105.97063279151917		0	1	345/345/0	1	0.20	0
+fig11	hunyuan	2k	nocache	4	a person is putting sauce on a burger	node2	310		0.0036144256591796875	189.00511360168457		0	1	345/345/0	1	0.06	0
+fig11	cog	2k	cache	4	a person is putting sauce on a burger	node1	209		24.787672519683838	60.94415497779846	0.4286	0	1	345/375/0	1	0.20	0
+fig11	hunyuan	2k	cache	4	a person is putting sauce on a burger	node2	263		0.010391950607299805	141.28131675720215	0.2571	0	1	345/345/0	1	0.06	0
+fig11	wan_i2v	2k	nocache	4	a person is putting sauce on a burger	node4	664	0.0046	13.0057	476.86545586586		0	1	345/345/0	1	0.15	0
+fig11	cog	4k	nocache	4	a bunch of houses that are on a hillside	node1	523		44.54945516586304	314.5084352493286		0	1	345/345/0	1	0.20	0
+fig11	wan_i2v	2k	cache	4	a person is putting sauce on a burger	node4	577	0.0047	13.0168	388.40798234939575	0.3429	0	1	345/345/0	1	0.15	0
+fig11	hunyuan	4k	nocache	4	a bunch of houses that are on a hillside	node2	750		0.0070841312408447266	565.5210828781128		0	1	345/345/0	1	0.06	0
+fig11	cog	4k	cache	4	a bunch of houses that are on a hillside	node1	394		44.73037075996399	186.5052089691162	0.4571	0	1	345/345/0	1	0.20	0
+fig11	cog	2k	nocache	1	a person is putting sauce on a burger	node1	544		24.586992740631104	419.36311435699463		0	1	405/405/0	1	0.20	0
+fig11	hunyuan	4k	cache	4	a bunch of houses that are on a hillside	node2	680		0.006424665451049805	501.2672700881958	0.1746	0	1	345/345/0	1	0.06	0
+fig11	cog	2k	cache	1	a person is putting sauce on a burger	node1	308		24.552656888961792	183.13989853858948	0.5643	0	1	390/390/0	1	0.20	0
+fig11	hunyuan	2k	nocache	1	a person is putting sauce on a burger	node2	842		0.0010731220245361328	749.37708568573		0	1	345/345/0	1	0.06	0
+fig11	wan_i2v	4k	nocache	4	a bunch of houses that are on a hillside	node4	1617	0.0040	26.4596	1384.129575252533		0	1	345/345/0	1	0.15	0
+fig11	hunyuan	2k	cache	1	a person is putting sauce on a burger	node2	564		0.0011544227600097656	471.9115221500397	0.3714	0	1	345/345/0	1	0.06	0
+fig11	wan_i2v	4k	cache	4	a bunch of houses that are on a hillside	node4	1352	0.0042	26.4276	1127.7820093631744	0.3143	0	1	345/345/0	1	0.15	0
+fig11	wan_i2v	2k	nocache	1	a person is putting sauce on a burger	node4	1981	0.0038	12.9899	1807.911476135254		0	1	345/345/0	1	0.15	0
+fig11	wan_i2v	2k	cache	1	a person is putting sauce on a burger	node4	1252	0.0038	12.9936	1076.0492832660675	0.4071	0	1	345/345/0	1	0.15	0
+fig11	wan_t2v	2k	nocache	4	a person is putting sauce on a burger	node2	1324	683.0202	12.8536	458.6415231227875		0	1	345/345/0	1	0.20	0
+fig11	wan_t2v	2k	cache	4	a person is putting sauce on a burger	node2	586	0.0089	47.0642	365.12650847435	0.3714	0	1	345/345/0	1	0.20	0
+fig11	wan_t2v	4k	nocache	4	a bunch of houses that are on a hillside	node2	334	0.0085	63.6234			1	0	345/345/0	1	0.20	0
+fig11	wan_t2v	4k	cache	4	a bunch of houses that are on a hillside	node2	1143	0.0149	65.6957	864.5712349414825	0.3857	0	1	345/405/0	1	0.20	0
+fig11	wan_t2v	2k	nocache	1	a person is putting sauce on a burger	node2	1987	0.0084	46.8381	1789.2972438335419		0	1	345/345/0	1	0.20	0
+fig11	wan_t2v	2k	cache	1	a person is putting sauce on a burger	node2	1141	0.0083	45.8052	949.3923997879028	0.4714	0	1	345/345/0	1	0.20	0
+fig11	hunyuan	2k	nocache	4	a mountain range with a sky background	node5	315		0.017347335815429688	191.0532088279724		0	1	345/345/0	1	0.06	0
+fig11	hunyuan	2k	cache	4	a mountain range with a sky background	node5	269		0.009716033935546875	142.77470898628235	0.2571	0	1	345/345/0	1	0.06	0
+fig11	hunyuan	2k	nocache	1	a mountain range with a sky background	node5	849		0.0010595321655273438	756.4527673721313		0	1	390/390/0	1	0.06	0
+fig11	hunyuan	2k	cache	1	a mountain range with a sky background	node5	423		0.001028299331665039	330.4196081161499	0.5643	0	1	345/345/0	1	0.06	0

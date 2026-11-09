@@ -1,0 +1,860 @@
+W1109 03:31:09.704000 133895278888768 torch/distributed/run.py:779] 
+W1109 03:31:09.704000 133895278888768 torch/distributed/run.py:779] *****************************************
+W1109 03:31:09.704000 133895278888768 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1109 03:31:09.704000 133895278888768 torch/distributed/run.py:779] *****************************************
+[2026-11-09 03:31:13,307] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-11-09 03:31:13,328] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-11-09 03:31:13,334] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2026-11-09 03:31:13,343] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Namespace(model='HYVideo-T/2', latent_channels=16, precision='bf16', rope_theta=256, gradient_checkpoint=False, gradient_checkpoint_layers=-1, vae='884-16c-hy', vae_precision='fp16', vae_tiling=True, text_encoder='llm-i2v', text_encoder_precision='fp16', text_states_dim=4096, text_len=256, tokenizer='llm-i2v', prompt_template='dit-llm-encode-i2v', prompt_template_video='dit-llm-encode-video-i2v', hidden_state_skip_layer=2, apply_final_norm=False, text_encoder_2='clipL', text_encoder_precision_2='fp16', text_states_dim_2=768, tokenizer_2='clipL', text_len_2=77, denoise_type='flow', flow_shift=7.0, flow_reverse=True, flow_solver='euler', use_linear_quadratic_schedule=False, linear_schedule_end=25, i2v_mode=True, i2v_resolution='720p', i2v_image_path='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/data/inputs/2k_1440x2560/a mountain range with a sky background.jpg', i2v_condition_type='token_replace', i2v_stability=True, use_lora=False, lora_path='', lora_scale=1.0, lora_rank=64, model_base='ckpts', dit_weight='ckpts/hunyuan-video-i2v-720p/transformers/mp_rank_00_model_states.pt', i2v_dit_weight='ckpts/hunyuan-video-i2v-720p/transformers/mp_rank_00_model_states.pt', model_resolution='540p', load_key='module', use_cpu_offload=False, batch_size=1, infer_steps=50, disable_autocast=False, save_path='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig11__hunyuan__2k__cache__4gpu__a_mountain_range_with_a_sky_background', save_path_suffix='', name_suffix='', num_videos=1, video_size=[1440, 2560], video_length=41, prompt='a mountain range with a sky background', seed_type='auto', seed=0, neg_prompt=None, cfg_scale=1.0, embedded_cfg_scale=6.0, use_fp8=False, reproduce=False, two_stage_generation=True, upscale_factor=2, rope_mode='local', upscale_res_steps=35, save_intermediate=True, output_dir='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig11__hunyuan__2k__cache__4gpu__a_mountain_range_with_a_sky_background', shift_timesteps='0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34', load_prev_latents_path='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/stage1/hunyuan_2k_a_mountain_range_with_a_sky_background.pt', loop_step=16, enable_intra_tile_cache=True, cache_thresh=0.06, enable_region_aware_cache=True, static_tile_cache_scale_factor=0.5, ulysses_degree=1, ring_degree=1)
+[W1109 03:31:14.577749324 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+Namespace(model='HYVideo-T/2', latent_channels=16, precision='bf16', rope_theta=256, gradient_checkpoint=False, gradient_checkpoint_layers=-1, vae='884-16c-hy', vae_precision='fp16', vae_tiling=True, text_encoder='llm-i2v', text_encoder_precision='fp16', text_states_dim=4096, text_len=256, tokenizer='llm-i2v', prompt_template='dit-llm-encode-i2v', prompt_template_video='dit-llm-encode-video-i2v', hidden_state_skip_layer=2, apply_final_norm=False, text_encoder_2='clipL', text_encoder_precision_2='fp16', text_states_dim_2=768, tokenizer_2='clipL', text_len_2=77, denoise_type='flow', flow_shift=7.0, flow_reverse=True, flow_solver='euler', use_linear_quadratic_schedule=False, linear_schedule_end=25, i2v_mode=True, i2v_resolution='720p', i2v_image_path='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/data/inputs/2k_1440x2560/a mountain range with a sky background.jpg', i2v_condition_type='token_replace', i2v_stability=True, use_lora=False, lora_path='', lora_scale=1.0, lora_rank=64, model_base='ckpts', dit_weight='ckpts/hunyuan-video-i2v-720p/transformers/mp_rank_00_model_states.pt', i2v_dit_weight='ckpts/hunyuan-video-i2v-720p/transformers/mp_rank_00_model_states.pt', model_resolution='540p', load_key='module', use_cpu_offload=False, batch_size=1, infer_steps=50, disable_autocast=False, save_path='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig11__hunyuan__2k__cache__4gpu__a_mountain_range_with_a_sky_background', save_path_suffix='', name_suffix='', num_videos=1, video_size=[1440, 2560], video_length=41, prompt='a mountain range with a sky background', seed_type='auto', seed=0, neg_prompt=None, cfg_scale=1.0, embedded_cfg_scale=6.0, use_fp8=False, reproduce=False, two_stage_generation=True, upscale_factor=2, rope_mode='local', upscale_res_steps=35, save_intermediate=True, output_dir='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig11__hunyuan__2k__cache__4gpu__a_mountain_range_with_a_sky_background', shift_timesteps='0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34', load_prev_latents_path='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/stage1/hunyuan_2k_a_mountain_range_with_a_sky_background.pt', loop_step=16, enable_intra_tile_cache=True, cache_thresh=0.06, enable_region_aware_cache=True, static_tile_cache_scale_factor=0.5, ulysses_degree=1, ring_degree=1)
+[W1109 03:31:14.582226692 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+Namespace(model='HYVideo-T/2', latent_channels=16, precision='bf16', rope_theta=256, gradient_checkpoint=False, gradient_checkpoint_layers=-1, vae='884-16c-hy', vae_precision='fp16', vae_tiling=True, text_encoder='llm-i2v', text_encoder_precision='fp16', text_states_dim=4096, text_len=256, tokenizer='llm-i2v', prompt_template='dit-llm-encode-i2v', prompt_template_video='dit-llm-encode-video-i2v', hidden_state_skip_layer=2, apply_final_norm=False, text_encoder_2='clipL', text_encoder_precision_2='fp16', text_states_dim_2=768, tokenizer_2='clipL', text_len_2=77, denoise_type='flow', flow_shift=7.0, flow_reverse=True, flow_solver='euler', use_linear_quadratic_schedule=False, linear_schedule_end=25, i2v_mode=True, i2v_resolution='720p', i2v_image_path='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/data/inputs/2k_1440x2560/a mountain range with a sky background.jpg', i2v_condition_type='token_replace', i2v_stability=True, use_lora=False, lora_path='', lora_scale=1.0, lora_rank=64, model_base='ckpts', dit_weight='ckpts/hunyuan-video-i2v-720p/transformers/mp_rank_00_model_states.pt', i2v_dit_weight='ckpts/hunyuan-video-i2v-720p/transformers/mp_rank_00_model_states.pt', model_resolution='540p', load_key='module', use_cpu_offload=False, batch_size=1, infer_steps=50, disable_autocast=False, save_path='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig11__hunyuan__2k__cache__4gpu__a_mountain_range_with_a_sky_background', save_path_suffix='', name_suffix='', num_videos=1, video_size=[1440, 2560], video_length=41, prompt='a mountain range with a sky background', seed_type='auto', seed=0, neg_prompt=None, cfg_scale=1.0, embedded_cfg_scale=6.0, use_fp8=False, reproduce=False, two_stage_generation=True, upscale_factor=2, rope_mode='local', upscale_res_steps=35, save_intermediate=True, output_dir='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig11__hunyuan__2k__cache__4gpu__a_mountain_range_with_a_sky_background', shift_timesteps='0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34', load_prev_latents_path='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/stage1/hunyuan_2k_a_mountain_range_with_a_sky_background.pt', loop_step=16, enable_intra_tile_cache=True, cache_thresh=0.06, enable_region_aware_cache=True, static_tile_cache_scale_factor=0.5, ulysses_degree=1, ring_degree=1)
+Namespace(model='HYVideo-T/2', latent_channels=16, precision='bf16', rope_theta=256, gradient_checkpoint=False, gradient_checkpoint_layers=-1, vae='884-16c-hy', vae_precision='fp16', vae_tiling=True, text_encoder='llm-i2v', text_encoder_precision='fp16', text_states_dim=4096, text_len=256, tokenizer='llm-i2v', prompt_template='dit-llm-encode-i2v', prompt_template_video='dit-llm-encode-video-i2v', hidden_state_skip_layer=2, apply_final_norm=False, text_encoder_2='clipL', text_encoder_precision_2='fp16', text_states_dim_2=768, tokenizer_2='clipL', text_len_2=77, denoise_type='flow', flow_shift=7.0, flow_reverse=True, flow_solver='euler', use_linear_quadratic_schedule=False, linear_schedule_end=25, i2v_mode=True, i2v_resolution='720p', i2v_image_path='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/data/inputs/2k_1440x2560/a mountain range with a sky background.jpg', i2v_condition_type='token_replace', i2v_stability=True, use_lora=False, lora_path='', lora_scale=1.0, lora_rank=64, model_base='ckpts', dit_weight='ckpts/hunyuan-video-i2v-720p/transformers/mp_rank_00_model_states.pt', i2v_dit_weight='ckpts/hunyuan-video-i2v-720p/transformers/mp_rank_00_model_states.pt', model_resolution='540p', load_key='module', use_cpu_offload=False, batch_size=1, infer_steps=50, disable_autocast=False, save_path='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig11__hunyuan__2k__cache__4gpu__a_mountain_range_with_a_sky_background', save_path_suffix='', name_suffix='', num_videos=1, video_size=[1440, 2560], video_length=41, prompt='a mountain range with a sky background', seed_type='auto', seed=0, neg_prompt=None, cfg_scale=1.0, embedded_cfg_scale=6.0, use_fp8=False, reproduce=False, two_stage_generation=True, upscale_factor=2, rope_mode='local', upscale_res_steps=35, save_intermediate=True, output_dir='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig11__hunyuan__2k__cache__4gpu__a_mountain_range_with_a_sky_background', shift_timesteps='0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34', load_prev_latents_path='/home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/stage1/hunyuan_2k_a_mountain_range_with_a_sky_background.pt', loop_step=16, enable_intra_tile_cache=True, cache_thresh=0.06, enable_region_aware_cache=True, static_tile_cache_scale_factor=0.5, ulysses_degree=1, ring_degree=1)
+[W1109 03:31:14.595902247 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+2026-11-09 03:31:14.430 | INFO     | hyvideo.inference:from_pretrained:222 - Got text-to-video model root path: ckpts
+2026-11-09 03:31:14.431 | INFO     | hyvideo.inference:from_pretrained:261 - Building model...
+[W1109 03:31:14.596862899 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+2026-11-09 03:31:14.833 | INFO     | hyvideo.inference:from_pretrained:222 - Got text-to-video model root path: ckpts
+2026-11-09 03:31:14.833 | INFO     | hyvideo.inference:from_pretrained:261 - Building model...
+2026-11-09 03:31:14.833 | INFO     | hyvideo.inference:from_pretrained:222 - Got text-to-video model root path: ckpts
+2026-11-09 03:31:14.833 | INFO     | hyvideo.inference:from_pretrained:261 - Building model...
+2026-11-09 03:31:14.835 | INFO     | hyvideo.inference:from_pretrained:222 - Got text-to-video model root path: ckpts
+2026-11-09 03:31:14.836 | INFO     | hyvideo.inference:from_pretrained:261 - Building model...
+2026-11-09 03:31:15.182 | INFO     | hyvideo.inference:load_state_dict:497 - Loading torch model ckpts/hunyuan-video-i2v-720p/transformers/mp_rank_00_model_states.pt...
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/hypergen/HunyuanVideoI2V/hyvideo/inference.py:498: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=lambda storage, loc: storage)
+2026-11-09 03:31:15.186 | INFO     | hyvideo.inference:load_state_dict:497 - Loading torch model ckpts/hunyuan-video-i2v-720p/transformers/mp_rank_00_model_states.pt...
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/hypergen/HunyuanVideoI2V/hyvideo/inference.py:498: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=lambda storage, loc: storage)
+2026-11-09 03:31:15.188 | INFO     | hyvideo.inference:load_state_dict:497 - Loading torch model ckpts/hunyuan-video-i2v-720p/transformers/mp_rank_00_model_states.pt...
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/hypergen/HunyuanVideoI2V/hyvideo/inference.py:498: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=lambda storage, loc: storage)
+2026-11-09 03:31:15.191 | INFO     | hyvideo.inference:load_state_dict:497 - Loading torch model ckpts/hunyuan-video-i2v-720p/transformers/mp_rank_00_model_states.pt...
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/hypergen/HunyuanVideoI2V/hyvideo/inference.py:498: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=lambda storage, loc: storage)
+2026-11-09 03:31:33.704 | INFO     | hyvideo.vae:load_vae:29 - Loading 3D VAE model (884-16c-hy) from: ./ckpts/hunyuan-video-i2v-720p/vae
+2026-11-09 03:31:34.433 | INFO     | hyvideo.vae:load_vae:29 - Loading 3D VAE model (884-16c-hy) from: ./ckpts/hunyuan-video-i2v-720p/vae
+2026-11-09 03:31:34.449 | INFO     | hyvideo.vae:load_vae:29 - Loading 3D VAE model (884-16c-hy) from: ./ckpts/hunyuan-video-i2v-720p/vae
+2026-11-09 03:31:34.450 | INFO     | hyvideo.vae:load_vae:29 - Loading 3D VAE model (884-16c-hy) from: ./ckpts/hunyuan-video-i2v-720p/vae
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/hypergen/HunyuanVideoI2V/hyvideo/vae/__init__.py:39: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(vae_ckpt, map_location=vae.device)
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/hypergen/HunyuanVideoI2V/hyvideo/vae/__init__.py:39: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(vae_ckpt, map_location=vae.device)
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/hypergen/HunyuanVideoI2V/hyvideo/vae/__init__.py:39: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(vae_ckpt, map_location=vae.device)
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/hypergen/HunyuanVideoI2V/hyvideo/vae/__init__.py:39: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(vae_ckpt, map_location=vae.device)
+2026-11-09 03:31:35.700 | INFO     | hyvideo.vae:load_vae:55 - VAE to dtype: torch.float16
+2026-11-09 03:31:35.800 | INFO     | hyvideo.text_encoder:load_text_encoder:35 - Loading text encoder model (llm-i2v) from: ./ckpts/text_encoder_i2v
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]2026-11-09 03:31:36.468 | INFO     | hyvideo.vae:load_vae:55 - VAE to dtype: torch.float16
+2026-11-09 03:31:36.471 | INFO     | hyvideo.vae:load_vae:55 - VAE to dtype: torch.float16
+2026-11-09 03:31:36.488 | INFO     | hyvideo.vae:load_vae:55 - VAE to dtype: torch.float16
+2026-11-09 03:31:36.591 | INFO     | hyvideo.text_encoder:load_text_encoder:35 - Loading text encoder model (llm-i2v) from: ./ckpts/text_encoder_i2v
+2026-11-09 03:31:36.594 | INFO     | hyvideo.text_encoder:load_text_encoder:35 - Loading text encoder model (llm-i2v) from: ./ckpts/text_encoder_i2v
+2026-11-09 03:31:36.594 | INFO     | hyvideo.text_encoder:load_text_encoder:35 - Loading text encoder model (llm-i2v) from: ./ckpts/text_encoder_i2v
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.29s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.33s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.34s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.37s/it]
+2026-11-09 03:31:57.505 | INFO     | hyvideo.text_encoder:load_text_encoder:61 - Text encoder to dtype: torch.float16
+2026-11-09 03:31:58.923 | INFO     | hyvideo.text_encoder:load_text_encoder:61 - Text encoder to dtype: torch.float16
+2026-11-09 03:31:59.107 | INFO     | hyvideo.text_encoder:load_text_encoder:61 - Text encoder to dtype: torch.float16
+2026-11-09 03:31:59.218 | INFO     | hyvideo.text_encoder:load_text_encoder:61 - Text encoder to dtype: torch.float16
+2026-11-09 03:31:59.803 | INFO     | hyvideo.text_encoder:load_tokenizer:75 - Loading tokenizer (llm-i2v) from: ./ckpts/text_encoder_i2v
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2026-11-09 03:32:00.016 | INFO     | hyvideo.text_encoder:load_text_encoder:35 - Loading text encoder model (clipL) from: ./ckpts/text_encoder_2
+2026-11-09 03:32:00.301 | INFO     | hyvideo.text_encoder:load_text_encoder:61 - Text encoder to dtype: torch.float16
+2026-11-09 03:32:00.339 | INFO     | hyvideo.text_encoder:load_tokenizer:75 - Loading tokenizer (clipL) from: ./ckpts/text_encoder_2
+Communication method: allgather
+2026-11-09 03:32:00.433 | INFO     | hyvideo.inference:predict:798 - Input (height, width, video_length) = (1440, 2560, 41)
+2026-11-09 03:32:00.433 | INFO     | hyvideo.inference:predict:828 - i2v_mode is True, i2v_resolution: 720p
+2026-11-09 03:32:00.449 | INFO     | hyvideo.inference:predict:844 - Input (height, width, video_length) = (704, 1248, 41)
+2026-11-09 03:32:01.388 | INFO     | hyvideo.text_encoder:load_tokenizer:75 - Loading tokenizer (llm-i2v) from: ./ckpts/text_encoder_i2v
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2026-11-09 03:32:01.606 | INFO     | hyvideo.text_encoder:load_text_encoder:35 - Loading text encoder model (clipL) from: ./ckpts/text_encoder_2
+2026-11-09 03:32:01.773 | INFO     | hyvideo.text_encoder:load_tokenizer:75 - Loading tokenizer (llm-i2v) from: ./ckpts/text_encoder_i2v
+2026-11-09 03:32:01.825 | INFO     | hyvideo.text_encoder:load_tokenizer:75 - Loading tokenizer (llm-i2v) from: ./ckpts/text_encoder_i2v
+2026-11-09 03:32:01.845 | INFO     | hyvideo.text_encoder:load_text_encoder:61 - Text encoder to dtype: torch.float16
+2026-11-09 03:32:01.879 | INFO     | hyvideo.text_encoder:load_tokenizer:75 - Loading tokenizer (clipL) from: ./ckpts/text_encoder_2
+Communication method: allgather
+2026-11-09 03:32:01.979 | INFO     | hyvideo.inference:predict:798 - Input (height, width, video_length) = (1440, 2560, 41)
+2026-11-09 03:32:01.979 | INFO     | hyvideo.inference:predict:828 - i2v_mode is True, i2v_resolution: 720p
+2026-11-09 03:32:01.998 | INFO     | hyvideo.inference:predict:844 - Input (height, width, video_length) = (704, 1248, 41)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2026-11-09 03:32:02.003 | INFO     | hyvideo.text_encoder:load_text_encoder:35 - Loading text encoder model (clipL) from: ./ckpts/text_encoder_2
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2026-11-09 03:32:02.054 | INFO     | hyvideo.text_encoder:load_text_encoder:35 - Loading text encoder model (clipL) from: ./ckpts/text_encoder_2
+2026-11-09 03:32:02.088 | DEBUG    | hyvideo.inference:get_rotary_pos_embed:699 - actual_num_frames = 41 <= 192, using original RoPE
+2026-11-09 03:32:02.249 | DEBUG    | hyvideo.inference:get_rotary_pos_embed:707 - freqs_cos shape: torch.Size([158400, 128]), device: cpu
+2026-11-09 03:32:02.250 | INFO     | hyvideo.inference:predict:898 - freqs_cos shape: torch.Size([158400, 128]), device: cpu
+2026-11-09 03:32:02.250 | DEBUG    | hyvideo.inference:predict:919 - 
+                        height: 1440
+                         width: 2560
+                  video_length: 41
+                        prompt: ['a mountain range with a sky background']
+                    neg_prompt: ['']
+                          seed: 0
+                   infer_steps: 50
+         num_videos_per_prompt: 1
+                guidance_scale: 1.0
+                      n_tokens: 158400
+                    flow_shift: 7.0
+       embedded_guidance_scale: 6.0
+                 i2v_stability: True
+2026-11-09 03:32:02.250 | INFO     | hyvideo.inference:predict:925 - Using two-stage generation for high-resolution video
+img_latents shape: torch.Size([1, 16, 1, 180, 320])
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=1]=== Starting Two-Stage Generation ===
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=1]Stage 1: 50 steps at 720x1280
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=1]Stage 2: 35 steps at 1440x2560
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=1]=== Stage 1: Low Resolution Generation ===
+2026-11-09 03:32:02.298 | INFO     | hyvideo.text_encoder:load_text_encoder:61 - Text encoder to dtype: torch.float16
+2026-11-09 03:32:02.335 | INFO     | hyvideo.text_encoder:load_tokenizer:75 - Loading tokenizer (clipL) from: ./ckpts/text_encoder_2
+2026-11-09 03:32:02.358 | INFO     | hyvideo.text_encoder:load_text_encoder:61 - Text encoder to dtype: torch.float16
+2026-11-09 03:32:02.397 | INFO     | hyvideo.text_encoder:load_tokenizer:75 - Loading tokenizer (clipL) from: ./ckpts/text_encoder_2
+Communication method: allgather
+2026-11-09 03:32:02.431 | INFO     | hyvideo.inference:predict:798 - Input (height, width, video_length) = (1440, 2560, 41)
+2026-11-09 03:32:02.432 | INFO     | hyvideo.inference:predict:828 - i2v_mode is True, i2v_resolution: 720p
+2026-11-09 03:32:02.448 | INFO     | hyvideo.inference:predict:844 - Input (height, width, video_length) = (704, 1248, 41)
+Communication method: allgather
+2026-11-09 03:32:02.494 | INFO     | hyvideo.inference:predict:798 - Input (height, width, video_length) = (1440, 2560, 41)
+2026-11-09 03:32:02.494 | INFO     | hyvideo.inference:predict:828 - i2v_mode is True, i2v_resolution: 720p
+2026-11-09 03:32:02.514 | INFO     | hyvideo.inference:predict:844 - Input (height, width, video_length) = (704, 1248, 41)
+2026-11-09 03:32:03.632 | DEBUG    | hyvideo.inference:get_rotary_pos_embed:699 - actual_num_frames = 41 <= 192, using original RoPE
+2026-11-09 03:32:03.725 | DEBUG    | hyvideo.inference:get_rotary_pos_embed:707 - freqs_cos shape: torch.Size([158400, 128]), device: cpu
+2026-11-09 03:32:03.725 | INFO     | hyvideo.inference:predict:898 - freqs_cos shape: torch.Size([158400, 128]), device: cpu
+2026-11-09 03:32:03.725 | DEBUG    | hyvideo.inference:predict:919 - 
+                        height: 1440
+                         width: 2560
+                  video_length: 41
+                        prompt: ['a mountain range with a sky background']
+                    neg_prompt: ['']
+                          seed: 0
+                   infer_steps: 50
+         num_videos_per_prompt: 1
+                guidance_scale: 1.0
+                      n_tokens: 158400
+                    flow_shift: 7.0
+       embedded_guidance_scale: 6.0
+                 i2v_stability: True
+2026-11-09 03:32:03.725 | INFO     | hyvideo.inference:predict:925 - Using two-stage generation for high-resolution video
+img_latents shape: torch.Size([1, 16, 1, 180, 320])
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=3]=== Starting Two-Stage Generation ===
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=3]Stage 1: 50 steps at 720x1280
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=3]Stage 2: 35 steps at 1440x2560
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=3]=== Stage 1: Low Resolution Generation ===
+2026-11-09 03:32:04.148 | DEBUG    | hyvideo.inference:get_rotary_pos_embed:699 - actual_num_frames = 41 <= 192, using original RoPE
+2026-11-09 03:32:04.256 | DEBUG    | hyvideo.inference:get_rotary_pos_embed:699 - actual_num_frames = 41 <= 192, using original RoPE
+2026-11-09 03:32:04.324 | DEBUG    | hyvideo.inference:get_rotary_pos_embed:707 - freqs_cos shape: torch.Size([158400, 128]), device: cpu
+2026-11-09 03:32:04.324 | INFO     | hyvideo.inference:predict:898 - freqs_cos shape: torch.Size([158400, 128]), device: cpu
+2026-11-09 03:32:04.324 | DEBUG    | hyvideo.inference:predict:919 - 
+                        height: 1440
+                         width: 2560
+                  video_length: 41
+                        prompt: ['a mountain range with a sky background']
+                    neg_prompt: ['']
+                          seed: 0
+                   infer_steps: 50
+         num_videos_per_prompt: 1
+                guidance_scale: 1.0
+                      n_tokens: 158400
+                    flow_shift: 7.0
+       embedded_guidance_scale: 6.0
+                 i2v_stability: True
+2026-11-09 03:32:04.324 | INFO     | hyvideo.inference:predict:925 - Using two-stage generation for high-resolution video
+img_latents shape: torch.Size([1, 16, 1, 180, 320])
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=0]=== Starting Two-Stage Generation ===
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=0]Stage 1: 50 steps at 720x1280
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=0]Stage 2: 35 steps at 1440x2560
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=0]=== Stage 1: Low Resolution Generation ===
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=0]=== Stage 1 Generation skipped: Loaded low-res latents from /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/stage1/hunyuan_2k_a_mountain_range_with_a_sky_background.pt
+2026-11-09 03:32:04.425 | DEBUG    | hyvideo.inference:get_rotary_pos_embed:707 - freqs_cos shape: torch.Size([158400, 128]), device: cpu
+2026-11-09 03:32:04.425 | INFO     | hyvideo.inference:predict:898 - freqs_cos shape: torch.Size([158400, 128]), device: cpu
+2026-11-09 03:32:04.425 | DEBUG    | hyvideo.inference:predict:919 - 
+                        height: 1440
+                         width: 2560
+                  video_length: 41
+                        prompt: ['a mountain range with a sky background']
+                    neg_prompt: ['']
+                          seed: 0
+                   infer_steps: 50
+         num_videos_per_prompt: 1
+                guidance_scale: 1.0
+                      n_tokens: 158400
+                    flow_shift: 7.0
+       embedded_guidance_scale: 6.0
+                 i2v_stability: True
+2026-11-09 03:32:04.425 | INFO     | hyvideo.inference:predict:925 - Using two-stage generation for high-resolution video
+img_latents shape: torch.Size([1, 16, 1, 180, 320])
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=2]=== Starting Two-Stage Generation ===
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=2]Stage 1: 50 steps at 720x1280
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=2]Stage 2: 35 steps at 1440x2560
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=2]=== Stage 1: Low Resolution Generation ===
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Saving video with fps=8 to: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig11__hunyuan__2k__cache__4gpu__a_mountain_range_with_a_sky_background/stage1_lowres_video.mp4
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=3]=== Upscale low-res latents to high-res (1440x2560) ===
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=1]=== Upscale low-res latents to high-res (1440x2560) ===
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=0]=== Upscale low-res latents to high-res (1440x2560) ===
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=2]=== Upscale low-res latents to high-res (1440x2560) ===
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=3]Upscaled latents shape: torch.Size([1, 16, 11, 180, 320])
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=3]Upscale latents time: 0.0011374950408935547 seconds
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Re-noising to timestep at index 15: 942.3078002929688
+INFO:hyvideo.diffusion.schedulers.scheduling_flow_match_discrete:sigma in re_noise: 0.9423077702522278
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=2]Upscaled latents shape: torch.Size([1, 16, 11, 180, 320])
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=2]Upscale latents time: 0.0008757114410400391 seconds
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=1]Upscaled latents shape: torch.Size([1, 16, 11, 180, 320])
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=1]Upscale latents time: 0.0009558200836181641 seconds
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Re-noised latents for Stage 2 denoising, will denoise remaining 35 steps
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Renoise time: 0.0009367465972900391 seconds
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=0]Upscaled latents shape: torch.Size([1, 16, 11, 180, 320])
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=0]Upscale latents time: 0.0010700225830078125 seconds
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Re-noising to timestep at index 15: 942.3078002929688
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Re-noising to timestep at index 15: 942.3078002929688
+INFO:hyvideo.diffusion.schedulers.scheduling_flow_match_discrete:sigma in re_noise: 0.9423077702522278
+INFO:hyvideo.diffusion.schedulers.scheduling_flow_match_discrete:sigma in re_noise: 0.9423077702522278
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Re-noised latents for Stage 2 denoising, will denoise remaining 35 steps
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Renoise time: 0.0009355545043945312 seconds
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Re-noising to timestep at index 15: 942.3078002929688
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Re-noised latents for Stage 2 denoising, will denoise remaining 35 steps
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Renoise time: 0.0009555816650390625 seconds
+INFO:hyvideo.diffusion.schedulers.scheduling_flow_match_discrete:sigma in re_noise: 0.9423077702522278
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Re-noised latents for Stage 2 denoising, will denoise remaining 35 steps
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:Renoise time: 0.0013763904571533203 seconds
+DEBUG:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:actual_num_frames = 41 <= 192, using original RoPE
+DEBUG:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:actual_num_frames = 41 <= 192, using original RoPE
+DEBUG:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:freqs_cos shape: torch.Size([39600, 128]), device: cpu
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:window_n_tokens: 158400, n_tokens: 158400
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:timestep is not None
+DEBUG:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:actual_num_frames = 41 <= 192, using original RoPE
+DEBUG:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:freqs_cos shape: torch.Size([39600, 128]), device: cpu
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:window_n_tokens: 158400, n_tokens: 158400
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:timestep is not None
+DEBUG:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:freqs_cos shape: torch.Size([39600, 128]), device: cpu
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:window_n_tokens: 158400, n_tokens: 158400
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:timestep is not None
+DEBUG:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:actual_num_frames = 41 <= 192, using original RoPE
+DEBUG:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:freqs_cos shape: torch.Size([39600, 128]), device: cpu
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:window_n_tokens: 158400, n_tokens: 158400
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:timestep is not None
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 180x320
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=1]Intra-Tile Cache for 4 tiles has been set up with threshold=0.06 and ret_steps=5.
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=1]Region-aware cache initialized for 4 tiles with base threshold 0.060
+self.rank=1 indices=[[0], [1], [2], [3]]
+  0%|          | 0/35 [00:00<?, ?it/s]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0006 seconds
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 180x320
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=3]Intra-Tile Cache for 4 tiles has been set up with threshold=0.06 and ret_steps=5.
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=3]Region-aware cache initialized for 4 tiles with base threshold 0.060
+self.rank=3 indices=[[0], [1], [2], [3]]
+  0%|          | 0/35 [00:00<?, ?it/s]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0005 seconds
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 180x320
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=2]Intra-Tile Cache for 4 tiles has been set up with threshold=0.06 and ret_steps=5.
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=2]Region-aware cache initialized for 4 tiles with base threshold 0.060
+self.rank=2 indices=[[0], [1], [2], [3]]
+  0%|          | 0/35 [00:00<?, ?it/s]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0005 seconds
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 180x320
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=0]Intra-Tile Cache for 4 tiles has been set up with threshold=0.06 and ret_steps=5.
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=0]Region-aware cache initialized for 4 tiles with base threshold 0.060
+self.rank=0 indices=[[0], [1], [2], [3]]
+  0%|          | 0/35 [00:00<?, ?it/s]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0005 seconds
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 0 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 0 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 0 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 0 should recalculate tile 3
+  3%|▎         | 1/35 [00:05<03:09,  5.58s/it]self.rank=3 start_idx=0 end_idx=0
+  3%|▎         | 1/35 [00:05<03:07,  5.53s/it]self.rank=0 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0005 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank0 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 1 should recalculate tile 3
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 1 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 1 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 1 should recalculate tile 0
+  6%|▌         | 2/35 [00:10<02:56,  5.35s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+  6%|▌         | 2/35 [00:10<02:58,  5.40s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+  6%|▌         | 2/35 [00:10<02:59,  5.43s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+  6%|▌         | 2/35 [00:10<02:59,  5.43s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 2 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 2 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 2 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 2 should recalculate tile 3
+  9%|▊         | 3/35 [00:16<02:51,  5.35s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+  9%|▊         | 3/35 [00:16<02:52,  5.39s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+  9%|▊         | 3/35 [00:16<02:52,  5.38s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+  9%|▊         | 3/35 [00:16<02:52,  5.40s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 3: k=1.6789900064468384, raw_input_change=0.09223806113004684, output_norm=1.05617356300354
+INFO:hyvideo.modules.models:Tile 2 at step 3: k=1.8621275424957275, raw_input_change=0.09372731298208237, output_norm=0.9958884119987488
+INFO:hyvideo.modules.models:Tile 1 at step 3: k=1.89548921585083, raw_input_change=0.09391039609909058, output_norm=1.196198582649231
+INFO:hyvideo.modules.models:Tile 3 at step 3: k=1.9085930585861206, raw_input_change=0.09305768460035324, output_norm=1.0029743909835815
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 3 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 3 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 3 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 3 should recalculate tile 3
+ 11%|█▏        | 4/35 [00:21<02:46,  5.37s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 11%|█▏        | 4/35 [00:21<02:46,  5.36s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 11%|█▏        | 4/35 [00:21<02:46,  5.37s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 11%|█▏        | 4/35 [00:21<02:46,  5.38s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 4: k=1.7874724864959717, raw_input_change=0.09239532798528671, output_norm=1.029031753540039
+INFO:hyvideo.modules.models:Tile 2 at step 4: k=1.9178369045257568, raw_input_change=0.09375850111246109, output_norm=1.0137537717819214
+INFO:hyvideo.modules.models:Tile 1 at step 4: k=1.8536731004714966, raw_input_change=0.09312731772661209, output_norm=1.1918435096740723
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 4 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 4 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 4 should recalculate tile 1
+INFO:hyvideo.modules.models:Tile 3 at step 4: k=1.9462918043136597, raw_input_change=0.09290444105863571, output_norm=1.0195103883743286
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 4 should recalculate tile 3
+ 14%|█▍        | 5/35 [00:27<02:41,  5.40s/it]self.rank=3 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0005 seconds
+rank2 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0005 seconds
+rank1 Communicate time consumption 0.0005 seconds
+INFO:hyvideo.modules.models:Tile 2 at step 5: k=1.9177507162094116, raw_input_change=0.09337582439184189, output_norm=1.0288971662521362
+INFO:hyvideo.modules.models:Tile 0 at step 5: k=1.870306372642517, raw_input_change=0.09198411554098129, output_norm=1.0089112520217896
+INFO:hyvideo.modules.models:Tile 1 at step 5: k=1.8435020446777344, raw_input_change=0.09314961731433868, output_norm=1.1737003326416016
+INFO:hyvideo.modules.models:Tile 3 at step 5: k=1.98682701587677, raw_input_change=0.0928424745798111, output_norm=1.037814736366272
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 5 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 5 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 5 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 5 should recalculate tile 3
+ 17%|█▋        | 6/35 [00:32<02:35,  5.35s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 17%|█▋        | 6/35 [00:32<02:35,  5.37s/it]self.rank=1 start_idx=0 end_idx=0
+ 17%|█▋        | 6/35 [00:32<02:35,  5.36s/it]rank1 Communicate time consumption 0.0004 seconds
+self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 17%|█▋        | 6/35 [00:32<02:35,  5.38s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 1 at step 6: k=1.808732032775879, raw_input_change=0.09274795651435852, output_norm=1.1570101976394653
+INFO:hyvideo.modules.models:Tile 2 at step 6: k=1.9522716999053955, raw_input_change=0.09313502162694931, output_norm=1.0473560094833374
+INFO:hyvideo.modules.models:Tile 0 at step 6: k=1.8560255765914917, raw_input_change=0.09191953390836716, output_norm=0.9941116571426392
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 6 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 6 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 6 should recalculate tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 6: k=1.992424726486206, raw_input_change=0.09314233809709549, output_norm=1.0565215349197388
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 6 should recalculate tile 3
+ 20%|██        | 7/35 [00:37<02:30,  5.36s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 20%|██        | 7/35 [00:37<02:30,  5.36s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 20%|██        | 7/35 [00:37<02:30,  5.37s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 20%|██        | 7/35 [00:37<02:30,  5.37s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 7: k=1.8601319789886475, raw_input_change=0.09119021147489548, output_norm=0.9798879027366638
+INFO:hyvideo.modules.models:Tile 1 at step 7: k=1.7715200185775757, raw_input_change=0.0922011286020279, output_norm=1.1419190168380737
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 7 should recalculate tile 0
+INFO:hyvideo.modules.models:Tile 2 at step 7: k=1.9165173768997192, raw_input_change=0.0931144505739212, output_norm=1.064677357673645
+INFO:hyvideo.modules.models:Tile 3 at step 7: k=1.9792745113372803, raw_input_change=0.0929400697350502, output_norm=1.074866533279419
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 7 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 7 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 7 should recalculate tile 3
+ 23%|██▎       | 8/35 [00:42<02:24,  5.36s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 23%|██▎       | 8/35 [00:43<02:24,  5.37s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 23%|██▎       | 8/35 [00:43<02:24,  5.37s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 23%|██▎       | 8/35 [00:43<02:25,  5.37s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 1 at step 8: k=1.7771819829940796, raw_input_change=0.09129703044891357, output_norm=1.124864935874939
+INFO:hyvideo.modules.models:Tile 0 at step 8: k=1.853302001953125, raw_input_change=0.090912826359272, output_norm=0.9704267382621765
+INFO:hyvideo.modules.models:Tile 2 at step 8: k=1.917729139328003, raw_input_change=0.0933728814125061, output_norm=1.0830785036087036
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 8 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 8 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 8 should recalculate tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 8: k=2.0185728073120117, raw_input_change=0.09338290244340897, output_norm=1.0956099033355713
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 8 should recalculate tile 3
+ 26%|██▌       | 9/35 [00:48<02:19,  5.36s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0005 seconds
+ 26%|██▌       | 9/35 [00:48<02:19,  5.37s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 26%|██▌       | 9/35 [00:48<02:19,  5.37s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 26%|██▌       | 9/35 [00:48<02:19,  5.37s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 1 at step 9: k=1.7221012115478516, raw_input_change=0.09035347402095795, output_norm=1.0988259315490723
+INFO:hyvideo.modules.models:Tile 2 at step 9: k=1.9618433713912964, raw_input_change=0.09363089501857758, output_norm=1.0954279899597168
+INFO:hyvideo.modules.models:Tile 0 at step 9: k=1.8208389282226562, raw_input_change=0.09049109369516373, output_norm=0.9668142795562744
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 9 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 9 should recalculate tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 9: k=1.9791992902755737, raw_input_change=0.09417405724525452, output_norm=1.1116573810577393
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 9 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 9 should recalculate tile 3
+ 29%|██▊       | 10/35 [00:53<02:14,  5.36s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0005 secondsrank0 Communicate time consumption 0.0005 seconds
+
+rank3 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0005 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 10: k=1.7935333251953125, raw_input_change=0.08996471762657166, output_norm=0.9637391567230225
+INFO:hyvideo.modules.models:Tile 1 at step 10: k=1.6808019876480103, raw_input_change=0.0899830237030983, output_norm=1.0715428590774536
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 10 should recalculate tile 0
+INFO:hyvideo.modules.models:Tile 2 at step 10: k=1.9458056688308716, raw_input_change=0.09353108704090118, output_norm=1.1117271184921265
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 10 should recalculate tile 1
+INFO:hyvideo.modules.models:Tile 3 at step 10: k=1.9983268976211548, raw_input_change=0.09426858276128769, output_norm=1.129420518875122
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 10 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 10 should recalculate tile 3
+ 31%|███▏      | 11/35 [00:58<02:08,  5.35s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 31%|███▏      | 11/35 [00:59<02:08,  5.36s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 31%|███▏      | 11/35 [00:59<02:08,  5.36s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 31%|███▏      | 11/35 [00:59<02:08,  5.36s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 11: k=1.7758338451385498, raw_input_change=0.09011915326118469, output_norm=0.9614050984382629
+INFO:hyvideo.modules.models:Tile 1 at step 11: k=1.7053216695785522, raw_input_change=0.08920074254274368, output_norm=1.0471632480621338
+INFO:hyvideo.modules.models:Tile 2 at step 11: k=1.9432843923568726, raw_input_change=0.09399110078811646, output_norm=1.1262151002883911
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 11 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 11 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 11 should recalculate tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 11: k=1.976630449295044, raw_input_change=0.09371116012334824, output_norm=1.146005392074585
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 11 should recalculate tile 3
+ 34%|███▍      | 12/35 [01:04<02:03,  5.36s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 34%|███▍      | 12/35 [01:04<02:03,  5.36s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 34%|███▍      | 12/35 [01:04<02:03,  5.35s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 34%|███▍      | 12/35 [01:04<02:03,  5.35s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 12: k=1.7671787738800049, raw_input_change=0.08986220508813858, output_norm=0.9555686116218567
+INFO:hyvideo.modules.models:Tile 1 at step 12: k=1.6947087049484253, raw_input_change=0.08898034691810608, output_norm=1.0232347249984741
+INFO:hyvideo.modules.models:Tile 2 at step 12: k=1.9491064548492432, raw_input_change=0.0948263555765152, output_norm=1.1404290199279785
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 12 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 12 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 12 should recalculate tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 12: k=1.9135175943374634, raw_input_change=0.09372955560684204, output_norm=1.1580966711044312
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 12 should recalculate tile 3
+ 37%|███▋      | 13/35 [01:09<01:57,  5.35s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 37%|███▋      | 13/35 [01:09<01:57,  5.35s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 37%|███▋      | 13/35 [01:09<01:57,  5.35s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 37%|███▋      | 13/35 [01:09<01:57,  5.35s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 13: k=1.787095308303833, raw_input_change=0.09032825380563736, output_norm=0.9521098136901855
+INFO:hyvideo.modules.models:Tile 2 at step 13: k=1.9784574508666992, raw_input_change=0.09520082920789719, output_norm=1.1563379764556885
+INFO:hyvideo.modules.models:Tile 1 at step 13: k=1.7108181715011597, raw_input_change=0.08939886093139648, output_norm=1.005837082862854
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 13 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 13 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 13 should recalculate tile 1
+INFO:hyvideo.modules.models:Tile 3 at step 13: k=1.883249044418335, raw_input_change=0.09417025744915009, output_norm=1.1624675989151
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 13 should recalculate tile 3
+ 40%|████      | 14/35 [01:15<01:52,  5.35s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 40%|████      | 14/35 [01:15<01:52,  5.35s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 40%|████      | 14/35 [01:15<01:52,  5.35s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 40%|████      | 14/35 [01:15<01:52,  5.35s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 1 at step 14: k=1.7614737749099731, raw_input_change=0.08913589268922806, output_norm=0.9952093362808228
+INFO:hyvideo.modules.models:Tile 0 at step 14: k=1.7791732549667358, raw_input_change=0.08971352130174637, output_norm=0.9515864253044128
+INFO:hyvideo.modules.models:Tile 2 at step 14: k=1.9651145935058594, raw_input_change=0.09485011547803879, output_norm=1.170181393623352
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 14 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 14 should recalculate tile 0
+INFO:hyvideo.modules.models:Tile 3 at step 14: k=1.9116228818893433, raw_input_change=0.09443125128746033, output_norm=1.173775553703308
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 14 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 14 should recalculate tile 3
+ 43%|████▎     | 15/35 [01:20<01:47,  5.36s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0rank3 Communicate time consumption 0.0004 seconds
+
+rank1 Communicate time consumption 0.0004 seconds
+rank0 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0016 seconds
+INFO:hyvideo.modules.models:Tile 1 at step 15: k=1.6476253271102905, raw_input_change=0.3627946674823761, output_norm=0.5274096131324768
+INFO:hyvideo.modules.models:Tile 0 at step 15: k=1.9046744108200073, raw_input_change=0.3584052324295044, output_norm=0.6100690960884094
+INFO:hyvideo.modules.models:Tile 3 at step 15: k=2.0748932361602783, raw_input_change=0.3799780011177063, output_norm=0.7049508094787598
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 15 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 15 should recalculate tile 0
+INFO:hyvideo.modules.models:Tile 2 at step 15: k=1.854580283164978, raw_input_change=0.38571226596832275, output_norm=0.637474536895752
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 15 should recalculate tile 3
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 15 should recalculate tile 2
+ 46%|████▌     | 16/35 [01:25<01:41,  5.35s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 46%|████▌     | 16/35 [01:25<01:41,  5.35s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 46%|████▌     | 16/35 [01:25<01:41,  5.35s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0003 seconds
+ 46%|████▌     | 16/35 [01:25<01:41,  5.36s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 16: k=1.4785434007644653, raw_input_change=0.053213153034448624, output_norm=1.0335737466812134
+INFO:hyvideo.modules.models:Tile 2 at step 16: k=1.8077436685562134, raw_input_change=0.056325994431972504, output_norm=1.224921464920044
+INFO:hyvideo.modules.models:Tile 1 at step 16: k=1.6254228353500366, raw_input_change=0.0537993349134922, output_norm=1.0222498178482056
+INFO:hyvideo.modules.models:rank=0 Cache hit, step 16 is skipped for tile 0
+INFO:hyvideo.modules.models:rank=2 Cache hit, step 16 is skipped for tile 2
+INFO:hyvideo.modules.models:rank=1 Cache hit, step 16 is skipped for tile 1
+INFO:hyvideo.modules.models:Tile 3 at step 16: k=1.7198759317398071, raw_input_change=0.05636511743068695, output_norm=1.2755905389785767
+INFO:hyvideo.modules.models:rank=3 Cache hit, step 16 is skipped for tile 3
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0003 seconds
+rank2 Communicate time consumption 0.0004 seconds
+self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 17: k=2.0526821613311768, raw_input_change=0.15826910734176636, output_norm=1.1994510889053345
+INFO:hyvideo.modules.models:Tile 2 at step 17: k=1.9204964637756348, raw_input_change=0.13805338740348816, output_norm=1.0255727767944336
+INFO:hyvideo.modules.models:Tile 1 at step 17: k=2.1763343811035156, raw_input_change=0.16559277474880219, output_norm=1.286608099937439
+INFO:hyvideo.modules.models:Tile 3 at step 17: k=1.8837637901306152, raw_input_change=0.13657572865486145, output_norm=1.020857572555542
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 17 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 17 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 17 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 17 should recalculate tile 3
+ 51%|█████▏    | 18/35 [01:31<01:09,  4.11s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 51%|█████▏    | 18/35 [01:31<01:09,  4.12s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0003 seconds
+ 51%|█████▏    | 18/35 [01:31<01:10,  4.12s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 51%|█████▏    | 18/35 [01:31<01:10,  4.12s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 18: k=0.5672095417976379, raw_input_change=0.02738373726606369, output_norm=1.2324638366699219
+INFO:hyvideo.modules.models:Tile 1 at step 18: k=0.5989431738853455, raw_input_change=0.03112003393471241, output_norm=1.3697866201400757
+INFO:hyvideo.modules.models:Tile 2 at step 18: k=0.7428184747695923, raw_input_change=0.025354936718940735, output_norm=1.100171685218811
+INFO:hyvideo.modules.models:rank=0 Cache hit, step 18 is skipped for tile 0
+INFO:hyvideo.modules.models:rank=1 Cache hit, step 18 is skipped for tile 1
+INFO:hyvideo.modules.models:rank=2 Cache hit, step 18 is skipped for tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 18: k=0.7284549474716187, raw_input_change=0.02517477050423622, output_norm=1.0893934965133667
+INFO:hyvideo.modules.models:rank=3 Cache hit, step 18 is skipped for tile 3
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0003 seconds
+rank2 Communicate time consumption 0.0004 seconds
+self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 19: k=1.161843180656433, raw_input_change=0.029811833053827286, output_norm=1.1793670654296875
+INFO:hyvideo.modules.models:Tile 1 at step 19: k=1.1546469926834106, raw_input_change=0.033605143427848816, output_norm=1.3446825742721558
+INFO:hyvideo.modules.models:Tile 2 at step 19: k=1.107969880104065, raw_input_change=0.02798924408853054, output_norm=1.0951217412948608
+INFO:hyvideo.modules.models:rank=0 Cache hit, step 19 is skipped for tile 0
+INFO:hyvideo.modules.models:rank=1 Cache hit, step 19 is skipped for tile 1
+INFO:hyvideo.modules.models:rank=2 Cache hit, step 19 is skipped for tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 19: k=1.1516185998916626, raw_input_change=0.027506085112690926, output_norm=1.077522873878479
+INFO:hyvideo.modules.models:rank=3 Cache hit, step 19 is skipped for tile 3
+self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+rank0 Communicate time consumption 0.0004 secondsrank2 Communicate time consumption 0.0004 seconds
+
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 1 at step 20: k=1.1369882822036743, raw_input_change=0.035500895231962204, output_norm=1.3107253313064575
+INFO:hyvideo.modules.models:Tile 0 at step 20: k=1.1475976705551147, raw_input_change=0.03222089633345604, output_norm=1.1346180438995361
+INFO:hyvideo.modules.models:Tile 2 at step 20: k=1.1042797565460205, raw_input_change=0.030805116519331932, output_norm=1.0922096967697144
+INFO:hyvideo.modules.models:rank=0 Cache hit, step 20 is skipped for tile 0
+INFO:hyvideo.modules.models:rank=1 Cache hit, step 20 is skipped for tile 1
+INFO:hyvideo.modules.models:Tile 3 at step 20: k=1.1396582126617432, raw_input_change=0.030377846211194992, output_norm=1.0708582401275635
+INFO:hyvideo.modules.models:rank=2 Cache hit, step 20 is skipped for tile 2
+INFO:hyvideo.modules.models:rank=3 Cache hit, step 20 is skipped for tile 3
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+self.rank=2 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 21: k=1.1325112581253052, raw_input_change=0.0348268523812294, output_norm=1.0929114818572998
+INFO:hyvideo.modules.models:Tile 1 at step 21: k=1.1209235191345215, raw_input_change=0.03799355402588844, output_norm=1.2718905210494995
+INFO:hyvideo.modules.models:Tile 2 at step 21: k=1.0906918048858643, raw_input_change=0.03424212709069252, output_norm=1.0902657508850098
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 21 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 21 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 21 should recalculate tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 21: k=1.119346022605896, raw_input_change=0.03382112458348274, output_norm=1.066744089126587
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 21 should recalculate tile 3
+ 63%|██████▎   | 22/35 [01:36<00:32,  2.54s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 63%|██████▎   | 22/35 [01:36<00:32,  2.54s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 63%|██████▎   | 22/35 [01:36<00:32,  2.54s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 63%|██████▎   | 22/35 [01:36<00:32,  2.54s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 22: k=2.4660873413085938, raw_input_change=0.03947572410106659, output_norm=1.1368581056594849
+INFO:hyvideo.modules.models:Tile 1 at step 22: k=2.447521209716797, raw_input_change=0.04326663538813591, output_norm=1.3284412622451782
+INFO:hyvideo.modules.models:Tile 2 at step 22: k=2.324831962585449, raw_input_change=0.03994849696755409, output_norm=1.1655951738357544
+INFO:hyvideo.modules.models:rank=0 Cache hit, step 22 is skipped for tile 0
+INFO:hyvideo.modules.models:rank=1 Cache hit, step 22 is skipped for tile 1
+INFO:hyvideo.modules.models:rank=2 Cache hit, step 22 is skipped for tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 22: k=2.409166097640991, raw_input_change=0.03951307758688927, output_norm=1.1393849849700928
+INFO:hyvideo.modules.models:rank=3 Cache hit, step 22 is skipped for tile 3
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+self.rank=2 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0003 seconds
+rank2 Communicate time consumption 0.0004 seconds
+self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 23: k=1.1112418174743652, raw_input_change=0.04242565482854843, output_norm=1.0859811305999756
+INFO:hyvideo.modules.models:Tile 1 at step 23: k=1.1170666217803955, raw_input_change=0.046195998787879944, output_norm=1.2713152170181274
+INFO:hyvideo.modules.models:Tile 2 at step 23: k=1.0751862525939941, raw_input_change=0.043896451592445374, output_norm=1.1486037969589233
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 23 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 23 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 23 should recalculate tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 23: k=1.0825543403625488, raw_input_change=0.04344988614320755, output_norm=1.1245713233947754
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 23 should recalculate tile 3
+ 69%|██████▊   | 24/35 [01:41<00:28,  2.57s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 69%|██████▊   | 24/35 [01:41<00:28,  2.58s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 69%|██████▊   | 24/35 [01:41<00:28,  2.58s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 69%|██████▊   | 24/35 [01:42<00:28,  2.58s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 24: k=1.3565059900283813, raw_input_change=0.047631047666072845, output_norm=1.10796058177948
+INFO:hyvideo.modules.models:Tile 2 at step 24: k=1.2974600791931152, raw_input_change=0.05030139163136482, output_norm=1.1980737447738647
+INFO:hyvideo.modules.models:Tile 1 at step 24: k=1.3737773895263672, raw_input_change=0.0508977510035038, output_norm=1.2862634658813477
+INFO:hyvideo.modules.models:rank=0 Cache hit, step 24 is skipped for tile 0
+INFO:hyvideo.modules.models:rank=2 Cache hit, step 24 is skipped for tile 2
+INFO:hyvideo.modules.models:rank=1 Cache hit, step 24 is skipped for tile 1
+INFO:hyvideo.modules.models:Tile 3 at step 24: k=1.311789870262146, raw_input_change=0.049826543778181076, output_norm=1.1756106615066528
+INFO:hyvideo.modules.models:rank=3 Cache hit, step 24 is skipped for tile 3
+self.rank=2 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 secondsrank2 Communicate time consumption 0.0004 seconds
+
+rank0 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 25: k=1.0971125364303589, raw_input_change=0.05156802386045456, output_norm=1.0596603155136108
+INFO:hyvideo.modules.models:Tile 1 at step 25: k=1.0840494632720947, raw_input_change=0.05350594222545624, output_norm=1.2139791250228882
+INFO:hyvideo.modules.models:Tile 2 at step 25: k=1.0658725500106812, raw_input_change=0.0557611919939518, output_norm=1.1700819730758667
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 25 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 25 should recalculate tile 1
+INFO:hyvideo.modules.models:Tile 3 at step 25: k=1.0612437725067139, raw_input_change=0.05547412857413292, output_norm=1.1519157886505127
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 25 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 25 should recalculate tile 3
+ 74%|███████▍  | 26/35 [01:47<00:23,  2.61s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 74%|███████▍  | 26/35 [01:47<00:23,  2.61s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 74%|███████▍  | 26/35 [01:47<00:23,  2.61s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 74%|███████▍  | 26/35 [01:47<00:23,  2.61s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 26: k=1.2559423446655273, raw_input_change=0.058666229248046875, output_norm=1.0938491821289062
+INFO:hyvideo.modules.models:Tile 1 at step 26: k=1.2663695812225342, raw_input_change=0.06035003438591957, output_norm=1.2290021181106567
+INFO:hyvideo.modules.models:Tile 2 at step 26: k=1.1805310249328613, raw_input_change=0.0647185891866684, output_norm=1.2282062768936157
+INFO:hyvideo.modules.models:rank=0 Cache hit, step 26 is skipped for tile 0
+INFO:hyvideo.modules.models:rank=1 Cache hit, step 26 is skipped for tile 1
+INFO:hyvideo.modules.models:rank=2 Cache hit, step 26 is skipped for tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 26: k=1.1674877405166626, raw_input_change=0.06427190452814102, output_norm=1.209639072418213
+INFO:hyvideo.modules.models:rank=3 Cache hit, step 26 is skipped for tile 3
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+self.rank=2 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0003 seconds
+rank2 Communicate time consumption 0.0004 seconds
+self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 27: k=1.0826295614242554, raw_input_change=0.06396578997373581, output_norm=1.0376055240631104
+INFO:hyvideo.modules.models:Tile 1 at step 27: k=1.0618611574172974, raw_input_change=0.06418178975582123, output_norm=1.1461026668548584
+INFO:hyvideo.modules.models:Tile 2 at step 27: k=1.0606228113174438, raw_input_change=0.07149283587932587, output_norm=1.1878741979599
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 27 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 27 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 27 should recalculate tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 27: k=1.0483583211898804, raw_input_change=0.07091482728719711, output_norm=1.1712796688079834
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 27 should recalculate tile 3
+ 80%|████████  | 28/35 [01:52<00:18,  2.63s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 80%|████████  | 28/35 [01:52<00:18,  2.63s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 80%|████████  | 28/35 [01:52<00:18,  2.63s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 80%|████████  | 28/35 [01:52<00:18,  2.63s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 28: k=1.1777634620666504, raw_input_change=0.07422076165676117, output_norm=1.0860466957092285
+INFO:hyvideo.modules.models:Tile 1 at step 28: k=1.2047165632247925, raw_input_change=0.07337803393602371, output_norm=1.1692041158676147
+INFO:hyvideo.modules.models:Tile 2 at step 28: k=1.116336464881897, raw_input_change=0.08381721377372742, output_norm=1.261511206626892
+INFO:hyvideo.modules.models:rank=0 Cache hit, step 28 is skipped for tile 0
+INFO:hyvideo.modules.models:rank=1 Cache hit, step 28 is skipped for tile 1
+INFO:hyvideo.modules.models:rank=2 Cache hit, step 28 is skipped for tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 28: k=1.1152698993682861, raw_input_change=0.08269557356834412, output_norm=1.242958664894104
+INFO:hyvideo.modules.models:rank=3 Cache hit, step 28 is skipped for tile 3
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 29: k=1.067681074142456, raw_input_change=0.08045873045921326, output_norm=1.0145902633666992
+INFO:hyvideo.modules.models:Tile 1 at step 29: k=1.0645149946212769, raw_input_change=0.08003148436546326, output_norm=1.0832884311676025
+INFO:hyvideo.modules.models:Tile 2 at step 29: k=1.0503838062286377, raw_input_change=0.09253133088350296, output_norm=1.2024503946304321
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 29 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 29 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 29 should recalculate tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 29: k=1.0470243692398071, raw_input_change=0.09019654244184494, output_norm=1.180689811706543
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 29 should recalculate tile 3
+ 86%|████████▌ | 30/35 [01:58<00:13,  2.64s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+
+rank1 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0005 seconds
+INFO:hyvideo.modules.models:Tile 1 at step 30: k=1.26778244972229, raw_input_change=0.09415757656097412, output_norm=1.1289730072021484
+INFO:hyvideo.modules.models:Tile 0 at step 30: k=1.2141802310943604, raw_input_change=0.09358029067516327, output_norm=1.0660920143127441
+INFO:hyvideo.modules.models:Tile 2 at step 30: k=1.284409999847412, raw_input_change=0.1109597235918045, output_norm=1.2883813381195068
+INFO:hyvideo.modules.models:Tile 3 at step 30: k=1.2482731342315674, raw_input_change=0.10661971569061279, output_norm=1.258370280265808
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 30 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 30 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 30 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 30 should recalculate tile 3
+ 89%|████████▊ | 31/35 [02:03<00:12,  3.11s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 89%|████████▊ | 31/35 [02:03<00:12,  3.11s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 89%|████████▊ | 31/35 [02:03<00:12,  3.11s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 89%|████████▊ | 31/35 [02:03<00:12,  3.12s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 1 at step 31: k=1.3893429040908813, raw_input_change=0.32979583740234375, output_norm=1.0528475046157837
+INFO:hyvideo.modules.models:Tile 0 at step 31: k=1.4765512943267822, raw_input_change=0.3476705551147461, output_norm=1.1058619022369385
+INFO:hyvideo.modules.models:Tile 2 at step 31: k=1.572593092918396, raw_input_change=0.39491763710975647, output_norm=1.25967276096344
+INFO:hyvideo.modules.models:Tile 3 at step 31: k=1.3611125946044922, raw_input_change=0.3973853290081024, output_norm=1.296114444732666
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 31 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 31 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 31 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 31 should recalculate tile 3
+ 91%|█████████▏| 32/35 [02:08<00:10,  3.56s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 91%|█████████▏| 32/35 [02:08<00:10,  3.57s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 91%|█████████▏| 32/35 [02:08<00:10,  3.56s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 91%|█████████▏| 32/35 [02:08<00:10,  3.56s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 32: k=0.2824579179286957, raw_input_change=0.09943260997533798, output_norm=1.0987151861190796
+INFO:hyvideo.modules.models:Tile 1 at step 32: k=0.24684426188468933, raw_input_change=0.10168605297803879, output_norm=1.0697765350341797
+INFO:hyvideo.modules.models:Tile 2 at step 32: k=0.2078039050102234, raw_input_change=0.11370813101530075, output_norm=1.2585413455963135
+INFO:hyvideo.modules.models:rank=0 Cache hit, step 32 is skipped for tile 0
+INFO:hyvideo.modules.models:rank=1 Cache hit, step 32 is skipped for tile 1
+INFO:hyvideo.modules.models:rank=2 Cache hit, step 32 is skipped for tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 32: k=0.2140844315290451, raw_input_change=0.11934775114059448, output_norm=1.324286699295044
+INFO:hyvideo.modules.models:rank=3 Cache hit, step 32 is skipped for tile 3
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0003 seconds
+rank2 Communicate time consumption 0.0004 seconds
+self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:Tile 0 at step 33: k=1.0040934085845947, raw_input_change=0.11558617651462555, output_norm=0.9941298961639404
+INFO:hyvideo.modules.models:Tile 1 at step 33: k=1.0065629482269287, raw_input_change=0.11736191809177399, output_norm=0.9800271391868591
+INFO:hyvideo.modules.models:Tile 2 at step 33: k=1.0014164447784424, raw_input_change=0.1274111568927765, output_norm=1.1377012729644775
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 33 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 33 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 33 should recalculate tile 2
+INFO:hyvideo.modules.models:Tile 3 at step 33: k=0.9972235560417175, raw_input_change=0.13874033093452454, output_norm=1.2263168096542358
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 33 should recalculate tile 3
+ 97%|█████████▋| 34/35 [02:13<00:03,  3.24s/it]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+ 97%|█████████▋| 34/35 [02:14<00:03,  3.24s/it]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+ 97%|█████████▋| 34/35 [02:14<00:03,  3.24s/it]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+ 97%|█████████▋| 34/35 [02:14<00:03,  3.24s/it]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+INFO:hyvideo.modules.models:rank=1 Cache miss, step 34 should recalculate tile 1
+INFO:hyvideo.modules.models:rank=0 Cache miss, step 34 should recalculate tile 0
+INFO:hyvideo.modules.models:rank=2 Cache miss, step 34 should recalculate tile 2
+INFO:hyvideo.modules.models:rank=3 Cache miss, step 34 should recalculate tile 3
+100%|██████████| 35/35 [02:19<00:00,  3.98s/it]
+100%|██████████| 35/35 [02:19<00:00,  3.99s/it]
+100%|██████████| 35/35 [02:19<00:00,  3.98s/it]
+100%|██████████| 35/35 [02:19<00:00,  3.99s/it]
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=2]Stage 2 time: 140.9742088317871 seconds
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=3]Stage 2 time: 140.97507548332214 seconds
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=0]Stage 2 time: 140.97359943389893 seconds
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=1]Stage 2 time: 140.97416496276855 seconds
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=2]=== Two-Stage Generation Completed ===
+2026-11-09 03:34:36.992 | INFO     | hyvideo.inference:predict:994 - Success, time: 152.5667781829834
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=3]=== Two-Stage Generation Completed ===
+2026-11-09 03:34:36.993 | INFO     | hyvideo.inference:predict:994 - Success, time: 153.26755547523499
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=1]=== Two-Stage Generation Completed ===
+2026-11-09 03:34:36.999 | INFO     | hyvideo.inference:predict:994 - Success, time: 154.7488934993744
+DEBUG:filelock:Attempting to acquire lock 126263889965392 on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 126263889965392 acquired on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 123401346691856 on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 126263889965392 on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 123401346691856 not acquired on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock, waiting 0.05 seconds ...
+DEBUG:filelock:Lock 126263889965392 released on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 126263895026384 on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 126263895026384 acquired on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 126263895026384 on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 126263895026384 released on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 136268200561488 on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 136268200561488 acquired on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 136268200561488 on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 136268200561488 released on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 136268184529680 on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 136268184529680 acquired on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 136268184529680 on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 136268184529680 released on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 123401346691856 on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 123401346691856 acquired on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 123401346691856 on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 123401346691856 released on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 123401351752400 on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 123401351752400 acquired on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 123401351752400 on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 123401351752400 released on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:return_dict: True, image shape: torch.Size([1, 3, 41, 1440, 2560])
+INFO:hyvideo.diffusion.pipelines.pipeline_hunyuan_video:[rank=0]=== Two-Stage Generation Completed ===
+2026-11-09 03:35:14.668 | INFO     | hyvideo.inference:predict:994 - Success, time: 190.34420585632324
+sample shape: torch.Size([1, 3, 41, 1440, 2560])
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+2026-11-09 03:35:17.860 | INFO     | __main__:main:90 - Sample save to: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig11__hunyuan__2k__cache__4gpu__a_mountain_range_with_a_sky_background/a mountain range with a sky background_final.mp4
+DEBUG:filelock:Attempting to acquire lock 126496091861968 on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 126496091861968 acquired on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 126496091861968 on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Lock 126496091861968 released on /home/fanjiang/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+DEBUG:filelock:Attempting to acquire lock 126496093792912 on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 126496093792912 acquired on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Attempting to release lock 126496093792912 on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+DEBUG:filelock:Lock 126496093792912 released on /home/fanjiang/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+exit=0

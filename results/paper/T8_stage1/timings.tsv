@@ -1,0 +1,6 @@
+config	res	host	gpus	wall_s	stage1_s	rc	clocks
+cog	720p	node2	0	335	148.69867610931396	0	975/975/0
+hunyuan	720p	node4	0	664	418.8933460712433	0	1980/1980/0
+wan_i2v	720p	node5	0	805		0	750/750/0
+wan_i2v	2k	node6	4,5,6,7	1371	715.9180	0	345/585/0
+wan_t2v	2k	node2	0,1,2,3	95		1	345/480/0

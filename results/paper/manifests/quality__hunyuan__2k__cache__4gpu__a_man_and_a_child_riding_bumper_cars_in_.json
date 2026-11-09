@@ -1,0 +1,19 @@
+{
+  "key": "quality__hunyuan__2k__cache__4gpu__a_man_and_a_child_riding_bumper_cars_in_",
+  "video_sha256": "47f6e2edc36a4d2f8531a0da3e1c1b6970c377f77e0d34b0e8365e38c3fd72cb",
+  "host": "node2",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "bc3dc73ed587cbb3576c1cc149d7565746faf05f",
+  "experiments_commit": "fc28b311cfb8f85668630c189a65e73633b5782a",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T02:56:29Z",
+  "remote_script": "#!/usr/bin/env bash\nset -uo pipefail\nmkdir -p \"/tmp/T7/quality__hunyuan__2k__cache__4gpu__a_man_and_a_child_riding_bumper_cars_in_\" \"/home/ubuntu/stage1_cache\"\ncd /home/ubuntu/repo/SuperGen/HunyuanVideoI2V\nln -sfn /home/ubuntu/ckpts/HunyuanVideo-I2V ckpts 2>/dev/null\nsource /home/ubuntu/repo/UltraGen-PPoPP-experiments/run/lib/hunyuan_flags.sh\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True  \\\nCUDA_VISIBLE_DEVICES=0,1,2,3 \\\n/home/ubuntu/envs/hunyuan/bin/torchrun --nproc_per_node=$(echo 0,1,2,3 | tr ',' '\\n' | wc -l) \\\n  --master_port 57819 sample_image2video.py \\\n  $HUNYUAN_REQUIRED_FLAGS $HUNYUAN_WEIGHT_FLAGS $HUNYUAN_TWOSTAGE_FLAGS $HUNYUAN_SHIFT_FLAGS \\\n  --prompt \"a man and a child riding bumper cars in an amusement park\" --i2v-image-path \"/home/ubuntu/repo/UltraGen-PPoPP-experiments/inputs/2k_1440x2560/a man and a child riding bumper cars in an amusement park.jpg\" \\\n  --video-size 1440 2560 --video-length 41 --infer-steps 50 \\\n  --upscale-factor 2 --upscale-res-steps 35 --seed 0 \\\n  --save-path \"/tmp/T7/quality__hunyuan__2k__cache__4gpu__a_man_and_a_child_riding_bumper_cars_in_\" --loop-step 16 \\\n  --save-intermediate --output-dir \"/tmp/T7/quality__hunyuan__2k__cache__4gpu__a_man_and_a_child_riding_bumper_cars_in_\" --load-prev-latents-path \"/home/ubuntu/stage1_cache/hunyuan_2k_a_man_and_a_child_riding_bumper_cars_in_an_amusement_park.pt\" \\\n  --enable-region-aware-cache --enable-intra-tile-cache --cache-thresh 0.06 --static-tile-cache-scale-factor 0.5 > \"/tmp/T7/quality__hunyuan__2k__cache__4gpu__a_man_and_a_child_riding_bumper_cars_in_/run_log.log\" 2>&1\nrc=$?; echo \"exit=$rc\" >> \"/tmp/T7/quality__hunyuan__2k__cache__4gpu__a_man_and_a_child_riding_bumper_cars_in_/run_log.log\"; exit $rc\n",
+  "figure": {"block": "quality", "variant": "cache", "ngpu": 4, "env": ""}
+}

@@ -1,0 +1,17 @@
+================================================================================
+ Table 4: cache speedup and retention   (mode: quick)
+ host=hypergen-rebuttal-h100x8 gpu=NVIDIA H100 80GB HBM3 x8 driver=580.178.04 torch(cogvideo)=2.5.1+cu124 artifact=f3ff7fc date=2026-11-09T00:41:15Z
+ results -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae    videos -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/videos
+================================================================================
+[00:41:15] skip  fig11__cog__2k__nocache__4gpu__a_person_is_putting_sauce_on_a_burger (already measured)
+[00:41:15] skip  fig11__cog__2k__cache__4gpu__a_person_is_putting_sauce_on_a_burger (already measured)
+[00:41:15] run   fig11  cog 2k nocache 1GPU ENABLE_REDISTRIBUTE=0
+[00:49:57]       rc=0  stage2=412.5098910331726s  skip=n/a  wall=522s
+[00:49:57] run   fig11  cog 2k cache 1GPU ENABLE_REDISTRIBUTE=0
+[00:54:48]       rc=0  stage2=180.55116295814514s  skip=0.5643  wall=290s
+[00:56:01] retention cog 2k 1GPU: psnr,ssim,lpips = 39.619,0.970,0.021
+[vbench] cog__2k__1__nocache: 1 video(s)
+    v1_subject=97.67  v2_background=95.20  v3_motion=98.90  v4_aesthetic=75.06  v5_imaging=72.86  avg=87.94
+[vbench] cog__2k__1__cache: 1 video(s)
+    v1_subject=97.66  v2_background=95.10  v3_motion=98.89  v4_aesthetic=75.77  v5_imaging=73.15  avg=88.11
+[00:56:36] done. Next: bash plots/make_all.sh --results /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae

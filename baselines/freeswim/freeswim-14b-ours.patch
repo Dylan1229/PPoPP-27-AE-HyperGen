@@ -1,0 +1,57 @@
+--- a/inference.py
++++ b/inference_14b_ours.py
+@@ -21,10 +21,15 @@
+     from nocache.pipeline_wan_video2video import WanVideoToVideoPipeline
+     from nocache.attention_processor_ import init_mask_flex, WanFlexAttnProcessor_, WanCrossAttnProcessor
+ 
+-assert args.target_width <= 1920 and args.target_height <= 1088, \
+-    "Please use 14B model at higher resolutions for better results"
++# Upstream asserts <=1920x1088 with the message "Please use 14B model at higher
++# resolutions"; we ARE using 14B, so the guard is satisfied in spirit. Kept as a
++# warning so the reason stays visible.
++if args.target_width > 1920 or args.target_height > 1088:
++    print(f"[note] {args.target_width}x{args.target_height} exceeds the 1.3B guard; "
++          f"using the 14B model as upstream advises.")
+ 
+-model_id = "Wan-AI/Wan2.1-T2V-1.3B-Diffusers"
++import os as _os
++model_id = _os.environ.get("FREESWIM_MODEL_ID", "Wan-AI/Wan2.1-T2V-1.3B-Diffusers")
+ vae = AutoencoderKLWan.from_pretrained(model_id, subfolder="vae", torch_dtype=torch.float32)
+ 
+ pipe_t2v = WanPipeline.from_pretrained(model_id, vae=vae, torch_dtype=torch.bfloat16)
+@@ -32,12 +37,15 @@
+ pipe_t2v.enable_sequential_cpu_offload()
+ pipe_t2v.vae.enable_tiling()
+ 
+-num_frames = 81
+-base_height = 480
+-base_width = 832
++# 14B is trained at 720p and the script's own comment says to change these for it.
++# Overridable so this matches OUR protocol exactly -- same prompt, frames, seed and
++# target resolution as the UltraGen runs, or the comparison confounds method with setup.
++num_frames = int(_os.environ.get("FREESWIM_FRAMES", 41))
++base_height = int(_os.environ.get("FREESWIM_BASE_H", 720))
++base_width = int(_os.environ.get("FREESWIM_BASE_W", 1280))
+ # If you want to use the 14B models, please remember to change the base_width to 1280, and base_height to 720.
+ 
+-prompt = "A realistic close-up of an elderly man with gray hair and a thick gray beard, wearing a light-colored shirt. His head is slightly lowered. The camera zooms from full body to close-up, highlighting detailed facial wrinkles, skin texture, forehead lines, eye bags, and beard strands. High resolution, cinematic lighting, sharp details."
++prompt = _os.environ.get("FREESWIM_PROMPT", "a lion is roaring in the wild")
+ negative_prompt = "repeating patterns, Blurry face, low detail, distorted features, extra limbs, cartoon style, smooth plastic skin, low resolution, flat colors, lack of texture"
+ 
+ output = pipe_t2v(
+@@ -46,7 +54,8 @@
+     height=base_height,
+     width=base_width,
+     num_frames=num_frames,
+-    guidance_scale=5.0
++    guidance_scale=5.0,
++    generator=torch.Generator("cpu").manual_seed(int(_os.environ.get("FREESWIM_SEED", 0))),
+ ).frames[0]
+ 
+ # You can export the base video to see the difference that FreeSwim can make
+@@ -100,4 +109,4 @@
+     # cache_steps=5,
+ ).frames[0]
+ 
+-export_to_video(output, "Old_man.mp4", fps=15)
++export_to_video(output, _os.environ.get("FREESWIM_OUT", "Old_man.mp4"), fps=15)

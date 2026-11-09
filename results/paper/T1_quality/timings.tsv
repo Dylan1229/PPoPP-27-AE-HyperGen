@@ -1,0 +1,115 @@
+config	res	variant	prompt	host	gpus	wall_s	rc	collected	stage1_s	stage2_s
+cog	2k	cache	a person is putting sauce on a burger	node5	0,1,2,3	2	0	1	78.87970352172852	
+cog	2k	cache	a room with a desk and a chair in it	node5	0,1,2,3	2	0	1	76.2138295173645	
+cog	2k	nocache	a person is putting sauce on a burger	node5	0,1,2,3	2	0	1	105.50345182418823	
+cog	2k	nocache	a room with a desk and a chair in it	node5	0,1,2,3	2	0	1	150.53983616828918	106.23632717132568
+cog	4k	cache	a bunch of houses that are on a hillside	node5	0,1,2,3	2	0	1	258.7058091163635	
+cog	4k	cache	a white and blue airplane flying in the sky	node5	0,1,2,3	2	0	1	237.25863075256348	
+cog	4k	cache	the parthenon in acropolis, greece	node5	0,1,2,3	2	0	1	239.91618990898132	
+cog	4k	nocache	a bunch of houses that are on a hillside	node5	0,1,2,3	2	0	1	148.5334460735321	312.1170246601105
+cog	4k	nocache	a white and blue airplane flying in the sky	node5	0,1,2,3	3	0	1	148.71919751167297	314.84244775772095
+cog	4k	nocache	the parthenon in acropolis, greece	node5	0,1,2,3	2	0	1	163.0168662071228	318.39815878868103
+cog	720p	nocache	a close up of leaves with water droplets on them	node5	0,1,2,3	3	0	1	147.88641333580017	103.6575255393982
+cog	720p	nocache	a man and a child riding bumper cars in an amusement park	node1	4,5,6,7	209	0	1	103.58748412132263	
+cog	720p	nocache	a mountain range with a sky background	node1	4,5,6,7	356	0	1	148.49404740333557	103.63012337684631
+cog	720p	nocache	a person is putting sauce on a burger	node1	0,1,2,3	358	0	1	103.66988563537598	
+hunyuan	2k	cache	a close up of leaves with water droplets on them	node5	0,1,2,3	2	0	1	130.82097339630127	
+hunyuan	2k	cache	a man and a child riding bumper cars in an amusement park	node5	0,1,2,3	2	0	1	135.93665742874146	
+hunyuan	2k	cache	a mountain range with a sky background	node5	0,1,2,3	2	0	1	126.39929175376892	
+hunyuan	2k	cache	a person is putting sauce on a burger	node5	0,1,2,3	2	0	1	141.5014226436615	
+hunyuan	2k	cache	a room with a desk and a chair in it	node5	0,1,2,3	2	0	1	125.25933694839478	
+hunyuan	2k	nocache	a close up of leaves with water droplets on them	node5	0,1,2,3	2	0	1	266.34297919273376	189.97136521339417
+hunyuan	2k	nocache	a man and a child riding bumper cars in an amusement park	node5	0,1,2,3	2	0	1	270.3194341659546	190.72254705429077
+hunyuan	2k	nocache	a mountain range with a sky background	node5	0,1,2,3	2	0	1	270.58749413490295	190.9473214149475
+hunyuan	2k	nocache	a person is putting sauce on a burger	node5	0,1,2,3	2	0	1	189.39905714988708	
+hunyuan	2k	nocache	a room with a desk and a chair in it	node5	0,1,2,3	2	0	1	265.9006588459015	189.21799087524414
+hunyuan	4k	cache	a bunch of houses that are on a hillside	node5	0,1,2,3	2	0	1	409.21114587783813	
+hunyuan	4k	cache	a white and blue airplane flying in the sky	node5	0,1,2,3	2	0	1	392.54014825820923	
+hunyuan	4k	cache	the parthenon in acropolis, greece	node5	0,1,2,3	2	0	1	386.43671917915344	
+hunyuan	4k	nocache	a bunch of houses that are on a hillside	node5	0,1,2,3	2	0	1	268.7388586997986	565.5859978199005
+hunyuan	4k	nocache	a white and blue airplane flying in the sky	node5	0,1,2,3	2	0	1	271.40081238746643	572.4108626842499
+hunyuan	4k	nocache	the parthenon in acropolis, greece	node5	0,1,2,3	2	0	1	267.68092346191406	558.1896398067474
+hunyuan	720p	nocache	a close up of leaves with water droplets on them	node2	0,1,2,3	337	0	1	266.76623272895813	186.50297212600708
+hunyuan	720p	nocache	a man and a child riding bumper cars in an amusement park	node3	4,5,6,7	335	0	1	267.45021963119507	186.59733700752258
+hunyuan	720p	nocache	a mountain range with a sky background	node3	0,1,2,3	340	0	1	267.7253715991974	187.8600435256958
+hunyuan	720p	nocache	a person is putting sauce on a burger	node3	0,1,2,3	341	0	1	187.26287150382996	
+hunyuan	720p	nocache	a room with a desk and a chair in it	node3	4,5,6,7	336	0	1	267.40808033943176	187.51132941246033
+wan_i2v	2k	nocache	a man and a child riding bumper cars in an amusement park	node5	0,1,2,3	2	0	1	479.1355321407318	
+wan_i2v	2k	nocache	a person is putting sauce on a burger	node5	0,1,2,3	2	0	1	478.71530747413635	
+wan_i2v	720p	nocache	a close up of leaves with water droplets on them	node5	0,1,2,3	2	0	1		
+wan_i2v	720p	nocache	a mountain range with a sky background	node4	0,1,2,3	840	0	1		
+wan_i2v	720p	nocache	a person is putting sauce on a burger	node4	0,1,2,3	841	0	1		
+wan_i2v	720p	nocache	a room with a desk and a chair in it	node4	4,5,6,7	833	0	1		
+wan_i2v	2k	nocache	a mountain range with a sky background	node2	0,1,2,3	1399	0	1
+wan_i2v	2k	cache	a person is putting sauce on a burger	node3	4,5,6,7	608	0	1
+wan_i2v	2k	nocache	a room with a desk and a chair in it	node4	0,1,2,3	1382	0	1
+wan_i2v	2k	nocache	a close up of leaves with water droplets on them	node3	0,1,2,3	1396	0	1
+wan_i2v	2k	cache	a man and a child riding bumper cars in an amusement park	node1	4,5,6,7	662	0	1
+wan_i2v	2k	cache	a mountain range with a sky background	node2	0,1,2,3	623	0	1
+wan_i2v	2k	cache	a room with a desk and a chair in it	node4	0,1,2,3	596	0	1
+wan_i2v	2k	cache	a close up of leaves with water droplets on them	node3	0,1,2,3	634	0	1
+wan_t2v	2k	nocache	a man and a child riding bumper cars in an amusement park	node3	4,5,6,7	1318	0	1
+cog	2k	nocache	a man and a child riding bumper cars in an amusement park	node1	4,5,6,7	392	0	1	148.059175491333	105.7355592250824
+cog	2k	nocache	a close up of leaves with water droplets on them	node3	4,5,6,7	398	0	1	147.95228457450867	105.19044637680054
+cog	2k	nocache	a mountain range with a sky background	node3	0,1,2,3	399	0	1	150.62559390068054	106.70724081993103
+cog	720p	nocache	a room with a desk and a chair in it	node1	0,1,2,3	242	0	1	125.65435886383057	
+wan_t2v	2k	cache	a person is putting sauce on a burger	node5	0,1,2,3	645	0	1	423.413339138031	
+wan_t2v	2k	nocache	a man and a child riding bumper cars in an amusement park	node1	4,5,6,7	1327	0	1	459.5862536430359	
+wan_t2v	2k	nocache	a mountain range with a sky background	node3	4,5,6,7	1331	0	1	449.7368721961975	
+wan_t2v	2k	nocache	a room with a desk and a chair in it	node3	0,1,2,3	1354	0	1	463.9869887828827	
+wan_t2v	2k	nocache	a close up of leaves with water droplets on them	node4	0,1,2,3	1342	0	1	460.35859870910645	
+wan_i2v	720p	nocache	a man and a child riding bumper cars in an amusement park	node2	0,1,2,3	848	0	1		
+wan_t2v	2k	nocache	a person is putting sauce on a burger	node3	0,1,2,3	1358	0	1		462.0723297595978
+wan_i2v	4k	nocache	the parthenon in acropolis, greece	node2	4,5,6,7	185	1	0		
+wan_i2v	4k	nocache	a bunch of houses that are on a hillside	node2	0,1,2,3	275	1	0		
+wan_i2v	4k	nocache	a bunch of houses that are on a hillside	node1	0,1,2,3	1624	0	1		1359.975193977356
+cog	2k	cache	a mountain range with a sky background	node2	4,5,6,7	534	0	1	201.4829649925232	156.9101905822754
+cog	2k	cache	a man and a child riding bumper cars in an amusement park	node2	0,1,2,3	575	0	1	233.58846139907837	201.78670001029968
+wan_t2v	4k	cache	a bunch of houses that are on a hillside	node2	0,1,2,3	81	1	0		
+wan_i2v	4k	cache	a bunch of houses that are on a hillside	node2	0,1,2,3	119	1	0		
+wan_i2v	4k	nocache	the parthenon in acropolis, greece	node1	4,5,6,7	2329	0	1		1388.4496309757233
+wan_i2v	4k	cache	a white and blue airplane flying in the sky	node2	4,5,6,7	116	1	0		
+wan_t2v	4k	cache	the parthenon in acropolis, greece	node2	0,1,2,3	86	1	0		
+cog	2k	cache	a close up of leaves with water droplets on them	node2	4,5,6,7	368	0	1	154.69639134407043	75.93584775924683
+wan_t2v	4k	cache	a white and blue airplane flying in the sky	node2	4,5,6,7	95	1	0		
+wan_i2v	4k	cache	a white and blue airplane flying in the sky	node1	0,1,2,3	1572	137	0		
+wan_t2v	4k	cache	a bunch of houses that are on a hillside	node1	4,5,6,7	867	137	0		
+wan_i2v	4k	cache	a white and blue airplane flying in the sky	node2	4,5,6,7	464	137	0		
+wan_i2v	4k	cache	the parthenon in acropolis, greece	node2	0,1,2,3	12	137	0		
+wan_t2v	4k	nocache	the parthenon in acropolis, greece	node1	0,1,2,3	98	1	0		
+wan_t2v	2k	nocache	a man and a child riding bumper cars in an amusement park	node2	4,5,6,7	115	1	0		
+wan_t2v	4k	nocache	a white and blue airplane flying in the sky	node1	4,5,6,7	308	137	0		
+wan_t2v	2k	nocache	a mountain range with a sky background	node2	0,1,2,3	313	137	0		
+wan_t2v	2k	nocache	a room with a desk and a chair in it	node2	4,5,6,7	300	137	0		
+wan_t2v	2k	nocache	a close up of leaves with water droplets on them	node2	0,1,2,3	293	137	0		
+wan_i2v	4k	cache	a bunch of houses that are on a hillside	node1	4,5,6,7	303	137	0		
+wan_i2v	4k	cache	the parthenon in acropolis, greece	node1	0,1,2,3	304	137	0		
+wan_t2v	4k	nocache	a bunch of houses that are on a hillside	node2	4,5,6,7	311	137	0		
+wan_t2v	4k	nocache	the parthenon in acropolis, greece	node2	0,1,2,3	311	137	0		
+wan_t2v	4k	cache	a white and blue airplane flying in the sky	node2	4,5,6,7	105	1	0		
+wan_i2v	4k	cache	a white and blue airplane flying in the sky	node1	4,5,6,7	295	137	0		
+wan_t2v	2k	cache	a person is putting sauce on a burger	node1	0,1,2,3	294	137	0		
+wan_t2v	2k	cache	a man and a child riding bumper cars in an amusement park	node1	4,5,6,7	10	137	0		
+wan_t2v	2k	cache	a mountain range with a sky background	node1	0,1,2,3	10	137	0		
+wan_t2v	2k	cache	a room with a desk and a chair in it	node1	4,5,6,7	11	137	0		
+wan_t2v	2k	cache	a close up of leaves with water droplets on them	node1	0,1,2,3	11	137	0		
+wan_t2v	4k	cache	a bunch of houses that are on a hillside	node1	4,5,6,7	11	137	0		
+wan_t2v	4k	cache	the parthenon in acropolis, greece	node1	0,1,2,3	11	137	0		
+wan_t2v	4k	cache	a white and blue airplane flying in the sky	node1	4,5,6,7	312	137	0		
+wan_i2v	4k	cache	a bunch of houses that are on a hillside	node3	0,1,2,3	854	1	0		
+wan_i2v	4k	cache	the parthenon in acropolis, greece	node3	4,5,6,7	887	1	0		
+wan_t2v	4k	nocache	a bunch of houses that are on a hillside	node1	4,5,6,7	1582	0	1		1333.1028008460999
+wan_i2v	4k	nocache	a white and blue airplane flying in the sky	node1	0,1,2,3	1641	0	1		1390.9489123821259
+wan_t2v	2k	cache	a person is putting sauce on a burger	node3	4,5,6,7	624	0	1		416.28707575798035
+wan_t2v	2k	cache	a man and a child riding bumper cars in an amusement park	node3	4,5,6,7	631	0	1	0.0082	427.5414311885834
+wan_t2v	4k	cache	the parthenon in acropolis, greece	node1	4,5,6,7	1432	137	0	679.9359	
+wan_t2v	4k	cache	a white and blue airplane flying in the sky	node1	0,1,2,3	1373	137	0	0.0078	1200.6523633003235
+wan_i2v	4k	cache	a white and blue airplane flying in the sky	node3	0,1,2,3	561	137	0	0.0005	
+wan_t2v	2k	cache	a mountain range with a sky background	node3	4,5,6,7	624	0	1	0.0089	416.7242543697357
+wan_t2v	2k	cache	a close up of leaves with water droplets on them	node3	4,5,6,7	82	137	0		
+wan_t2v	2k	cache	a room with a desk and a chair in it	node3	0,1,2,3	63	137	0		
+wan_t2v	4k	cache	the parthenon in acropolis, greece	node3	0,1,2,3	1	137	0		
+wan_t2v	4k	cache	a white and blue airplane flying in the sky	node3	0,1,2,3	62	137	0		
+wan_t2v	4k	cache	a bunch of houses that are on a hillside	node3	4,5,6,7	44	137	0		
+wan_t2v	4k	nocache	the parthenon in acropolis, greece	node1	0,1,2,3	1609	0	1	0.0153	1341.5246076583862	65.4545
+wan_t2v	4k	nocache	a white and blue airplane flying in the sky	node1	0,1,2,3	1588	0	1	0.0148	1340.9015336036682	61.0071

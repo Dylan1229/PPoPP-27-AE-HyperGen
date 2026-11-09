@@ -1,0 +1,7 @@
+config	res	variant	ngpu	stage2_s	n_runs	note
+cog	2k	cache	4	61	1	median Stage-2 time of the quality runs
+cog	2k	nocache	4	105	1	median Stage-2 time of the quality runs
+wan_t2v	2k	cache	4	372	1	median Stage-2 time of the quality runs
+wan_t2v	2k	nocache	4	467	1	median Stage-2 time of the quality runs
+cinescale	2k	nocache	4	1198	1	median high-resolution-stage time from the method's progress bar
+freeswim	2k	nocache	1	10707	1	median high-resolution-stage time from the method's progress bar

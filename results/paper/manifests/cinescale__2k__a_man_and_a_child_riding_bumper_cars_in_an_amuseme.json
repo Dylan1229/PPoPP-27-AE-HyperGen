@@ -1,0 +1,19 @@
+{
+  "key": "cinescale__2k__a_man_and_a_child_riding_bumper_cars_in_an_amuseme",
+  "video_sha256": "211e80b30e5762b8bc83bd51561810f189fd200ae033b476463844fed521ef26",
+  "host": "node3",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "bc3dc73ed587cbb3576c1cc149d7565746faf05f",
+  "experiments_commit": "dd1a99f5a604be6d83d4b3141b7457a59d87c69f",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T08:17:58Z",
+  "remote_script": "",
+  "baseline": {"method": "cinescale", "resolution": "2k", "lora": false}
+}

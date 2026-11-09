@@ -1,0 +1,16 @@
+================================================================================
+ Table 3: VBench quality (HyperGen rows)   (mode: quick)
+ host=hypergen-rebuttal-h100x8 gpu=NVIDIA H100 80GB HBM3 x8 driver=580.178.04 torch(cogvideo)=2.5.1+cu124 artifact=e8c18a5 date=2026-11-09T04:21:53Z
+ results -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae    videos -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/videos
+================================================================================
+[04:21:53] run   wan_t2v 2k nocache 4GPU :: a person is putting sauce on a burger
+[04:21:53]       first use of this Stage-1 sketch: generating it in a preparatory run (4 GPU, output discarded)
+[04:54:31]       rc=0  stage2=466.7406749725342s  wall=648s
+[04:54:31] run   wan_t2v 2k cache 4GPU :: a person is putting sauce on a burger
+[05:03:42]       rc=0  stage2=371.9210367202759s  wall=551s
+[vbench] wan_t2v__2k__nocache: 1 video(s)
+    v1_subject=99.27  v2_background=98.72  v3_motion=99.23  v4_aesthetic=68.79  v5_imaging=76.47  avg=88.50
+[vbench] wan_t2v__2k__cache: 1 video(s)
+    v1_subject=99.14  v2_background=98.27  v3_motion=99.22  v4_aesthetic=65.75  v5_imaging=76.20  avg=87.72
+wrote /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae/T5_algo/latency.tsv (4 HyperGen cell(s), 1 baseline cell(s))
+[05:04:17] done. Next: bash plots/make_all.sh --results /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae

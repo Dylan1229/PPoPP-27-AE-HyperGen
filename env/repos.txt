@@ -1,0 +1,8 @@
+# Upstream code the artifact runs against, cloned into third_party/ by env/setup_envs.sh.
+# Format: name | git url | ref (commit, tag or branch)
+Wan2.1    | https://github.com/Wan-Video/Wan2.1.git    | main
+VBench    | https://github.com/Vchitect/VBench.git     | 45e79ec
+# Table 3 baselines, at the commits the paper's runs used. Do NOT update CineScale: the current
+# Eyeline-Labs/CineScale main is rewritten around Wan2.2 and no longer has diffsynth/.
+CineScale | https://github.com/PeterZs/CineScale.git   | 0abca0cfc3910b89fe2f7aa94ba6a9b0fc0714c7
+FreeSwim  | https://github.com/WillWu111/FreeSwim.git  | 9f35a72f6382696fe2fd02ff02183a249c3090f3

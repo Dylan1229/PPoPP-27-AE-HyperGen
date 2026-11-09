@@ -1,0 +1,19 @@
+{
+  "key": "fig11__hunyuan__2k__cache__4gpu__a_person_is_putting_sauce_on_a_burger",
+  "video_sha256": "f6c1f5aa1382cd8f7d18e5fc2c922ffa3fdd9cb6cc7d857fad5203448a702029",
+  "host": "node2",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "bc3dc73ed587cbb3576c1cc149d7565746faf05f",
+  "experiments_commit": "dd1a99f5a604be6d83d4b3141b7457a59d87c69f",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T08:01:46Z",
+  "remote_script": "#!/usr/bin/env bash\nset -uo pipefail\nmkdir -p \"/tmp/T7/fig11__hunyuan__2k__cache__4gpu__a_person_is_putting_sauce_on_a_burger\" \"/home/ubuntu/stage1_cache\"\ncd /home/ubuntu/repo/SuperGen/HunyuanVideoI2V\nln -sfn /home/ubuntu/ckpts/HunyuanVideo-I2V ckpts 2>/dev/null\nsource /home/ubuntu/repo/UltraGen-PPoPP-experiments/run/lib/hunyuan_flags.sh\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True ENABLE_REDISTRIBUTE=0 \\\nCUDA_VISIBLE_DEVICES=0,1,2,3 \\\n/home/ubuntu/envs/hunyuan/bin/torchrun --nproc_per_node=$(echo 0,1,2,3 | tr ',' '\\n' | wc -l) \\\n  --master_port 57634 sample_image2video.py \\\n  $HUNYUAN_REQUIRED_FLAGS $HUNYUAN_WEIGHT_FLAGS $HUNYUAN_TWOSTAGE_FLAGS $HUNYUAN_SHIFT_FLAGS \\\n  --prompt \"a person is putting sauce on a burger\" --i2v-image-path \"/home/ubuntu/repo/UltraGen-PPoPP-experiments/inputs/2k_1440x2560/a person is putting sauce on a burger.jpg\" \\\n  --video-size 1440 2560 --video-length 41 --infer-steps 50 \\\n  --upscale-factor 2 --upscale-res-steps 35 --seed 0 \\\n  --save-path \"/tmp/T7/fig11__hunyuan__2k__cache__4gpu__a_person_is_putting_sauce_on_a_burger\" --loop-step 16 \\\n  --save-intermediate --output-dir \"/tmp/T7/fig11__hunyuan__2k__cache__4gpu__a_person_is_putting_sauce_on_a_burger\" --load-prev-latents-path \"/home/ubuntu/stage1_cache/hunyuan_2k_a_person_is_putting_sauce_on_a_burger.pt\" \\\n  --enable-region-aware-cache --enable-intra-tile-cache --cache-thresh 0.06 --static-tile-cache-scale-factor 0.5 > \"/tmp/T7/fig11__hunyuan__2k__cache__4gpu__a_person_is_putting_sauce_on_a_burger/run_log.log\" 2>&1\nrc=$?; echo \"exit=$rc\" >> \"/tmp/T7/fig11__hunyuan__2k__cache__4gpu__a_person_is_putting_sauce_on_a_burger/run_log.log\"; exit $rc\n",
+  "figure": {"block": "fig11", "variant": "cache", "ngpu": 4, "env": "ENABLE_REDISTRIBUTE=0"}
+}

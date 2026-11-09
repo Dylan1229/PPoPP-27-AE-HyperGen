@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the paper."
+title: "HyperGen: Artifact for 'Empowering Ultra-high-resolution Video Generation Framework with Sketch-Tile Collaboration' (PPoPP 2027)"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/Dylan1229/PPoPP-27-AE-HyperGen"
+version: "1.0"
+# TODO(authors): complete the author list to match the camera-ready paper.
+authors:
+  - family-names: Ye
+    given-names: Fanjiang
+    affiliation: Rice University
+  - family-names: Wang
+    given-names: Yuke
+    affiliation: Rice University
+preferred-citation:
+  type: conference-paper
+  title: "HyperGen: Empowering Ultra-high-resolution Video Generation Framework with Sketch-Tile Collaboration"
+  collection-title: "Proceedings of the 32nd ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming (PPoPP '27)"
+  year: 2027
+  authors:
+    - family-names: Ye
+      given-names: Fanjiang
+    - family-names: Wang
+      given-names: Yuke

@@ -1,0 +1,20 @@
+================================================================================
+ Table 5: HyperGen cache vs TeaCache (CogVideoX 2K, 1 GPU)   (mode: quick)
+ host=hypergen-rebuttal-h100x8 gpu=NVIDIA H100 80GB HBM3 x8 driver=580.178.04 torch(cogvideo)=2.5.1+cu124 artifact=7ec924c date=2026-11-09T01:46:11Z
+ results -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae    videos -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/videos
+================================================================================
+[01:46:11] run   nocache thr=0 on GPU offset 0
+[01:54:54]       nocache thr=0 rc=0 stage2=412.5331633090973s skip=
+[01:54:54] run   ours thr=0.15 on GPU offset 0
+[02:00:14]       ours thr=0.15 rc=0 stage2=209.9461808204651s skip=0.4929
+[02:00:14] run   ours thr=0.20 on GPU offset 0
+[02:05:06]       ours thr=0.20 rc=0 stage2=180.531183719635s skip=0.5643
+[02:05:06] run   teacache thr=0.10 on GPU offset 0
+[02:10:43]       teacache thr=0.10 rc=0 stage2=224.57720589637756s skip=0.4571
+[02:10:43] run   teacache thr=0.20 on GPU offset 0
+[02:14:44]       teacache thr=0.20 rc=0 stage2=130.5016212463379s skip=0.6857
+[02:15:58] ours thr=0.15  speedup=1.96x  psnr,ssim,lpips=40.471,0.972,0.017
+[02:17:12] ours thr=0.20  speedup=2.29x  psnr,ssim,lpips=39.650,0.970,0.022
+[02:18:28] teacache thr=0.10  speedup=1.84x  psnr,ssim,lpips=40.512,0.972,0.017
+[02:19:43] teacache thr=0.20  speedup=3.16x  psnr,ssim,lpips=38.905,0.968,0.026
+[02:19:43] done. Next: bash plots/make_all.sh --results /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae

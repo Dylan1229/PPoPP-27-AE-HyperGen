@@ -1,0 +1,15 @@
+================================================================================
+ Table 3: VBench quality (HyperGen rows)   (mode: quick)
+ host=hypergen-rebuttal-h100x8 gpu=NVIDIA H100 80GB HBM3 x8 driver=580.178.04 torch(cogvideo)=2.5.1+cu124 artifact=7ec924c date=2026-11-09T01:38:28Z
+ results -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae    videos -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/videos
+================================================================================
+[01:38:28] run   cog 2k nocache 4GPU :: a person is putting sauce on a burger
+[01:42:20]       rc=0  stage2=105.09433460235596s  wall=232s
+[01:42:20] run   cog 2k cache 4GPU :: a person is putting sauce on a burger
+[01:45:33]       rc=0  stage2=60.67179846763611s  wall=193s
+[vbench] cog__2k__nocache: 1 video(s)
+    v1_subject=97.71  v2_background=94.09  v3_motion=98.90  v4_aesthetic=74.85  v5_imaging=72.85  avg=87.68
+[vbench] cog__2k__cache: 1 video(s)
+    v1_subject=97.41  v2_background=94.01  v3_motion=98.88  v4_aesthetic=74.17  v5_imaging=73.50  avg=87.59
+wrote /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae/T5_algo/latency.tsv (2 HyperGen cell(s), 0 baseline cell(s))
+[01:46:09] done. Next: bash plots/make_all.sh --results /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae

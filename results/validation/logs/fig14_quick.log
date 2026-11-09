@@ -1,0 +1,10 @@
+================================================================================
+ Figure 14: workload rebalance (4K, cache on)   (mode: quick)
+ host=hypergen-rebuttal-h100x8 gpu=NVIDIA H100 80GB HBM3 x8 driver=580.178.04 torch(cogvideo)=2.5.1+cu124 artifact=1ef94ae date=2026-11-09T01:03:00Z
+ results -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae    videos -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/videos
+================================================================================
+[01:03:00] run   fig14  cog 4k cache_reb0 4GPU ENABLE_REDISTRIBUTE=0
+[01:09:32]       rc=0  stage2=194.8105664253235s  skip=0.4571  wall=391s
+[01:09:32] run   fig14  cog 4k cache_reb1 4GPU ENABLE_REDISTRIBUTE=1
+[01:15:41]       rc=0  stage2=168.69343638420105s  skip=0.4429  wall=369s
+[01:15:41] done. Next: bash plots/make_all.sh --results /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae

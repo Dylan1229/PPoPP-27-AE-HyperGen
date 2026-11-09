@@ -1,0 +1,14 @@
+{
+  "title": "HyperGen: Artifact for \"Empowering Ultra-high-resolution Video Generation Framework with Sketch-Tile Collaboration\" (PPoPP 2027)",
+  "upload_type": "software",
+  "description": "Artifact of the PPoPP 2027 paper HyperGen: the implementation (two-stage tiled generation, region-aware cache, cache-guided tile parallelism) for CogVideoX-1.5, HunyuanVideo and Wan2.1; runners for every experiment in the paper's evaluation (Tables 3-5, Figures 11-14); the VBench and PSNR/SSIM/LPIPS scoring pipeline; the raw measurements behind the paper's tables and figures; and the scripts that regenerate the tables and figures.",
+  "license": "Apache-2.0",
+  "keywords": ["video generation", "diffusion transformers", "ultra-high resolution", "caching", "tile parallelism", "artifact evaluation", "PPoPP"],
+  "creators": [
+    {"name": "Ye, Fanjiang", "affiliation": "Rice University"},
+    {"name": "Wang, Yuke", "affiliation": "Rice University"}
+  ],
+  "related_identifiers": [
+    {"identifier": "https://github.com/Dylan1229/PPoPP-27-AE-HyperGen", "relation": "isSupplementTo", "scheme": "url"}
+  ]
+}

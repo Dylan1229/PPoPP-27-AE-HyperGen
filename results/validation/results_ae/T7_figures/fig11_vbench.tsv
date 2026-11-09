@@ -1,0 +1,9 @@
+config	res	ngpu	variant	n_videos	v1_subject	v2_background	v3_motion	v4_aesthetic	v5_imaging	avg
+cog	2k	4	cache	1	97.37	94.92	98.88	74.06	73.57	87.76
+cog	2k	1	nocache	1	97.67	95.20	98.90	75.06	72.86	87.94
+cog	2k	1	cache	1	97.66	95.10	98.89	75.77	73.15	88.11
+hunyuan	2k	4	nocache	1	99.28	98.47	99.69	64.91	76.62	87.79
+hunyuan	2k	4	cache	1	99.31	98.96	99.66	66.11	76.66	88.14
+wan_i2v	2k	4	nocache	1	96.15	94.66	98.54	78.21	74.31	88.37
+wan_i2v	2k	4	cache	1	95.93	93.99	98.55	75.36	74.75	87.72
+cog	2k	4	nocache	1	97.74	95.05	98.90	74.98	72.95	87.92

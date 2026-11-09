@@ -1,0 +1,19 @@
+{
+  "key": "freeswim__2k__a_person_is_putting_sauce_on_a_burger",
+  "video_sha256": "6c2964ca2965ef5630dca56080827b1ca372572f986e3f45509c67d21b255c4f",
+  "host": "node1",
+  "gpus": "4",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "e7bd6bc01d3828b4ced17affba06e007293250d2",
+  "experiments_commit": "9b0abad62ae3e2b1e5158c2164a5d6adf2714d0e",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T14:27:06Z",
+  "remote_script": "",
+  "baseline": {"method": "freeswim", "resolution": "2k", "lora": false}
+}

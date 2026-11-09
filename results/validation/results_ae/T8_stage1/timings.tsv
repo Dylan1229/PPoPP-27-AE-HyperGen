@@ -1,0 +1,3 @@
+config	res	host	gpus	wall_s	stage1_s	rc	clocks
+cog	720p	hypergen-rebuttal-h100x8	0		147.43048691749573	0	
+cog	720p	hypergen-rebuttal-h100x8	0		149.25982975959778	0	

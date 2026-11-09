@@ -1,0 +1,61 @@
+results: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/gs
+output:  /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/gs
+
+---- Table 3
+ERROR: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/gs/T1_quality/vbench.tsv not found -- run scripts/run_table3.sh first
+
+---- Table 4
+Incomplete or suspect:
+  cog 2k 1GPU: missing cache, nocache
+  hunyuan 2k 1GPU: missing cache, nocache
+  wan_i2v 2k 1GPU: missing cache, nocache
+  hunyuan 2k 4GPU: missing cache, nocache
+  wan_i2v 2k 4GPU: missing cache, nocache
+  cog 4k 4GPU: missing cache, nocache
+  hunyuan 4k 4GPU: missing cache, nocache
+  wan_i2v 4k 4GPU: missing cache, nocache
+
+wrote /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/gs/tables/table4_cache_speedup.tex
+2 fig11 timings, 1 scored cells
+
+---- Table 5
+ERROR: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/gs/T2_baselines/quality.tsv not found -- run scripts/run_table5.sh
+
+---- Figure 11
+no backbone has a complete set of six fig10 points plus a Stage-1 measurement
+
+---- Figure 12
+note: fig12 cog 4k 'baseline' not measured (a --quick run skips the 1-GPU baseline); plotting the remaining steps
+note: fig12 cog 4k 'tilepar' not measured (a --quick run skips the 1-GPU baseline); plotting the remaining steps
+note: fig12 cog 4k 'cache' not measured (a --quick run skips the 1-GPU baseline); plotting the remaining steps
+note: fig12 cog 4k 'regionaware' not measured (a --quick run skips the 1-GPU baseline); plotting the remaining steps
+note: fig12 cog 4k 'rebalance' not measured (a --quick run skips the 1-GPU baseline); plotting the remaining steps
+Stage-2 latency, cog at 4k
+Traceback (most recent call last):
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/plots/fig12_breakdown.py", line 149, in <module>
+    main()
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/plots/fig12_breakdown.py", line 100, in main
+    print(f"  (Stage 1 = {s1:.1f}s and upscale ~{detail[0][2]:.0f}s are identical in every bar, so "
+IndexError: list index out of range
+
+---- Figure 13
+no fig13 rows to plot
+
+---- Figure 14
+no complete fig14 pairs (w/o and w/ rebalance) to plot
+
+---- summary: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/gs/summary.md
+# Key numbers: `gs` vs. the paper
+
+Latencies are Stage 2 unless stated; absolute seconds depend on the machine, so compare
+speedups and retention. Single-prompt VBench is noisy.
+
+## Table 4 - cache: Stage-2 latency w/ / w/o, speedup, retention
+
+| backbone | setting | this run: s (w/ / w/o) | speedup | PSNR | LPIPS | paper: speedup | PSNR | LPIPS |
+|---|---|---|---|---|---|---|---|---|
+| cog | 2k 4 GPU | 61 / 105 | 1.73x | 37.04 | 0.039 | 1.74x | 37.08 | 0.039 |
+
+generated: Table 4
+skipped (inputs missing or incomplete, see messages above): Table 3 Table 5 Figure 11 Figure 12 Figure 13 Figure 14
+tables:  /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/gs/tables    figures: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/gs/figures    previews: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/gs/previews

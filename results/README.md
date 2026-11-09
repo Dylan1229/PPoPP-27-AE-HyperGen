@@ -1,0 +1,3 @@
+- `paper/`: the measurements behind the paper's tables and figures ([README](paper/README.md)).
+- `ae/` (created by the runners, git-ignored): your measurements, same layout and columns.
+- `validation/`: the logs and TSVs from our own run of the artifact on a fresh machine before submission.

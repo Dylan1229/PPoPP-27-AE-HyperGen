@@ -1,0 +1,19 @@
+{
+  "key": "hunyuan__2k__thr0.04",
+  "video_sha256": "d5d5d004739fe9384506f9ebac18f7713498c437edd8615f2a8d5b729ed6d80d",
+  "host": "node5",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "e7bd6bc01d3828b4ced17affba06e007293250d2",
+  "experiments_commit": "2673c6fbc8f5d061a151fd3ea050e6d2c913c1f8",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T21:47:47Z",
+  "remote_script": "#!/usr/bin/env bash\nset -uo pipefail\nmkdir -p \"/tmp/T6/hunyuan__2k__thr0.04\" \"/home/ubuntu/stage1_cache\"\ncd /home/ubuntu/repo/SuperGen/HunyuanVideoI2V\nln -sfn /home/ubuntu/ckpts/HunyuanVideo-I2V ckpts 2>/dev/null\nsource /home/ubuntu/repo/UltraGen-PPoPP-experiments/run/lib/hunyuan_flags.sh\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True  \\\nCUDA_VISIBLE_DEVICES=0,1,2,3 \\\n/home/ubuntu/envs/hunyuan/bin/torchrun --nproc_per_node=$(echo 0,1,2,3 | tr ',' '\\n' | wc -l) \\\n  --master_port 54418 sample_image2video.py \\\n  $HUNYUAN_REQUIRED_FLAGS $HUNYUAN_WEIGHT_FLAGS $HUNYUAN_TWOSTAGE_FLAGS $HUNYUAN_SHIFT_FLAGS \\\n  --prompt \"a mountain range with a sky background\" --i2v-image-path \"/home/ubuntu/repo/UltraGen-PPoPP-experiments/inputs/2k_1440x2560/a mountain range with a sky background.jpg\" \\\n  --video-size 1440 2560 --video-length 41 --infer-steps 50 \\\n  --upscale-factor 2 --upscale-res-steps 35 --seed 0 \\\n  --save-path \"/tmp/T6/hunyuan__2k__thr0.04\" --loop-step 16 \\\n  --save-intermediate --output-dir \"/tmp/T6/hunyuan__2k__thr0.04\" --load-prev-latents-path \"/home/ubuntu/stage1_cache/hunyuan_2k_a_mountain_range_with_a_sky_background.pt\" \\\n  --enable-region-aware-cache --enable-intra-tile-cache --cache-thresh 0.04 --static-tile-cache-scale-factor 0.5 > \"/tmp/T6/hunyuan__2k__thr0.04/run_log.log\" 2>&1\nrc=$?; echo \"exit=$rc\" >> \"/tmp/T6/hunyuan__2k__thr0.04/run_log.log\"; exit $rc\n",
+  "sweep": {"cache_thresh": "0.04", "scale": 0.5}
+}

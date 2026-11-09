@@ -1,0 +1,23 @@
+config	res	variant	ngpu	stage2_s	n_runs	note
+cog	720p	nocache	4	104	2	720p runs the two-stage path at upscale_factor=1, so its stage 2 IS the 720p denoise
+cog	2k	nocache	4	106	1	last fig11 run at this backbone's operating point (matches Table 4)
+cog	2k	cache	4	61	1	last fig11 run at this backbone's operating point (matches Table 4)
+cog	4k	nocache	4	315	1	last fig11 run at this backbone's operating point (matches Table 4)
+cog	4k	cache	4	187	1	last fig11 run at this backbone's operating point (matches Table 4)
+hunyuan	720p	nocache	4	187	4	720p runs the two-stage path at upscale_factor=1, so its stage 2 IS the 720p denoise
+hunyuan	2k	nocache	4	191	2	last fig11 run at this backbone's operating point (matches Table 4)
+hunyuan	2k	cache	4	143	2	last fig11 run at this backbone's operating point (matches Table 4)
+hunyuan	4k	nocache	4	566	1	last fig11 run at this backbone's operating point (matches Table 4)
+hunyuan	4k	cache	4	501	1	last fig11 run at this backbone's operating point (matches Table 4)
+wan_i2v	2k	nocache	4	477	1	last fig11 run at this backbone's operating point (matches Table 4)
+wan_i2v	2k	cache	4	388	1	last fig11 run at this backbone's operating point (matches Table 4)
+wan_i2v	4k	nocache	4	1384	1	last fig11 run at this backbone's operating point (matches Table 4)
+wan_i2v	4k	cache	4	1128	1	last fig11 run at this backbone's operating point (matches Table 4)
+wan_t2v	2k	nocache	4	459	1	last fig11 run at this backbone's operating point (matches Table 4)
+wan_t2v	2k	cache	4	365	1	last fig11 run at this backbone's operating point (matches Table 4)
+wan_t2v	4k	nocache	4	1341	3	T1_quality median; the fig11 block has no wan_t2v 4K no-cache cell
+wan_t2v	4k	cache	4	865	1	last fig11 run at this backbone's operating point (matches Table 4)
+cinescale	2k	nocache	4	1219	1	high-res stage from its own progress bar (20:19); wall 1594s
+cinescale	4k	nocache	4	5519	1	high-res stage from its own progress bar (1:31:59); wall 5975s
+freeswim	2k	nocache	1	10864	1	35 high-res steps at 310.4 s/it = 3:01:04; wall 12539s; released codebase is single-GPU only
+freeswim	4k	nocache	1		0	OOM: asks a further 13.60 GiB with 5.63 GiB free of 79.18 GiB

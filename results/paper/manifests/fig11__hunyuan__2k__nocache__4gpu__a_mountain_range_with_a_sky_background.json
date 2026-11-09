@@ -1,0 +1,19 @@
+{
+  "key": "fig11__hunyuan__2k__nocache__4gpu__a_mountain_range_with_a_sky_background",
+  "video_sha256": "cf27933206a76de8ff754b7ccbc7b13dc133220e5400dd00a8879d73c0078d15",
+  "host": "node5",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "e7bd6bc01d3828b4ced17affba06e007293250d2",
+  "experiments_commit": "2673c6fbc8f5d061a151fd3ea050e6d2c913c1f8",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T22:52:02Z",
+  "remote_script": "#!/usr/bin/env bash\nset -uo pipefail\nmkdir -p \"/tmp/T7/fig11__hunyuan__2k__nocache__4gpu__a_mountain_range_with_a_sky_background\" \"/home/ubuntu/stage1_cache\"\ncd /home/ubuntu/repo/SuperGen/HunyuanVideoI2V\nln -sfn /home/ubuntu/ckpts/HunyuanVideo-I2V ckpts 2>/dev/null\nsource /home/ubuntu/repo/UltraGen-PPoPP-experiments/run/lib/hunyuan_flags.sh\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True ENABLE_REDISTRIBUTE=0 \\\nCUDA_VISIBLE_DEVICES=0,1,2,3 \\\n/home/ubuntu/envs/hunyuan/bin/torchrun --nproc_per_node=$(echo 0,1,2,3 | tr ',' '\\n' | wc -l) \\\n  --master_port 57745 sample_image2video.py \\\n  $HUNYUAN_REQUIRED_FLAGS $HUNYUAN_WEIGHT_FLAGS $HUNYUAN_TWOSTAGE_FLAGS $HUNYUAN_SHIFT_FLAGS \\\n  --prompt \"a mountain range with a sky background\" --i2v-image-path \"/home/ubuntu/repo/UltraGen-PPoPP-experiments/inputs/2k_1440x2560/a mountain range with a sky background.jpg\" \\\n  --video-size 1440 2560 --video-length 41 --infer-steps 50 \\\n  --upscale-factor 2 --upscale-res-steps 35 --seed 0 \\\n  --save-path \"/tmp/T7/fig11__hunyuan__2k__nocache__4gpu__a_mountain_range_with_a_sky_background\" --loop-step 16 \\\n  --save-intermediate --output-dir \"/tmp/T7/fig11__hunyuan__2k__nocache__4gpu__a_mountain_range_with_a_sky_background\" --load-prev-latents-path \"/home/ubuntu/stage1_cache/hunyuan_2k_a_mountain_range_with_a_sky_background.pt\" \\\n   > \"/tmp/T7/fig11__hunyuan__2k__nocache__4gpu__a_mountain_range_with_a_sky_background/run_log.log\" 2>&1\nrc=$?; echo \"exit=$rc\" >> \"/tmp/T7/fig11__hunyuan__2k__nocache__4gpu__a_mountain_range_with_a_sky_background/run_log.log\"; exit $rc\n",
+  "figure": {"block": "fig11", "variant": "nocache", "ngpu": 4, "env": "ENABLE_REDISTRIBUTE=0"}
+}

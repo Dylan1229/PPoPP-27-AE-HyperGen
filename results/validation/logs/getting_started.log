@@ -1,0 +1,66 @@
+######## 1/5  pre-flight check
+== hardware
+  [ ok ] 8 GPU(s): 8 NVIDIA H100 80GB HBM3, 81559 MiB 
+     GPU_LIST=0,1,2,3,4,5,6,7 (8 usable by the runners)
+  [ ok ] ffmpeg / ffprobe on PATH (VBench downscales 4K videos with them)
+     disk: 778G free on /
+== environments (/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs)
+  [ ok ] cogvideo  (torch, diffusers 0.33.1)
+  [ ok ] hunyuan   (torch 2.4, flash-attn)
+  [MISS] wan       (torch, flash-attn, Wan2.1 runtime at /home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1)
+  [ ok ] vbench    (VBench)
+  [ ok ] metrics   (lpips, scikit-image, PyAV, matplotlib)
+  [ ok ] cinescale (Table 3 baseline; optional)
+  [ ok ] freeswim  (Table 3 baseline; optional)
+== weights (/home/fanjiang/ckpts)
+  [ ok ] CogVideoX1.5-5B-I2V      /home/fanjiang/ckpts/CogVideoX1.5-5B-I2V
+  [ ok ] HunyuanVideo-I2V         /home/fanjiang/ckpts/HunyuanVideo-I2V
+  [MISS] Wan2.1-I2V-14B-720P      /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P
+  [ ok ] Wan2.1-T2V-14B           /home/fanjiang/ckpts/Wan2.1-T2V-14B
+  [MISS] Wan2.1-T2V-14B-Diffusers /home/fanjiang/ckpts/Wan2.1-T2V-14B-Diffusers (FreeSwim only; optional)
+== input data
+  [ ok ] prompt lists and conditioning images (50 images)
+
+== what can run
+  getting started / --quick Tables 4-5, Figs 11-14 yes
+  Table 3 --quick (CogVideoX)                      yes
+  Table 3 --full (CogVideoX, Hunyuan, Wan T2V)     no (needs: wan)
+  Table 4 / Figure 11 --full (+ Wan I2V)           no (needs: wan w_wani2v)
+  Figures 13-14 --full (+ Hunyuan)                 yes
+  Table 3 baselines: CineScale                     yes
+  Table 3 baselines: FreeSwim                      no (needs: w_wand)
+
+12 ok, 3 missing
+
+######## 2/5  tables and figures from the paper's raw data (no GPU)
+skipped (data incomplete):
+generated: Table 3 Table 4 Table 5 Figure 11 Figure 12 Figure 13 (published values) Figure 14 (published values) Figure 13 (measured, final code)
+tables:  /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/paper/tables    figures: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/paper/figures    previews: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/paper/previews
+   (full log: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/make_all_paper.log; compare out/paper/tables/*.tex with the PDF)
+
+######## 3-4/5  CogVideoX 2K on 4 GPUs, without and with the cache, then scoring
+================================================================================
+ Table 4: cache speedup and retention   (mode: quick)
+ host=hypergen-rebuttal-h100x8 gpu=NVIDIA H100 80GB HBM3 x8 driver=580.178.04 torch(cogvideo)=2.5.1+cu124 artifact=b15d728 date=2026-11-09T00:27:49Z
+ results -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae    videos -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/videos
+================================================================================
+[00:27:49] run   fig11  cog 2k nocache 4GPU ENABLE_REDISTRIBUTE=0
+[00:35:56]       rc=0  stage2=105.10004186630249s  skip=n/a  wall=486s
+[00:35:56] run   fig11  cog 2k cache 4GPU ENABLE_REDISTRIBUTE=0
+[00:39:10]       rc=0  stage2=60.655877351760864s  skip=0.4286  wall=193s
+[00:40:24] retention cog 2k 4GPU: psnr,ssim,lpips = 28.931,0.924,0.088
+[vbench] cog__2k__4__nocache: 1 video(s)
+    v1_subject=97.40  v2_background=95.84  v3_motion=98.84  v4_aesthetic=72.46  v5_imaging=72.54  avg=87.42
+[vbench] cog__2k__4__cache: 1 video(s)
+    v1_subject=97.37  v2_background=94.92  v3_motion=98.88  v4_aesthetic=74.06  v5_imaging=73.57  avg=87.76
+[00:41:06] done. Next: bash plots/make_all.sh --results /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae
+
+######## 5/5  Table 4 from this run
+## Table 4 - cache: Stage-2 latency w/ / w/o, speedup, retention
+
+| backbone | setting | this run: s (w/ / w/o) | speedup | PSNR | LPIPS | paper: speedup | PSNR | LPIPS |
+|---|---|---|---|---|---|---|---|---|
+
+generated table: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/ae/tables/table4_cache_speedup.tex
+videos:          /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/videos/T7/
+getting started finished in 14 min

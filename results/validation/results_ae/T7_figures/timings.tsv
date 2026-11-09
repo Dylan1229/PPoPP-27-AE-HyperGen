@@ -1,0 +1,26 @@
+block	config	res	variant	ngpu	prompt	host	wall_s	stage1_s	upscale_s	stage2_s	skip_rate	rc	collected	clocks	exclusive	thresh	rebalance
+fig11	cog	2k	nocache	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	486	147.7219467163086	24.59100914001465	105.10004186630249		0	1	345/1980/0	1		0
+fig11	cog	2k	cache	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	193		24.623746156692505	60.655877351760864	0.4286	0	1	345/1980/0	1	0.20	0
+fig12	cog	4k	tilepar	4	a bunch of houses that are on a hillside	hypergen-rebuttal-h100x8	666	149.04014992713928	44.294551610946655	313.1722548007965		0	1	345/1980/0	1		0
+fig11	cog	2k	nocache	1	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	522		24.34154963493347	412.5098910331726		0	1	1980/1980/0	1		0
+fig12	cog	4k	cache	4	a bunch of houses that are on a hillside	hypergen-rebuttal-h100x8	419		44.36784100532532	224.72832012176514	0.3429	0	1	345/1980/0	1	0.20	0
+fig11	cog	2k	cache	1	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	290		24.3949875831604	180.55116295814514	0.5643	0	1	1980/1980/0	1	0.20	0
+fig12	cog	4k	regionaware	4	a bunch of houses that are on a hillside	hypergen-rebuttal-h100x8	383		44.38177299499512	186.14374041557312	0.4429	0	1	345/1980/0	1	0.20	0
+fig12	cog	4k	rebalance	4	a bunch of houses that are on a hillside	hypergen-rebuttal-h100x8	359		44.30255699157715	162.5511589050293	0.4429	0	1	345/1980/0	1	0.20	1
+fig10	cog	2k	origin	1	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	668	147.4252827167511	24.306872844696045	412.3473279476166		0	1	1980/1980/0	1		0
+fig14	cog	4k	cache_reb0	4	a bunch of houses that are on a hillside	hypergen-rebuttal-h100x8	391		44.25684976577759	194.8105664253235	0.4571	0	1	345/1980/0	1	0.20	0
+fig10	cog	2k	parallel	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	378	147.43048691749573	24.64170217514038	105.13685393333435		0	1	345/1980/0	1		1
+fig14	cog	4k	cache_reb1	4	a bunch of houses that are on a hillside	hypergen-rebuttal-h100x8	369		44.359299421310425	168.69343638420105	0.4429	0	1	345/1980/0	1	0.20	1
+fig10	cog	2k	parcache	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	367	147.46514081954956	24.63968777656555	93.31780862808228	0.5714	0	1	345/1980/0	1	0.20	1
+fig13	cog	2k	nocache	1	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	523		24.35657811164856	412.5508940219879		0	1	1980/1980/0	1		0
+fig10	cog	2k	stage1	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	384	149.25982975959778	24.618445873260498	105.18741655349731		0	1	345/1980/0	1		0
+fig13	cog	2k	nocache	2	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	335		24.56470823287964	208.82779955863953		0	1	345/1980/0	1		0
+fig13	cog	2k	nocache	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	233		24.665398836135864	105.08298087120056		0	1	345/1980/0	1		0
+fig10	cog	2k	origin	1	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	527		24.36603832244873	416.8245677947998		0	1	1980/1980/0	1		0
+fig10	cog	2k	parallel	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	233		24.684985876083374	105.23147177696228		0	1	345/1980/0	1		1
+fig10	cog	2k	parcache	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	195		24.668182134628296	66.63683223724365	0.6286	0	1	345/1980/0	1	0.20	1
+fig11	hunyuan	2k	nocache	4	a mountain range with a sky background	hypergen-rebuttal-h100x8	298		0.0019674301147460938	189.2455108165741		0	1	345/1980/0	1		0
+fig11	hunyuan	2k	cache	4	a mountain range with a sky background	hypergen-rebuttal-h100x8	251		0.0011374950408935547	140.97507548332214	0.2571	0	1	345/1980/0	1	0.06	0
+fig11	wan_i2v	2k	nocache	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	638	0.0045	12.6502	488.6061728000641		0	1	555/1980/0	1		0
+fig11	wan_i2v	2k	cache	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	561	0.0072	12.6513	409.307076215744	0.3429	0	1	390/1980/0	1	0.15	0
+fig11	cog	2k	nocache	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	232		24.596237421035767	104.9951651096344		0	1	345/1980/0	1		0

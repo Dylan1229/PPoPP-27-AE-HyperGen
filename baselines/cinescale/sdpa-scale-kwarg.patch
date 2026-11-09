@@ -1,0 +1,18 @@
+diff --git a/diffsynth/models/wan_video_dit.py b/diffsynth/models/wan_video_dit.py
+index 895d5e8..f3e2dd4 100644
+--- a/diffsynth/models/wan_video_dit.py
++++ b/diffsynth/models/wan_video_dit.py
+@@ -52,7 +52,12 @@ def flash_attention(q: torch.Tensor, k: torch.Tensor, v: torch.Tensor, num_heads
+         else:
+             attention_scale = None
+ 
+-        x = F.scaled_dot_product_attention(q, k, v, softmax_scale=attention_scale)
++        # UPSTREAM BUG: `softmax_scale` is FlashAttention's parameter name; PyTorch's
++        # scaled_dot_product_attention calls it `scale`. So CineScale's own
++        # PyTorch fallback path crashes whenever flash_attn is absent. The two are
++        # semantically identical, so rename it. Also pass it only when set, since
++        # scale=None means "use the default 1/sqrt(d)" and is safe either way.
++        x = F.scaled_dot_product_attention(q, k, v, scale=attention_scale)
+         x = rearrange(x, "b n s d -> b s (n d)", n=num_heads)
+     return x
+ 

@@ -1,0 +1,19 @@
+{
+  "key": "cog__2k__cache__a_man_and_a_child_riding_bumper_cars_in_an_amusement_park",
+  "video_sha256": "15fea42d65c75336bcc5040e1a8cbed6de560779faf8b57ebc8803004645d653",
+  "host": "node2",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "2eceb659f5117708d48cdb0244d3f12cd4101e76",
+  "experiments_commit": "d2e2538605c9d825e553c9c572ae167e957d1339",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-02T10:41:23Z",
+  "remote_script": "#!/usr/bin/env bash\nset -uo pipefail\nmkdir -p \"/tmp/T1/cog_2k_cache/a_man_and_a_child_riding_bumper_cars_in_an_amusement_park\" \"/home/ubuntu/stage1_cache\"\ncd /home/ubuntu/repo/SuperGen\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \\\nLOW_RES_SAVE_PATH=\"/home/ubuntu/stage1_cache/cog_2k_a_man_and_a_child_riding_bumper_cars_in_an_amusement_park.pt\" \\\nCUDA_VISIBLE_DEVICES=0,1,2,3 TP_SIZE=$(echo 0,1,2,3 | tr ',' '\\n' | wc -l) \\\n/home/ubuntu/envs/cogvideo/bin/torchrun --nproc_per_node=$(echo 0,1,2,3 | tr ',' '\\n' | wc -l) \\\n  --master_port 38052 CogvideoI2V/pipeline.py \\\n  --prompt \"a man and a child riding bumper cars in an amusement park\" --model_path /home/ubuntu/ckpts/CogVideoX1.5-5B-I2V --generate_type i2v \\\n  --image_or_video_path \"/home/ubuntu/repo/UltraGen-PPoPP-experiments/inputs/2k_1440x2560/a man and a child riding bumper cars in an amusement park.jpg\" \\\n  --width 2560 --height 1440 --upscale_factor 2 \\\n  --num_inference_steps 50 --upscale_res_steps 35 --guidance_scale 6.0 \\\n  --num_frames 41 --fps 8 --seed 0 \\\n  --output_path \"/tmp/T1/cog_2k_cache/a_man_and_a_child_riding_bumper_cars_in_an_amusement_park/video.mp4\" \\\n  --low_res_latents_path \"/home/ubuntu/stage1_cache/cog_2k_a_man_and_a_child_riding_bumper_cars_in_an_amusement_park.pt\" \\\n  --loop_step 16 --shift_timesteps $(seq -s, 0 $((35 - 1))) \\\n  --detail_reinject_scale 2.0 --attn_scale_coef 1.0 \\\n  --cache_method ours --enable_region_aware_cache --enable_intra_tile_cache --static_tile_cache_scale_factor 0.5 --cache_thresh 0.25 > \"/tmp/T1/cog_2k_cache/a_man_and_a_child_riding_bumper_cars_in_an_amusement_park/run_log.log\" 2>&1\nrc=$?; echo \"exit=$rc\" >> \"/tmp/T1/cog_2k_cache/a_man_and_a_child_riding_bumper_cars_in_an_amusement_park/run_log.log\"; exit $rc\n",
+  "cell": {"config": "cog", "resolution": "2k", "variant": "cache", "prompt": "a man and a child riding bumper cars in an amusement park"}
+}

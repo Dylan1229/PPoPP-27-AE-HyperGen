@@ -1,0 +1,492 @@
+W1109 03:35:20.876000 68597 torch/distributed/run.py:793] 
+W1109 03:35:20.876000 68597 torch/distributed/run.py:793] *****************************************
+W1109 03:35:20.876000 68597 torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1109 03:35:20.876000 68597 torch/distributed/run.py:793] *****************************************
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:31: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:42: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @amp.autocast(enabled=False)
+[W1109 03:35:26.643571953 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+Communication method: allgather
+2026-11-09 03:35:26,479 [INFO] [rank=0/4] tile parallelism enabled
+2026-11-09 03:35:26,479 [INFO] Stage 1 at 720x1280; Stage 2 target 1440x2560 (upscale_factor=2)
+2026-11-09 03:35:26,479 [INFO] loading Wan2.1-I2V-14B ...
+[W1109 03:35:26.931357681 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+Communication method: allgather
+2026-11-09 03:35:26,766 [INFO] [rank=2/4] tile parallelism enabled
+2026-11-09 03:35:26,766 [INFO] Stage 1 at 720x1280; Stage 2 target 1440x2560 (upscale_factor=2)
+2026-11-09 03:35:26,766 [INFO] loading Wan2.1-I2V-14B ...
+[W1109 03:35:26.951537140 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+Communication method: allgather
+2026-11-09 03:35:26,786 [INFO] [rank=1/4] tile parallelism enabled
+2026-11-09 03:35:26,787 [INFO] Stage 1 at 720x1280; Stage 2 target 1440x2560 (upscale_factor=2)
+2026-11-09 03:35:26,787 [INFO] loading Wan2.1-I2V-14B ...
+[W1109 03:35:26.953138641 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+Communication method: allgather
+2026-11-09 03:35:26,788 [INFO] [rank=3/4] tile parallelism enabled
+2026-11-09 03:35:26,788 [INFO] Stage 1 at 720x1280; Stage 2 target 1440x2560 (upscale_factor=2)
+2026-11-09 03:35:26,788 [INFO] loading Wan2.1-I2V-14B ...
+2026-11-09 03:36:14,653 [INFO] loading /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P/models_t5_umt5-xxl-enc-bf16.pth
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/t5.py:496: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location='cpu'))
+2026-11-09 03:36:15,107 [INFO] loading /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P/models_t5_umt5-xxl-enc-bf16.pth
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/t5.py:496: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location='cpu'))
+2026-11-09 03:36:15,213 [INFO] loading /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P/models_t5_umt5-xxl-enc-bf16.pth
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/t5.py:496: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location='cpu'))
+2026-11-09 03:36:19,315 [INFO] loading /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P/models_t5_umt5-xxl-enc-bf16.pth
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/t5.py:496: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(checkpoint_path, map_location='cpu'))
+2026-11-09 03:36:23,636 [INFO] loading /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P/Wan2.1_VAE.pth
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/vae.py:614: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  torch.load(pretrained_path, map_location=device), assign=True)
+2026-11-09 03:36:24,035 [INFO] loading /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P/Wan2.1_VAE.pth
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/vae.py:614: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  torch.load(pretrained_path, map_location=device), assign=True)
+2026-11-09 03:36:24,086 [INFO] loading /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/clip.py:519: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  torch.load(checkpoint_path, map_location='cpu'))
+2026-11-09 03:36:24,087 [INFO] loading /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P/Wan2.1_VAE.pth
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/vae.py:614: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  torch.load(pretrained_path, map_location=device), assign=True)
+2026-11-09 03:36:24,472 [INFO] loading /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/clip.py:519: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  torch.load(checkpoint_path, map_location='cpu'))
+2026-11-09 03:36:24,535 [INFO] loading /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/clip.py:519: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  torch.load(checkpoint_path, map_location='cpu'))
+2026-11-09 03:36:27,875 [INFO] loading /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P/Wan2.1_VAE.pth
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/vae.py:614: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  torch.load(pretrained_path, map_location=device), assign=True)
+2026-11-09 03:36:28,288 [INFO] loading /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/clip.py:519: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  torch.load(checkpoint_path, map_location='cpu'))
+2026-11-09 03:36:28,629 [INFO] Creating WanModel from /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P
+Loading checkpoint shards: 100%|██████████| 7/7 [00:00<00:00, 117.12it/s]
+[rank3]:[W1109 03:36:28.903636299 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+2026-11-09 03:36:28,985 [INFO] Creating WanModel from /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P
+2026-11-09 03:36:29,002 [INFO] Creating WanModel from /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P
+Loading checkpoint shards: 100%|██████████| 7/7 [00:00<00:00, 113.76it/s]
+[rank1]:[W1109 03:36:29.261079047 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+Loading checkpoint shards: 100%|██████████| 7/7 [00:00<00:00, 116.70it/s]
+[rank2]:[W1109 03:36:29.272664067 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+2026-11-09 03:36:32,442 [INFO] Creating WanModel from /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P
+Loading checkpoint shards: 100%|██████████| 7/7 [00:00<00:00, 119.99it/s]
+[rank0]:[W1109 03:36:32.712842566 ProcessGroupNCCL.cpp:4115] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device,or call init_process_group() with a device_id.
+2026-11-09 03:36:34,355 [INFO] Stage 1: generating the low-resolution guide
+2026-11-09 03:36:34,371 [INFO] First Stage Running time: 0.0004 seconds
+2026-11-09 03:36:34,371 [INFO] Upsampling Running time: 0.0001 seconds -> latent (16, 11, 180, 320)
+2026-11-09 03:36:34,387 [INFO] First Stage Running time: 0.0004 seconds
+2026-11-09 03:36:34,387 [INFO] Upsampling Running time: 0.0001 seconds -> latent (16, 11, 180, 320)
+2026-11-09 03:36:34,387 [INFO] First Stage Running time: 0.0004 seconds
+2026-11-09 03:36:34,388 [INFO] Upsampling Running time: 0.0001 seconds -> latent (16, 11, 180, 320)
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/clip.py:540: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(dtype=self.dtype):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/vae.py:651: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/image2video.py:258: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.param_dtype), torch.no_grad(), no_sync():
+  0%|          | 0/50 [00:00<?, ?it/s]/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:546: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:297: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:305: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:312: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:344: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+100%|██████████| 50/50 [11:00<00:00, 13.22s/it]
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/vae.py:658: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=self.dtype):
+2026-11-09 03:48:39,457 [INFO] First Stage Running time: 725.1015 seconds
+2026-11-09 03:48:42,690 [INFO] VAE encode tiled: 1440x2560 -> 2x2 tiles of 720x1280 (+64px overlap); Wan's VAE has no spatial tiling
+2026-11-09 03:48:51,960 [INFO] Upsampling Running time: 12.5020 seconds -> latent (16, 11, 180, 320)
+2026-11-09 03:48:51,962 [INFO] re-noised to sigma=0.9208 (step index 15), keeping 7.9% of the Stage-1 signal
+2026-11-09 03:48:51,968 [INFO] re-noised to sigma=0.9208 (step index 15), keeping 7.9% of the Stage-1 signal
+2026-11-09 03:48:51,968 [INFO] re-noised to sigma=0.9208 (step index 15), keeping 7.9% of the Stage-1 signal
+2026-11-09 03:48:51,968 [INFO] re-noised to sigma=0.9208 (step index 15), keeping 7.9% of the Stage-1 signal
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/clip.py:540: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(dtype=self.dtype):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/clip.py:540: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(dtype=self.dtype):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/clip.py:540: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(dtype=self.dtype):
+2026-11-09 03:48:56,679 [INFO] per-tile CLIP features: 4 tiles (set WAN_CLIP_PER_TILE=0 for the whole-image feature)
+2026-11-09 03:48:56,696 [INFO] per-tile CLIP features: 4 tiles (set WAN_CLIP_PER_TILE=0 for the whole-image feature)
+2026-11-09 03:48:56,781 [INFO] per-tile CLIP features: 4 tiles (set WAN_CLIP_PER_TILE=0 for the whole-image feature)
+2026-11-09 03:48:56,781 [INFO] per-tile CLIP features: 4 tiles (set WAN_CLIP_PER_TILE=0 for the whole-image feature)
+2026-11-09 03:49:03,951 [INFO] I2V conditioning: y_canvas (20, 11, 180, 320) clip_fea (257, 1280)
+2026-11-09 03:49:03,951 [INFO] per-tile seq_len=39600
+2026-11-09 03:49:03,990 [INFO] I2V conditioning: y_canvas (20, 11, 180, 320) clip_fea (257, 1280)
+2026-11-09 03:49:03,990 [INFO] per-tile seq_len=39600
+2026-11-09 03:49:04,109 [INFO] I2V conditioning: y_canvas (20, 11, 180, 320) clip_fea (257, 1280)
+2026-11-09 03:49:04,109 [INFO] per-tile seq_len=39600
+2026-11-09 03:49:05,294 [INFO] VAE encode tiled: 1440x2560 -> 2x2 tiles of 720x1280 (+64px overlap); Wan's VAE has no spatial tiling
+2026-11-09 03:49:14,558 [INFO] I2V conditioning: y_canvas (20, 11, 180, 320) clip_fea (257, 1280)
+2026-11-09 03:49:14,560 [INFO] per-tile seq_len=39600
+2026-11-09 03:49:26,934 [INFO] Wan Stage-2 autocast dtype: torch.bfloat16
+2026-11-09 03:49:26,935 [INFO] Using predefined window_size: (90, 160) for latent space resolution 180x320
+2026-11-09 03:49:26,935 [INFO] SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+2026-11-09 03:49:26,935 [INFO] Wan Stage-2: canvas 180x320, 4 tiles of 90x160, step=(5,10)
+self.rank=3 indices=[[0], [1], [2], [3]]
+2026-11-09 03:49:26,937 [INFO] [rank=3] Wan Stage-2 tile parallelism: 4 tiles over 4 ranks, local=[3]
+self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0010 seconds
+2026-11-09 03:49:27,578 [INFO] Wan Stage-2 autocast dtype: torch.bfloat16
+2026-11-09 03:49:27,578 [INFO] Using predefined window_size: (90, 160) for latent space resolution 180x320
+2026-11-09 03:49:27,578 [INFO] SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+2026-11-09 03:49:27,578 [INFO] Wan Stage-2: canvas 180x320, 4 tiles of 90x160, step=(5,10)
+self.rank=0 indices=[[0], [1], [2], [3]]
+2026-11-09 03:49:27,581 [INFO] [rank=0] Wan Stage-2 tile parallelism: 4 tiles over 4 ranks, local=[0]
+self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0011 seconds
+2026-11-09 03:49:29,873 [INFO] Wan Stage-2 autocast dtype: torch.bfloat16
+2026-11-09 03:49:29,874 [INFO] Using predefined window_size: (90, 160) for latent space resolution 180x320
+2026-11-09 03:49:29,874 [INFO] SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+2026-11-09 03:49:29,874 [INFO] Wan Stage-2: canvas 180x320, 4 tiles of 90x160, step=(5,10)
+2026-11-09 03:49:29,875 [INFO] Wan Stage-2 autocast dtype: torch.bfloat16
+2026-11-09 03:49:29,875 [INFO] Using predefined window_size: (90, 160) for latent space resolution 180x320
+2026-11-09 03:49:29,875 [INFO] SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+self.rank=2 indices=[[0], [1], [2], [3]]
+2026-11-09 03:49:29,875 [INFO] Wan Stage-2: canvas 180x320, 4 tiles of 90x160, step=(5,10)
+2026-11-09 03:49:29,877 [INFO] [rank=2] Wan Stage-2 tile parallelism: 4 tiles over 4 ranks, local=[2]
+self.rank=1 indices=[[0], [1], [2], [3]]
+self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0012 seconds
+2026-11-09 03:49:29,878 [INFO] [rank=1] Wan Stage-2 tile parallelism: 4 tiles over 4 ranks, local=[1]
+self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0010 seconds
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:546: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:546: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:546: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:297: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:297: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:297: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:305: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:305: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:305: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:312: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:312: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:312: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:344: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:344: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1/wan/modules/model.py:344: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(dtype=torch.float32):
+2026-11-09 03:49:41,993 [INFO] Stage 2 step 1/35
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+
+rank0 Communicate time consumption 0.0007 seconds
+rank1 Communicate time consumption 0.0006 secondsrank2 Communicate time consumption 0.0006 seconds
+
+rank3 Communicate time consumption 0.0006 seconds
+self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+self.rank=0 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0006 secondsrank3 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+
+rank0 Communicate time consumption 0.0006 seconds
+self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+self.rank=0 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0005 seconds
+rank2 Communicate time consumption 0.0006 seconds
+rank0 Communicate time consumption 0.0006 seconds
+self.rank=0 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+rank0 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+self.rank=3 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+2026-11-09 03:50:48,407 [INFO] Stage 2 step 6/35
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+rank0 Communicate time consumption 0.0005 seconds
+rank1 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0006 seconds
+self.rank=2 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0self.rank=0 start_idx=0 end_idx=0
+
+
+
+rank3 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 secondsrank1 Communicate time consumption 0.0006 seconds
+
+rank0 Communicate time consumption 0.0007 seconds
+self.rank=0 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+self.rank=2 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+rank3 Communicate time consumption 0.0006 seconds
+rank0 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+self.rank=0 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+self.rank=2 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0006 secondsrank1 Communicate time consumption 0.0006 seconds
+
+rank2 Communicate time consumption 0.0006 seconds
+2026-11-09 03:51:54,743 [INFO] Stage 2 step 11/35
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+
+rank0 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 secondsrank3 Communicate time consumption 0.0006 secondsrank1 Communicate time consumption 0.0006 seconds
+
+
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+self.rank=1 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0005 seconds
+self.rank=2 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+
+self.rank=0 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0006 secondsrank3 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+
+rank0 Communicate time consumption 0.0006 seconds
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+self.rank=1 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0006 seconds
+rank0 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+2026-11-09 03:53:01,127 [INFO] Stage 2 step 16/35
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+
+rank0 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0005 seconds
+rank3 Communicate time consumption 0.0005 seconds
+rank1 Communicate time consumption 0.0005 seconds
+self.rank=0 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+
+
+rank3 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 secondsrank1 Communicate time consumption 0.0006 seconds
+
+rank0 Communicate time consumption 0.0007 seconds
+self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+self.rank=3 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0005 seconds
+rank3 Communicate time consumption 0.0005 secondsrank0 Communicate time consumption 0.0005 secondsrank2 Communicate time consumption 0.0005 seconds
+
+
+self.rank=1 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+
+self.rank=0 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0006 secondsrank3 Communicate time consumption 0.0006 seconds
+
+rank2 Communicate time consumption 0.0006 seconds
+rank0 Communicate time consumption 0.0006 seconds
+self.rank=0 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0006 seconds
+rank0 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+2026-11-09 03:54:07,571 [INFO] Stage 2 step 21/35
+self.rank=1 start_idx=0 end_idx=0self.rank=0 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+
+self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+rank0 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+self.rank=0 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+
+
+rank3 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+rank0 Communicate time consumption 0.0007 seconds
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+
+rank0 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 secondsrank2 Communicate time consumption 0.0006 seconds
+
+self.rank=0 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+self.rank=3 start_idx=0 end_idx=0
+
+rank1 Communicate time consumption 0.0006 secondsrank0 Communicate time consumption 0.0006 secondsrank3 Communicate time consumption 0.0006 seconds
+
+
+rank2 Communicate time consumption 0.0006 seconds
+self.rank=0 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+
+
+rank1 Communicate time consumption 0.0006 secondsrank2 Communicate time consumption 0.0006 secondsrank3 Communicate time consumption 0.0006 secondsrank0 Communicate time consumption 0.0006 seconds
+
+
+
+2026-11-09 03:55:13,867 [INFO] Stage 2 step 26/35
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0006 secondsrank2 Communicate time consumption 0.0006 seconds
+
+rank0 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0006 seconds
+self.rank=0 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+self.rank=2 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+rank1 Communicate time consumption 0.0005 secondsrank0 Communicate time consumption 0.0006 seconds
+
+rank3 Communicate time consumption 0.0005 seconds
+rank2 Communicate time consumption 0.0006 seconds
+self.rank=0 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+self.rank=3 start_idx=0 end_idx=0
+
+rank1 Communicate time consumption 0.0006 seconds
+rank0 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0005 seconds
+rank2 Communicate time consumption 0.0006 seconds
+self.rank=3 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+rank0 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+self.rank=0 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+
+rank0 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 secondsrank2 Communicate time consumption 0.0006 seconds
+
+2026-11-09 03:56:20,224 [INFO] Stage 2 step 31/35
+self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0005 seconds
+rank1 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0007 seconds
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+
+rank3 Communicate time consumption 0.0005 secondsrank2 Communicate time consumption 0.0005 secondsrank1 Communicate time consumption 0.0005 seconds
+
+
+rank0 Communicate time consumption 0.0006 seconds
+self.rank=3 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 secondsrank1 Communicate time consumption 0.0005 seconds
+
+rank0 Communicate time consumption 0.0006 seconds
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+
+rank0 Communicate time consumption 0.0006 seconds
+rank3 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+2026-11-09 03:57:13,276 [INFO] Stage 2 step 35/35
+2026-11-09 03:57:14,451 [INFO] Second Stage Running time: 479.8904776573181 seconds
+2026-11-09 03:57:14,451 [INFO] Second Stage Running time: 490.4995436668396 seconds
+2026-11-09 03:57:14,451 [INFO] Second Stage Running time: 490.46080708503723 seconds
+2026-11-09 03:57:14,451 [INFO] Second Stage Running time: 490.341521024704 seconds
+2026-11-09 03:57:47,870 [INFO] VAE decode tiled: latent 180x320 -> 2x2 tiles of 90x160 (+8 latent overlap, linear blend)
+2026-11-09 03:57:48,833 [INFO] Total running time is 1342.37 seconds
+2026-11-09 03:57:48,902 [INFO] Total running time is 1342.44 seconds
+2026-11-09 03:57:49,020 [INFO] Total running time is 1342.56 seconds
+2026-11-09 03:58:05,958 [INFO] Saved final video to: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig11__wan_i2v__2k__nocache__4gpu__a_person_is_putting_sauce_on_a_burger/_stage1_prep/out.mp4
+2026-11-09 03:58:05,958 [INFO] Total running time is 1359.48 seconds

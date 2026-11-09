@@ -1,0 +1,19 @@
+{
+  "key": "wan_t2v__2k__nocache__a_man_and_a_child_riding_bumper_cars_in_an_amusement_park",
+  "video_sha256": "68d4f828139aa12f88ba6c97dc15fbb0ede92b7b42efec0c9fa96b2d6208e219",
+  "host": "node1",
+  "gpus": "4,5,6,7",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "6ddb1cbf5b75715afa7bbef176e24627e24f792d",
+  "experiments_commit": "5a7a17e838d0858695e1d508f9308a75d228cfd9",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-02T08:24:58Z",
+  "remote_script": "#!/usr/bin/env bash\nset -uo pipefail\nmkdir -p \"/tmp/T1/wan_t2v_2k_nocache/a_man_and_a_child_riding_bumper_cars_in_an_amusement_park\" \"/home/ubuntu/stage1_cache\"\ncd /home/ubuntu/repo/SuperGen\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \\\nCUDA_VISIBLE_DEVICES=4,5,6,7 \\\n/home/ubuntu/envs/easycache/bin/torchrun --nproc_per_node=$(echo 4,5,6,7 | tr ',' '\\n' | wc -l) \\\n  --master_port 31293 WanI2V/pipeline_t2v.py \\\n  --prompt \"a man and a child riding bumper cars in an amusement park\" --task t2v-14B --ckpt_dir /home/ubuntu/ckpts/Wan2.1-T2V-14B \\\n  --width 2560 --height 1440 --upscale_factor 2 \\\n  --num_frames 41 --num_inference_steps 50 --upscale_res_steps 35 --seed 0 \\\n  --output_path \"/tmp/T1/wan_t2v_2k_nocache/a_man_and_a_child_riding_bumper_cars_in_an_amusement_park/out.mp4\" --stage1_latents_path \"/home/ubuntu/stage1_cache/wan_t2v_2k_a_man_and_a_child_riding_bumper_cars_in_an_amusement_park.pt\" --loop_step 16 \\\n   > \"/tmp/T1/wan_t2v_2k_nocache/a_man_and_a_child_riding_bumper_cars_in_an_amusement_park/run_log.log\" 2>&1\nrc=$?; echo \"exit=$rc\" >> \"/tmp/T1/wan_t2v_2k_nocache/a_man_and_a_child_riding_bumper_cars_in_an_amusement_park/run_log.log\"; exit $rc\n",
+  "cell": {"config": "wan_t2v", "resolution": "2k", "variant": "nocache", "prompt": "a man and a child riding bumper cars in an amusement park"}
+}

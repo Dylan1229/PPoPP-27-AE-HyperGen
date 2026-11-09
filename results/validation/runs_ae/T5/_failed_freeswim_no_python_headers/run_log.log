@@ -1,0 +1,105 @@
+[note] 2560x1440 exceeds the 1.3B guard; using the 14B model as upstream advises.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s][A
+Loading checkpoint shards:   8%|▊         | 1/12 [00:00<00:01,  7.47it/s][A
+Loading checkpoint shards:  17%|█▋        | 2/12 [00:00<00:01,  7.31it/s][A
+Loading checkpoint shards:  25%|██▌       | 3/12 [00:00<00:01,  7.21it/s][A
+Loading checkpoint shards:  33%|███▎      | 4/12 [00:00<00:01,  7.06it/s][A
+Loading checkpoint shards:  42%|████▏     | 5/12 [00:00<00:00,  7.11it/s][A
+Loading checkpoint shards:  50%|█████     | 6/12 [00:00<00:00,  7.24it/s][A
+Loading checkpoint shards:  58%|█████▊    | 7/12 [00:00<00:00,  7.17it/s][A
+Loading checkpoint shards:  67%|██████▋   | 8/12 [00:01<00:00,  7.06it/s][A
+Loading checkpoint shards:  75%|███████▌  | 9/12 [00:01<00:00,  7.14it/s][A
+Loading checkpoint shards:  83%|████████▎ | 10/12 [00:01<00:00,  7.24it/s][A
+Loading checkpoint shards: 100%|██████████| 12/12 [00:01<00:00,  7.39it/s]
+Loading pipeline components...:  40%|████      | 2/5 [00:02<00:04,  1.42s/it]
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s][A
+Loading weights:  26%|██▌       | 63/242 [00:00<00:00, 573.81it/s][A
+Loading weights:  50%|█████     | 121/242 [00:00<00:00, 573.48it/s][A
+Loading weights:  74%|███████▍  | 179/242 [00:00<00:00, 544.14it/s][A
+Loading weights: 100%|██████████| 242/242 [00:00<00:00, 440.30it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:03<00:00,  1.25it/s]
+100%|██████████| 50/50 [21:46<00:00, 26.14s/it]
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s][A
+Loading checkpoint shards:   8%|▊         | 1/12 [00:00<00:01,  7.64it/s][A
+Loading checkpoint shards:  17%|█▋        | 2/12 [00:00<00:01,  7.39it/s][A
+Loading checkpoint shards:  25%|██▌       | 3/12 [00:00<00:01,  7.48it/s][A
+Loading checkpoint shards:  33%|███▎      | 4/12 [00:00<00:01,  7.49it/s][A
+Loading checkpoint shards:  42%|████▏     | 5/12 [00:00<00:00,  7.65it/s][A
+Loading checkpoint shards:  50%|█████     | 6/12 [00:00<00:00,  7.87it/s][A
+Loading checkpoint shards:  58%|█████▊    | 7/12 [00:00<00:00,  7.73it/s][A
+Loading checkpoint shards:  67%|██████▋   | 8/12 [00:01<00:00,  7.64it/s][A
+Loading checkpoint shards:  75%|███████▌  | 9/12 [00:01<00:00,  7.72it/s][A
+Loading checkpoint shards:  83%|████████▎ | 10/12 [00:01<00:00,  7.63it/s][A
+Loading checkpoint shards: 100%|██████████| 12/12 [00:01<00:00,  7.84it/s]
+Loading pipeline components...:  40%|████      | 2/5 [00:02<00:03,  1.30s/it]
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s][A
+Loading weights:  24%|██▍       | 59/242 [00:00<00:00, 587.66it/s][A
+Loading weights:  55%|█████▍    | 132/242 [00:00<00:00, 664.77it/s][A
+Loading weights: 100%|██████████| 242/242 [00:00<00:00, 544.18it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:03<00:00,  1.42it/s]
+Loading checkpoint shards: 100%|██████████| 12/12 [00:01<00:00,  8.03it/s]
+/tmp/tmpxwk0nc7b/main.c:5:10: fatal error: Python.h: No such file or directory
+    5 | #include <Python.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+Traceback (most recent call last):
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/FreeSwim/inference_14b_ours.py", line 76, in <module>
+    init_mask_flex(
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/FreeSwim/nocache/attention_processor_.py", line 50, in init_mask_flex
+    BLOCK_MASK = create_block_mask(get_mask, B=None, H=None, Q_LEN=num_frames * height * width,
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 663, in _fn
+    raise e.remove_dynamo_frames() from None  # see TORCHDYNAMO_VERBOSE=1
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 760, in _compile_fx_inner
+    raise InductorError(e, currentframe()).with_traceback(
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 745, in _compile_fx_inner
+    mb_compiled_graph = fx_codegen_and_compile(
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 1295, in fx_codegen_and_compile
+    return scheme.codegen_and_compile(gm, example_inputs, inputs_to_check, graph_kwargs)
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 1197, in codegen_and_compile
+    compiled_fn = graph.compile_to_module().call
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/graph.py", line 2083, in compile_to_module
+    return self._compile_to_module()
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/graph.py", line 2091, in _compile_to_module
+    self.codegen_with_cpp_wrapper() if self.cpp_wrapper else self.codegen()
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/graph.py", line 2002, in codegen
+    self.scheduler.codegen()
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/scheduler.py", line 4135, in codegen
+    else self._codegen(self.nodes)
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/scheduler.py", line 4264, in _codegen
+    self.get_backend(device).codegen_node(node)
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/codegen/cuda_combined_scheduling.py", line 104, in codegen_node
+    return self._triton_scheduling.codegen_node(node)
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/codegen/simd.py", line 1320, in codegen_node
+    return self.codegen_node_schedule(
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/codegen/simd.py", line 1365, in codegen_node_schedule
+    src_code = kernel.codegen_kernel()
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/codegen/triton.py", line 3603, in codegen_kernel
+    **self.inductor_meta_common(),
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/_inductor/codegen/triton.py", line 3427, in inductor_meta_common
+    "backend_hash": torch.utils._triton.triton_hash_with_backend(),
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/utils/_triton.py", line 111, in triton_hash_with_backend
+    backend = triton_backend()
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/torch/utils/_triton.py", line 103, in triton_backend
+    target = driver.active.get_current_target()
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/triton/runtime/driver.py", line 23, in __getattr__
+    self._initialize_obj()
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/triton/runtime/driver.py", line 20, in _initialize_obj
+    self._obj = self._init_fn()
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/triton/runtime/driver.py", line 9, in _create_driver
+    return actives[0]()
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/triton/backends/nvidia/driver.py", line 535, in __init__
+    self.utils = CudaUtils()  # TODO: make static
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/triton/backends/nvidia/driver.py", line 89, in __init__
+    mod = compile_module_from_src(Path(os.path.join(dirname, "driver.c")).read_text(), "cuda_utils")
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/triton/backends/nvidia/driver.py", line 66, in compile_module_from_src
+    so = _build(name, src_path, tmpdir, library_dirs(), include_dir, libraries)
+  File "/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/triton/runtime/build.py", line 36, in _build
+    subprocess.check_call(cc_cmd, stdout=subprocess.DEVNULL)
+  File "/usr/lib/python3.10/subprocess.py", line 369, in check_call
+    raise CalledProcessError(retcode, cmd)
+torch._inductor.exc.InductorError: CalledProcessError: Command '['/usr/bin/gcc', '/tmp/tmpxwk0nc7b/main.c', '-O3', '-shared', '-fPIC', '-Wno-psabi', '-o', '/tmp/tmpxwk0nc7b/cuda_utils.cpython-310-x86_64-linux-gnu.so', '-lcuda', '-L/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/triton/backends/nvidia/lib', '-L/lib/x86_64-linux-gnu', '-I/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs/freeswim/lib/python3.10/site-packages/triton/backends/nvidia/include', '-I/tmp/tmpxwk0nc7b', '-I/usr/include/python3.10']' returned non-zero exit status 1.
+
+Set TORCHDYNAMO_VERBOSE=1 for the internal stack trace (please do this especially if you're reporting a bug to PyTorch). For even more developer context, set TORCH_LOGS="+dynamo"
+

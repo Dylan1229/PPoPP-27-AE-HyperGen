@@ -1,0 +1,19 @@
+{
+  "key": "wan_t2v__4k__nocache__the_parthenon_in_acropolis__greece",
+  "video_sha256": "434d9ede83d9f81da86964316dbc2ef8e57d9a84ebcc1c3e35220dcfc8075e66",
+  "host": "node1",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "bc3dc73ed587cbb3576c1cc149d7565746faf05f",
+  "experiments_commit": "a8315a86fb2c9bed19d0f135dcfb1bc7c0c2869e",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T00:35:02Z",
+  "remote_script": "#!/usr/bin/env bash\nset -uo pipefail\nmkdir -p \"/tmp/T1/wan_t2v_4k_nocache/the_parthenon_in_acropolis__greece\" \"/home/ubuntu/stage1_cache\"\ncd /home/ubuntu/repo/SuperGen\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True  \\\nCUDA_VISIBLE_DEVICES=0,1,2,3 \\\n/home/ubuntu/envs/easycache/bin/torchrun --nproc_per_node=$(echo 0,1,2,3 | tr ',' '\\n' | wc -l) \\\n  --master_port 37238 WanI2V/pipeline_t2v.py \\\n  --prompt \"the parthenon in acropolis, greece\" --task t2v-14B --ckpt_dir /home/ubuntu/ckpts/Wan2.1-T2V-14B \\\n  --width 3840 --height 2160 --upscale_factor 3 \\\n  --num_frames 41 --num_inference_steps 50 --upscale_res_steps 35 --seed 0 \\\n  --output_path \"/tmp/T1/wan_t2v_4k_nocache/the_parthenon_in_acropolis__greece/out.mp4\" --stage1_latents_path \"/home/ubuntu/stage1_cache/wan_t2v_4k_the_parthenon_in_acropolis__greece.pt\" --loop_step 16 \\\n   > \"/tmp/T1/wan_t2v_4k_nocache/the_parthenon_in_acropolis__greece/run_log.log\" 2>&1\nrc=$?; echo \"exit=$rc\" >> \"/tmp/T1/wan_t2v_4k_nocache/the_parthenon_in_acropolis__greece/run_log.log\"; exit $rc\n",
+  "cell": {"config": "wan_t2v", "resolution": "4k", "variant": "nocache"}
+}

@@ -1,0 +1,19 @@
+{
+  "key": "freeswim__2k__a_close_up_of_leaves_with_water_droplets_on_them",
+  "video_sha256": "8a362b3dad948d82eccaf47b56d58ccc244138fe3c10f5afa956dedcb474b586",
+  "host": "node1",
+  "gpus": "6",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "e7bd6bc01d3828b4ced17affba06e007293250d2",
+  "experiments_commit": "9b0abad62ae3e2b1e5158c2164a5d6adf2714d0e",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T14:25:43Z",
+  "remote_script": "",
+  "baseline": {"method": "freeswim", "resolution": "2k", "lora": false}
+}

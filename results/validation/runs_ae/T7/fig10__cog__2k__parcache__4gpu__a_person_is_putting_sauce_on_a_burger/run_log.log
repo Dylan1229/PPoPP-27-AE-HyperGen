@@ -1,0 +1,1187 @@
+W1109 01:43:12.112000 39439 torch/distributed/run.py:793] 
+W1109 01:43:12.112000 39439 torch/distributed/run.py:793] *****************************************
+W1109 01:43:12.112000 39439 torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1109 01:43:12.112000 39439 torch/distributed/run.py:793] *****************************************
+[W1109 01:43:16.753203370 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[W1109 01:43:16.786911988 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[W1109 01:43:16.870894634 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[W1109 01:43:16.880005006 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+WARNING:root:[1;31mThe width(2560) and height(1440) are not recommended for cogvideox1.5-5b-i2v. The best resolution is (768, 1360).[0m
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 49.66it/s]
+Loading pipeline components...:  20%|██        | 1/5 [00:00<00:00,  8.91it/s]WARNING:root:[1;31mThe width(2560) and height(1440) are not recommended for cogvideox1.5-5b-i2v. The best resolution is (768, 1360).[0m
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]WARNING:root:[1;31mThe width(2560) and height(1440) are not recommended for cogvideox1.5-5b-i2v. The best resolution is (768, 1360).[0m
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]WARNING:root:[1;31mThe width(2560) and height(1440) are not recommended for cogvideox1.5-5b-i2v. The best resolution is (768, 1360).[0m
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s][A
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 49.58it/s]
+Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  5.71it/s]
+Loading pipeline components...:  20%|██        | 1/5 [00:00<00:01,  3.00it/s]
+Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00,  6.94it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s][A
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.74s/it][A
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.74s/it][A
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.86s/it][A
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:05,  1.77s/it][A
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.73s/it][A
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.73s/it][A
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.83s/it][A
+Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.75s/it][A
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.71s/it][A
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.71s/it][A
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.74s/it][A
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.83s/it][A
+Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.66s/it]
+Loading pipeline components...:  20%|██        | 1/5 [00:06<00:26,  6.66s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 69.43it/s]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.64s/it]
+Loading pipeline components...: 100%|██████████| 5/5 [00:07<00:00,  1.44s/it]
+Loading pipeline components...: 100%|██████████| 5/5 [00:07<00:00,  1.44s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.69s/it]
+Loading pipeline components...: 100%|██████████| 5/5 [00:07<00:00,  1.47s/it]
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.75s/it]
+Loading pipeline components...:  60%|██████    | 3/5 [00:07<00:04,  2.38s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 67.91it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:07<00:00,  1.52s/it]
+Communication method: allgather
+Communication method: allgather
+Communication method: allgather
+Communication method: allgather
+INFO:root:VAE tiling: diffusers defaults (its tiled encode/decode change output size when the overlap factor changes)
+INFO:root:== Finish Loading, start to generate video ==
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: === Starting Two-Stage Generation ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Stage 1: 50 steps at 720x1280
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Stage 2: 35 steps at 1440x2560
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Loaded low-res latents with shape: torch.Size([1, 12, 16, 90, 160])
+INFO:root:VAE tiling: diffusers defaults (its tiled encode/decode change output size when the overlap factor changes)
+INFO:root:== Finish Loading, start to generate video ==
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: === Starting Two-Stage Generation ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Stage 1: 50 steps at 720x1280
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Stage 2: 35 steps at 1440x2560
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Loaded low-res latents with shape: torch.Size([1, 12, 16, 90, 160])
+INFO:root:VAE tiling: diffusers defaults (its tiled encode/decode change output size when the overlap factor changes)
+INFO:root:== Finish Loading, start to generate video ==
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: === Starting Two-Stage Generation ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Stage 1: 50 steps at 720x1280
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Stage 2: 35 steps at 1440x2560
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Loaded low-res latents with shape: torch.Size([1, 12, 16, 90, 160])
+INFO:root:VAE tiling: diffusers defaults (its tiled encode/decode change output size when the overlap factor changes)
+INFO:root:== Finish Loading, start to generate video ==
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: === Starting Two-Stage Generation ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Stage 1: 50 steps at 720x1280
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Stage 2: 35 steps at 1440x2560
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Loaded low-res latents with shape: torch.Size([1, 12, 16, 90, 160])
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Saved Stage 1 video to /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig10__cog__2k__parcache__4gpu__a_person_is_putting_sauce_on_a_burger/stage1_lowres_video.mp4
+INFO:pipeline_cogvideox_i2v_TVG:=== Stage 2: Upscale and Refine (1440x2560) ===
+INFO:pipeline_cogvideox_i2v_TVG:=== Stage 2: Upscale and Refine (1440x2560) ===
+INFO:pipeline_cogvideox_i2v_TVG:=== Stage 2: Upscale and Refine (1440x2560) ===
+INFO:pipeline_cogvideox_i2v_TVG:=== Stage 2: Upscale and Refine (1440x2560) ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Upsampling Running time: 24.342596292495728 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Re-noised latents for Stage 2 denoising (to_timestep: 699)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Re-noising Running time: 0.00685882568359375 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: detail re-injection ladder built (50 steps, cosine_scale=2.0)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Upsampling Running time: 24.44893717765808 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Re-noised latents for Stage 2 denoising (to_timestep: 699)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Re-noising Running time: 0.005374431610107422 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: detail re-injection ladder built (50 steps, cosine_scale=2.0)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Upsampling Running time: 24.570852756500244 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Re-noised latents for Stage 2 denoising (to_timestep: 699)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Re-noising Running time: 0.003231048583984375 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: detail re-injection ladder built (50 steps, cosine_scale=2.0)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Upsampling Running time: 24.668182134628296 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Re-noised latents for Stage 2 denoising (to_timestep: 699)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Re-noising Running time: 0.005605220794677734 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: detail re-injection ladder built (50 steps, cosine_scale=2.0)
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 180x320
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Intra-Tile Cache for 4 tiles has been set up with threshold=0.2 and ret_steps=5.
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: Region-aware cache initialized for 4 tiles with base threshold 0.200
+self.rank=0 indices=[[0], [1], [2], [3]]
+  0%|          | 0/35 [00:00<?, ?it/s]self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0006 seconds
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 0 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 180x320
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Intra-Tile Cache for 4 tiles has been set up with threshold=0.2 and ret_steps=5.
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: Region-aware cache initialized for 4 tiles with base threshold 0.200
+self.rank=2 indices=[[0], [1], [2], [3]]
+  0%|          | 0/35 [00:00<?, ?it/s]self.rank=2 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0006 seconds
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 0 should recalculate tile 2
+self.rank=2 start_idx=0 end_idx=12
+rank2 Communicate time consumption 0.0016 seconds
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 180x320
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Intra-Tile Cache for 4 tiles has been set up with threshold=0.2 and ret_steps=5.
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: Region-aware cache initialized for 4 tiles with base threshold 0.200
+self.rank=1 indices=[[0], [1], [2], [3]]
+  0%|          | 0/35 [00:00<?, ?it/s]self.rank=1 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 0 should recalculate tile 1
+self.rank=1 start_idx=0 end_idx=12
+rank1 Communicate time consumption 0.0015 seconds
+INFO:utils.tile_utils:Using predefined window_size: (90, 160) for latent space resolution 180x320
+INFO:utils.tile_utils:SlidingWindowConfig: window_size=(90, 160), num_windows=(2, 2), step_sizes=(5, 10)
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Intra-Tile Cache for 4 tiles has been set up with threshold=0.2 and ret_steps=5.
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: Region-aware cache initialized for 4 tiles with base threshold 0.200
+self.rank=3 indices=[[0], [1], [2], [3]]
+  0%|          | 0/35 [00:00<?, ?it/s]self.rank=3 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0008 seconds
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 0 should recalculate tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank3 Communicate time consumption 0.0018 seconds
+self.rank=3 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=2 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2] detail re-inject step 0 t=699 c1=0.6282
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1] detail re-inject step 0 t=699 c1=0.6282
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3] detail re-inject step 0 t=699 c1=0.6282
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] detail re-inject step 0 t=699 c1=0.6282
+  3%|▎         | 1/35 [00:03<01:48,  3.19s/it]self.rank=2 start_idx=0 end_idx=0
+  3%|▎         | 1/35 [00:02<01:41,  2.98s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0005 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank0 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0005 seconds
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 1 should recalculate tile 2
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 1 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 1 should recalculate tile 1
+self.rank=0 start_idx=0 end_idx=12
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 1 should recalculate tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0017 seconds
+self.rank=2 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+  6%|▌         | 2/35 [00:05<01:38,  2.98s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+  6%|▌         | 2/35 [00:06<01:42,  3.09s/it]self.rank=0 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 2 should recalculate tile 1
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 2 should recalculate tile 2
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 2 should recalculate tile 3
+self.rank=3 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 2 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank0 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0017 seconds
+self.rank=1 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=2 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+  9%|▊         | 3/35 [00:08<01:35,  2.98s/it]self.rank=2 start_idx=0 end_idx=0
+  9%|▊         | 3/35 [00:09<01:37,  3.04s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank0 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0005 seconds
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 3 should recalculate tile 2
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 3 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 3 should recalculate tile 0
+self.rank=1 start_idx=0 end_idx=12
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 3 should recalculate tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank2 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank0 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0017 seconds
+self.rank=2 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+ 11%|█▏        | 4/35 [00:12<01:33,  3.01s/it]self.rank=3 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+ 11%|█▏        | 4/35 [00:12<01:33,  3.02s/it]self.rank=0 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 4 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 4 should recalculate tile 2
+self.rank=2 start_idx=0 end_idx=12self.rank=1 start_idx=0 end_idx=12
+
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 4 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 4 should recalculate tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank1 Communicate time consumption 0.0014 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank0 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0017 seconds
+self.rank=2 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+ 14%|█▍        | 5/35 [00:15<01:30,  3.01s/it]self.rank=1 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+self.rank=0 start_idx=0 end_idx=0
+ 14%|█▍        | 5/35 [00:14<01:29,  2.98s/it]self.rank=3 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+rank0 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0005 seconds
+rank3 Communicate time consumption 0.0005 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 5: k=0.95703125, raw_input_change=0.0234375, output_norm=0.6015625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 5: k=0.9296875, raw_input_change=0.0235595703125, output_norm=0.62109375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 5: k=0.83203125, raw_input_change=0.02294921875, output_norm=0.59765625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 5 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 5 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 5 is skipped for tile 1
+self.rank=0 start_idx=0 end_idx=12self.rank=2 start_idx=0 end_idx=12
+
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 5: k=0.8515625, raw_input_change=0.02294921875, output_norm=0.59375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 5 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0016 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0017 seconds
+WARNING, rank 3 is idle after work redistribution.
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 start_idx=0 end_idx=0self.rank=0 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+
+self.rank=3 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 6: k=0.9296875, raw_input_change=0.0162353515625, output_norm=0.62109375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 6: k=0.83203125, raw_input_change=0.01531982421875, output_norm=0.59375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 6: k=0.95703125, raw_input_change=0.0159912109375, output_norm=0.60546875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 6 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 6 is skipped for tile 1
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 6 is skipped for tile 2
+self.rank=1 start_idx=0 end_idx=12
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 6: k=0.8515625, raw_input_change=0.01531982421875, output_norm=0.58984375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 6 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0014 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+WARNING, rank 3 is idle after work redistribution.WARNING, rank 2 is idle after work redistribution.
+
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+
+self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+
+self.rank=3 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 secondsrank1 Communicate time consumption 0.0004 seconds
+
+rank2 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 7: k=0.9296875, raw_input_change=0.0162353515625, output_norm=0.62109375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 7: k=0.83203125, raw_input_change=0.01513671875, output_norm=0.59375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 7 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 7: k=0.95703125, raw_input_change=0.0159912109375, output_norm=0.60546875, k_fresh=False
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 7 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 7 is skipped for tile 2
+self.rank=1 start_idx=0 end_idx=12
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 7: k=0.8515625, raw_input_change=0.01513671875, output_norm=0.58984375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 7 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0014 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+WARNING, rank 3 is idle after work redistribution.
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 start_idx=0 end_idx=0self.rank=0 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+
+self.rank=3 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+rank0 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 8: k=0.9296875, raw_input_change=0.0162353515625, output_norm=0.6171875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 8: k=0.83203125, raw_input_change=0.0152587890625, output_norm=0.59375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 8: k=0.95703125, raw_input_change=0.01611328125, output_norm=0.609375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 8 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 8 is skipped for tile 1
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 8 is skipped for tile 2
+self.rank=1 start_idx=0 end_idx=12
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 8: k=0.8515625, raw_input_change=0.01519775390625, output_norm=0.58984375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 8 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0014 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+WARNING, rank 3 is idle after work redistribution.
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0003 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 9: k=0.9296875, raw_input_change=0.0172119140625, output_norm=0.6171875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 9: k=0.83203125, raw_input_change=0.0162353515625, output_norm=0.59375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 9: k=0.95703125, raw_input_change=0.0172119140625, output_norm=0.6171875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 9 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 9 is skipped for tile 1
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 9 is skipped for tile 2
+self.rank=1 start_idx=0 end_idx=12
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 9: k=0.8515625, raw_input_change=0.0159912109375, output_norm=0.5859375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 9 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+WARNING, rank 3 is idle after work redistribution.
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+rank0 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 10: k=0.9296875, raw_input_change=0.0174560546875, output_norm=0.6171875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 10: k=0.83203125, raw_input_change=0.0162353515625, output_norm=0.59375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 10: k=0.95703125, raw_input_change=0.0174560546875, output_norm=0.6171875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 10 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 10 is skipped for tile 1
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 10 is skipped for tile 2
+self.rank=1 start_idx=0 end_idx=12
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 10: k=0.8515625, raw_input_change=0.0159912109375, output_norm=0.58203125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 10 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+WARNING, rank 3 is idle after work redistribution.
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1] detail re-inject step 10 t=499 c1=0.2484
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2] detail re-inject step 10 t=499 c1=0.2484
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] detail re-inject step 10 t=499 c1=0.2484
+self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=0 start_idx=0 end_idx=0
+
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3] detail re-inject step 10 t=499 c1=0.2484
+self.rank=3 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0003 seconds
+rank1 Communicate time consumption 0.0004 secondsrank2 Communicate time consumption 0.0004 seconds
+
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 11: k=0.9296875, raw_input_change=0.0181884765625, output_norm=0.6171875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 11: k=0.83203125, raw_input_change=0.01708984375, output_norm=0.58984375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 11: k=0.95703125, raw_input_change=0.0181884765625, output_norm=0.62109375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 11 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 11 is skipped for tile 1
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 11 is skipped for tile 2
+self.rank=1 start_idx=0 end_idx=12
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 11: k=0.8515625, raw_input_change=0.016845703125, output_norm=0.58203125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 11 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+WARNING, rank 3 is idle after work redistribution.
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+
+self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 start_idx=0 end_idx=0self.rank=0 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+
+self.rank=3 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 secondsrank0 Communicate time consumption 0.0004 seconds
+
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 12: k=0.9296875, raw_input_change=0.0179443359375, output_norm=0.6171875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 12: k=0.83203125, raw_input_change=0.016845703125, output_norm=0.58984375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 12: k=0.95703125, raw_input_change=0.01806640625, output_norm=0.625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 12 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 12 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 12 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 12: k=0.8515625, raw_input_change=0.0166015625, output_norm=0.578125, k_fresh=False
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 12 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0014 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=2 After redistribution: active_indices=[[], [], [0], [2]] global_indices=[[1], [3], [0], [2]]
+self.rank=3 After redistribution: active_indices=[[], [], [0], [2]] global_indices=[[1], [3], [0], [2]]
+self.rank=1 After redistribution: active_indices=[[], [], [0], [2]] global_indices=[[1], [3], [0], [2]]
+self.rank=0 After redistribution: active_indices=[[], [], [0], [2]] global_indices=[[1], [3], [0], [2]]
+ 37%|███▋      | 13/35 [00:17<00:19,  1.13it/s]self.rank=3 start_idx=0 end_idx=0
+ 37%|███▋      | 13/35 [00:18<00:19,  1.13it/s]self.rank=2 start_idx=0 end_idx=0
+ 37%|███▋      | 13/35 [00:18<00:19,  1.13it/s]self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0005 seconds
+self.rank=1 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+rank0 Communicate time consumption 0.0005 seconds
+rank1 Communicate time consumption 0.0005 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 13: k=9.625, raw_input_change=0.0235595703125, output_norm=0.6484375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 13: k=9.5625, raw_input_change=0.0235595703125, output_norm=0.65234375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 13 should recalculate tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 13: k=2.859375, raw_input_change=0.0184326171875, output_norm=0.58984375, k_fresh=False
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 13 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 13 should recalculate tile 1
+self.rank=3 start_idx=0 end_idx=12
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 13: k=2.734375, raw_input_change=0.01806640625, output_norm=0.578125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 13 should recalculate tile 3
+self.rank=1 start_idx=0 end_idx=12
+rank2 Communicate time consumption 0.0016 seconds
+rank0 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0018 seconds
+rank1 Communicate time consumption 0.0015 seconds
+self.rank=3 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]self.rank=1 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+
+self.rank=0 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=2 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+ 40%|████      | 14/35 [00:21<00:24,  1.15s/it]self.rank=1 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+self.rank=3 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 14: k=2.984375, raw_input_change=0.0250244140625, output_norm=0.65625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 14: k=11.0, raw_input_change=0.024658203125, output_norm=0.625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 14: k=2.890625, raw_input_change=0.025146484375, output_norm=0.66015625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 14 is skipped for tile 0
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 14 should recalculate tile 1
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 14 is skipped for tile 2
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 14: k=11.1875, raw_input_change=0.024169921875, output_norm=0.6171875, k_fresh=True
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 14 should recalculate tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0016 seconds
+rank3 Communicate time consumption 0.0016 seconds
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=3 After redistribution: active_indices=[[], [], [1], [3]] global_indices=[[0], [2], [1], [3]]
+self.rank=2 After redistribution: active_indices=[[], [], [1], [3]] global_indices=[[0], [2], [1], [3]]
+self.rank=1 After redistribution: active_indices=[[], [], [1], [3]] global_indices=[[0], [2], [1], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [1], [3]] global_indices=[[0], [2], [1], [3]]
+ 43%|████▎     | 15/35 [00:23<00:28,  1.42s/it]self.rank=0 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+
+self.rank=3 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0005 seconds
+rank3 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0005 secondsrank1 Communicate time consumption 0.0005 seconds
+
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 15: k=2.75, raw_input_change=0.022216796875, output_norm=0.65625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 15: k=2.984375, raw_input_change=0.0458984375, output_norm=0.62890625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 15: k=10.4375, raw_input_change=0.045166015625, output_norm=0.6171875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 15 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 15 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 15: k=2.65625, raw_input_change=0.022216796875, output_norm=0.66015625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 15 should recalculate tile 2
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 15 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0012 seconds
+rank2 Communicate time consumption 0.0012 seconds
+rank1 Communicate time consumption 0.0013 seconds
+rank3 Communicate time consumption 0.0014 seconds
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=1 After redistribution: active_indices=[[], [], [0], [2]] global_indices=[[1], [3], [0], [2]]
+self.rank=2 After redistribution: active_indices=[[], [], [0], [2]] global_indices=[[1], [3], [0], [2]]
+self.rank=0 After redistribution: active_indices=[[], [], [0], [2]] global_indices=[[1], [3], [0], [2]]
+self.rank=3 After redistribution: active_indices=[[], [], [0], [2]] global_indices=[[1], [3], [0], [2]]
+ 46%|████▌     | 16/35 [00:27<00:32,  1.70s/it]self.rank=3 start_idx=0 end_idx=0
+ 46%|████▌     | 16/35 [00:26<00:32,  1.70s/it]
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0005 seconds
+rank1 Communicate time consumption 0.0005 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 16: k=1.6796875, raw_input_change=0.024169921875, output_norm=0.640625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 16: k=1.671875, raw_input_change=0.0245361328125, output_norm=0.64453125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 16: k=3.53125, raw_input_change=0.0238037109375, output_norm=0.65234375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 16 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 16 is skipped for tile 2
+self.rank=2 start_idx=0 end_idx=12
+self.rank=3 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 16 should recalculate tile 1
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 16: k=3.421875, raw_input_change=0.023681640625, output_norm=0.65625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 16 should recalculate tile 3
+self.rank=1 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0016 seconds
+rank3 Communicate time consumption 0.0018 seconds
+rank1 Communicate time consumption 0.0016 seconds
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=3 After redistribution: active_indices=[[], [], [1], [3]] global_indices=[[0], [2], [1], [3]]
+self.rank=1 After redistribution: active_indices=[[], [], [1], [3]] global_indices=[[0], [2], [1], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [1], [3]] global_indices=[[0], [2], [1], [3]]
+self.rank=2 After redistribution: active_indices=[[], [], [1], [3]] global_indices=[[0], [2], [1], [3]]
+ 49%|████▊     | 17/35 [00:29<00:35,  1.96s/it]self.rank=3 start_idx=0 end_idx=0
+ 49%|████▊     | 17/35 [00:29<00:35,  1.95s/it]self.rank=2 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0005 seconds
+rank2 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 17: k=3.609375, raw_input_change=0.045166015625, output_norm=0.65234375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 17: k=2.984375, raw_input_change=0.023681640625, output_norm=0.640625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 17: k=3.484375, raw_input_change=0.044921875, output_norm=0.65234375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 17 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 17: k=2.953125, raw_input_change=0.0238037109375, output_norm=0.64453125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 17 is skipped for tile 3
+self.rank=0 start_idx=0 end_idx=12
+self.rank=3 start_idx=0 end_idx=12INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 17 is skipped for tile 1
+
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 17 is skipped for tile 2
+self.rank=1 start_idx=0 end_idx=12
+self.rank=2 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0012 seconds
+rank2 Communicate time consumption 0.0012 secondsrank3 Communicate time consumption 0.0013 seconds
+
+rank1 Communicate time consumption 0.0013 seconds
+WARNING, rank 3 is idle after work redistribution.
+WARNING, rank 2 is idle after work redistribution.WARNING, rank 0 is idle after work redistribution.
+
+WARNING, rank 1 is idle after work redistribution.
+self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+
+self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0003 seconds
+rank2 Communicate time consumption 0.0003 seconds
+rank1 Communicate time consumption 0.0003 seconds
+rank3 Communicate time consumption 0.0003 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 18: k=2.984375, raw_input_change=0.0208740234375, output_norm=0.64453125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 18: k=11.0, raw_input_change=0.0198974609375, output_norm=0.6484375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 18: k=2.890625, raw_input_change=0.02099609375, output_norm=0.6484375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 18 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 18 should recalculate tile 1
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 18 should recalculate tile 2
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 18: k=3.609375, raw_input_change=0.02001953125, output_norm=0.65234375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 18 should recalculate tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0016 seconds
+rank2 Communicate time consumption 0.0017 seconds
+rank3 Communicate time consumption 0.0017 seconds
+self.rank=2 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]self.rank=1 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+
+self.rank=3 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+ 54%|█████▍    | 19/35 [00:32<00:28,  1.78s/it]self.rank=3 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0005 seconds
+rank2 Communicate time consumption 0.0005 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 19: k=3.78125, raw_input_change=0.026611328125, output_norm=0.671875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 19: k=5.8125, raw_input_change=0.0267333984375, output_norm=0.67578125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 19 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 19: k=5.875, raw_input_change=0.026611328125, output_norm=0.671875, k_fresh=True
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 19 is skipped for tile 3
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 19: k=3.875, raw_input_change=0.0264892578125, output_norm=0.66796875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 19 should recalculate tile 1
+self.rank=1 start_idx=0 end_idx=12
+self.rank=3 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 19 is skipped for tile 2
+self.rank=2 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+rank2 Communicate time consumption 0.0016 seconds
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=2 After redistribution: active_indices=[[], [], [], [1]] global_indices=[[0], [2], [3], [1]]
+self.rank=1 After redistribution: active_indices=[[], [], [], [1]] global_indices=[[0], [2], [3], [1]]
+self.rank=3 After redistribution: active_indices=[[], [], [], [1]] global_indices=[[0], [2], [3], [1]]
+self.rank=0 After redistribution: active_indices=[[], [], [], [1]] global_indices=[[0], [2], [3], [1]]
+ 57%|█████▋    | 20/35 [00:35<00:30,  2.03s/it]self.rank=3 start_idx=0 end_idx=0
+ 57%|█████▋    | 20/35 [00:35<00:30,  2.03s/it]self.rank=0 start_idx=0 end_idx=0
+ 57%|█████▋    | 20/35 [00:35<00:30,  2.03s/it]self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0rank3 Communicate time consumption 0.0005 seconds
+
+rank0 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0005 seconds
+rank1 Communicate time consumption 0.0006 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 20: k=3.78125, raw_input_change=0.02490234375, output_norm=0.67578125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 20: k=2.0625, raw_input_change=0.024658203125, output_norm=0.6796875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 20 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 20 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 20: k=4.59375, raw_input_change=0.0247802734375, output_norm=0.671875, k_fresh=False
+self.rank=3 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 20: k=3.40625, raw_input_change=0.0233154296875, output_norm=0.66796875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 20 should recalculate tile 2
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 20 should recalculate tile 3
+self.rank=1 start_idx=0 end_idx=12
+self.rank=2 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0016 seconds
+WARNING, rank 0 is idle after work redistribution.
+self.rank=2 After redistribution: active_indices=[[], [0], [2], [3]] global_indices=[[1], [0], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[], [0], [2], [3]] global_indices=[[1], [0], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [0], [2], [3]] global_indices=[[1], [0], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[], [0], [2], [3]] global_indices=[[1], [0], [2], [3]]
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2] detail re-inject step 20 t=299 c1=0.0420
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1] detail re-inject step 20 t=299 c1=0.0420
+ 60%|██████    | 21/35 [00:38<00:31,  2.24s/it]INFO:pipeline_cogvideox_i2v_TVG:[rank=3] detail re-inject step 20 t=299 c1=0.0420
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] detail re-inject step 20 t=299 c1=0.0420
+self.rank=2 start_idx=0 end_idx=0
+ 60%|██████    | 21/35 [00:38<00:31,  2.24s/it]self.rank=1 start_idx=0 end_idx=0
+ 60%|██████    | 21/35 [00:38<00:31,  2.24s/it]rank2 Communicate time consumption 0.0005 seconds
+self.rank=0 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0006 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 21: k=2.609375, raw_input_change=0.02685546875, output_norm=0.69140625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 21: k=2.921875, raw_input_change=0.0281982421875, output_norm=0.68359375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 21 is skipped for tile 0
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 21 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 21: k=2.421875, raw_input_change=0.0269775390625, output_norm=0.6796875, k_fresh=False
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 21 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 21: k=2.578125, raw_input_change=0.02685546875, output_norm=0.6875, k_fresh=True
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 21 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0016 seconds
+rank0 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0017 seconds
+WARNING, rank 3 is idle after work redistribution.
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.WARNING, rank 1 is idle after work redistribution.
+
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 start_idx=0 end_idx=0self.rank=0 start_idx=0 end_idx=0
+
+self.rank=2 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+rank0 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 22: k=3.78125, raw_input_change=0.024658203125, output_norm=0.6953125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 22: k=5.875, raw_input_change=0.0234375, output_norm=0.6796875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 22: k=2.921875, raw_input_change=0.0244140625, output_norm=0.68359375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 22 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 22 should recalculate tile 1
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 22 should recalculate tile 2
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 22: k=2.578125, raw_input_change=0.0244140625, output_norm=0.68359375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 22 should recalculate tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0014 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+self.rank=2 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+ 66%|██████▌   | 23/35 [00:41<00:23,  1.95s/it]self.rank=3 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+rank0 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0005 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 23: k=2.359375, raw_input_change=0.029296875, output_norm=0.70703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 23: k=3.34375, raw_input_change=0.0289306640625, output_norm=0.6953125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 23 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 23: k=2.34375, raw_input_change=0.029052734375, output_norm=0.6953125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 23 is skipped for tile 1
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 23: k=2.3125, raw_input_change=0.0289306640625, output_norm=0.6953125, k_fresh=True
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 23 is skipped for tile 2
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 23 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0016 seconds
+rank3 Communicate time consumption 0.0016 seconds
+WARNING, rank 3 is idle after work redistribution.
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+self.rank=3 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 24: k=2.359375, raw_input_change=0.025390625, output_norm=0.70703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 24: k=3.34375, raw_input_change=0.0250244140625, output_norm=0.6953125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 24: k=2.34375, raw_input_change=0.0250244140625, output_norm=0.6953125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 24 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 24 is skipped for tile 1
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 24 is skipped for tile 2
+self.rank=1 start_idx=0 end_idx=12
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 24: k=2.3125, raw_input_change=0.02490234375, output_norm=0.69140625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 24 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0016 seconds
+rank3 Communicate time consumption 0.0016 seconds
+WARNING, rank 3 is idle after work redistribution.
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+
+self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=2 start_idx=0 end_idx=0self.rank=0 start_idx=0 end_idx=0
+
+self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 25: k=2.359375, raw_input_change=0.0244140625, output_norm=0.70703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 25: k=3.34375, raw_input_change=0.02392578125, output_norm=0.6953125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 25: k=2.34375, raw_input_change=0.0240478515625, output_norm=0.6953125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 25 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 25 should recalculate tile 1
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 25 should recalculate tile 2
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 25: k=2.3125, raw_input_change=0.02392578125, output_norm=0.69140625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 25 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0016 seconds
+rank3 Communicate time consumption 0.0016 seconds
+WARNING, rank 0 is idle after work redistribution.
+self.rank=2 After redistribution: active_indices=[[], [0], [1], [2]] global_indices=[[3], [0], [1], [2]]
+self.rank=3 After redistribution: active_indices=[[], [0], [1], [2]] global_indices=[[3], [0], [1], [2]]
+self.rank=1 After redistribution: active_indices=[[], [0], [1], [2]] global_indices=[[3], [0], [1], [2]]
+self.rank=0 After redistribution: active_indices=[[], [0], [1], [2]] global_indices=[[3], [0], [1], [2]]
+ 74%|███████▍  | 26/35 [00:44<00:13,  1.51s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+self.rank=2 start_idx=0 end_idx=0
+ 74%|███████▍  | 26/35 [00:44<00:13,  1.51s/it]self.rank=0 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0005 secondsrank2 Communicate time consumption 0.0004 seconds
+
+rank0 Communicate time consumption 0.0005 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 26: k=3.515625, raw_input_change=0.02978515625, output_norm=0.71875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 26: k=3.375, raw_input_change=0.0279541015625, output_norm=0.70703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 26: k=3.5, raw_input_change=0.02783203125, output_norm=0.7109375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 26 is skipped for tile 0
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 26 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 26 is skipped for tile 2
+self.rank=2 start_idx=0 end_idx=12
+self.rank=3 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 26: k=2.453125, raw_input_change=0.026123046875, output_norm=0.69140625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 26 should recalculate tile 3
+self.rank=0 start_idx=0 end_idx=12
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0017 seconds
+rank0 Communicate time consumption 0.0015 seconds
+WARNING, rank 0 is idle after work redistribution.WARNING, rank 2 is idle after work redistribution.
+
+WARNING, rank 1 is idle after work redistribution.
+self.rank=3 After redistribution: active_indices=[[], [], [], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=2 After redistribution: active_indices=[[], [], [], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[], [], [], [3]] global_indices=[[0], [1], [2], [3]]
+ 77%|███████▋  | 27/35 [00:47<00:14,  1.77s/it]self.rank=3 start_idx=0 end_idx=0
+ 77%|███████▋  | 27/35 [00:47<00:14,  1.77s/it]self.rank=0 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+
+ 77%|███████▋  | 27/35 [00:47<00:14,  1.77s/it]self.rank=2 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0005 seconds
+rank1 Communicate time consumption 0.0006 seconds
+rank0 Communicate time consumption 0.0006 seconds
+rank2 Communicate time consumption 0.0006 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 27: k=2.359375, raw_input_change=0.0262451171875, output_norm=0.71875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 27: k=3.34375, raw_input_change=0.027099609375, output_norm=0.70703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 27: k=3.71875, raw_input_change=0.0269775390625, output_norm=0.70703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 27 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 27 should recalculate tile 1
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 27 is skipped for tile 3
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 27: k=2.34375, raw_input_change=0.02734375, output_norm=0.7109375, k_fresh=False
+self.rank=3 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 27 should recalculate tile 2
+self.rank=2 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+rank2 Communicate time consumption 0.0016 seconds
+WARNING, rank 0 is idle after work redistribution.
+self.rank=1 After redistribution: active_indices=[[], [0], [1], [2]] global_indices=[[3], [0], [1], [2]]
+self.rank=2 After redistribution: active_indices=[[], [0], [1], [2]] global_indices=[[3], [0], [1], [2]]self.rank=3 After redistribution: active_indices=[[], [0], [1], [2]] global_indices=[[3], [0], [1], [2]]
+
+self.rank=0 After redistribution: active_indices=[[], [0], [1], [2]] global_indices=[[3], [0], [1], [2]]
+ 80%|████████  | 28/35 [00:50<00:14,  2.01s/it]self.rank=2 start_idx=0 end_idx=0
+ 80%|████████  | 28/35 [00:50<00:14,  2.01s/it]self.rank=1 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0005 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 28: k=2.515625, raw_input_change=0.03125, output_norm=0.71875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 28: k=2.453125, raw_input_change=0.029541015625, output_norm=0.7109375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 28 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 28 is skipped for tile 1
+self.rank=1 start_idx=0 end_idx=12
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 28: k=3.546875, raw_input_change=0.0296630859375, output_norm=0.70703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 28: k=2.5, raw_input_change=0.029541015625, output_norm=0.71484375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 28 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 28 is skipped for tile 3
+self.rank=3 start_idx=0 end_idx=12
+self.rank=0 start_idx=0 end_idx=12
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank0 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0017 seconds
+WARNING, rank 3 is idle after work redistribution.
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0self.rank=0 start_idx=0 end_idx=0
+
+
+self.rank=3 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 29: k=2.359375, raw_input_change=0.027587890625, output_norm=0.71875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 29: k=3.34375, raw_input_change=0.02734375, output_norm=0.7109375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 29: k=2.34375, raw_input_change=0.027587890625, output_norm=0.71875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 29 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 29 is skipped for tile 1
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 29 should recalculate tile 2
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 29: k=3.71875, raw_input_change=0.0262451171875, output_norm=0.70703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 29 should recalculate tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+WARNING, rank 0 is idle after work redistribution.
+self.rank=3 After redistribution: active_indices=[[], [0], [2], [3]] global_indices=[[1], [0], [2], [3]]self.rank=2 After redistribution: active_indices=[[], [0], [2], [3]] global_indices=[[1], [0], [2], [3]]
+
+self.rank=1 After redistribution: active_indices=[[], [0], [2], [3]] global_indices=[[1], [0], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [0], [2], [3]] global_indices=[[1], [0], [2], [3]]
+ 86%|████████▌ | 30/35 [00:53<00:09,  1.82s/it]self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0self.rank=3 start_idx=0 end_idx=0
+
+ 86%|████████▌ | 30/35 [00:53<00:09,  1.82s/it]rank1 Communicate time consumption 0.0004 seconds
+self.rank=0 start_idx=0 end_idx=0
+rank2 Communicate time consumption 0.0005 seconds
+rank3 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0006 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 30: k=2.390625, raw_input_change=0.03076171875, output_norm=0.71484375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 30: k=2.359375, raw_input_change=0.032470703125, output_norm=0.71484375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 30: k=3.265625, raw_input_change=0.030517578125, output_norm=0.703125, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 30 is skipped for tile 0
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 30 is skipped for tile 2
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 30 is skipped for tile 3
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 30: k=2.5625, raw_input_change=0.0299072265625, output_norm=0.70703125, k_fresh=False
+self.rank=3 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 30 should recalculate tile 1
+self.rank=0 start_idx=0 end_idx=12
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0016 seconds
+rank3 Communicate time consumption 0.0016 seconds
+rank0 Communicate time consumption 0.0015 seconds
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=3 After redistribution: active_indices=[[], [], [], [1]] global_indices=[[0], [2], [3], [1]]
+self.rank=2 After redistribution: active_indices=[[], [], [], [1]] global_indices=[[0], [2], [3], [1]]
+self.rank=1 After redistribution: active_indices=[[], [], [], [1]] global_indices=[[0], [2], [3], [1]]
+self.rank=0 After redistribution: active_indices=[[], [], [], [1]] global_indices=[[0], [2], [3], [1]]
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3] detail re-inject step 30 t=99 c1=0.0006
+ 89%|████████▊ | 31/35 [00:56<00:08,  2.06s/it]INFO:pipeline_cogvideox_i2v_TVG:[rank=1] detail re-inject step 30 t=99 c1=0.0006
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2] detail re-inject step 30 t=99 c1=0.0006
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] detail re-inject step 30 t=99 c1=0.0006
+self.rank=3 start_idx=0 end_idx=0
+ 89%|████████▊ | 31/35 [00:56<00:08,  2.06s/it]self.rank=1 start_idx=0 end_idx=0self.rank=2 start_idx=0 end_idx=0
+
+self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0006 seconds
+rank1 Communicate time consumption 0.0006 seconds
+rank0 Communicate time consumption 0.0006 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 31: k=2.21875, raw_input_change=0.0294189453125, output_norm=0.71484375, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 31 should recalculate tile 1
+self.rank=3 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 31: k=2.359375, raw_input_change=0.056640625, output_norm=0.70703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 31: k=2.078125, raw_input_change=0.0294189453125, output_norm=0.71875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 31: k=2.71875, raw_input_change=0.0303955078125, output_norm=0.703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 31 is skipped for tile 0
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 31 is skipped for tile 3
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 31 should recalculate tile 2
+self.rank=1 start_idx=0 end_idx=12
+self.rank=2 start_idx=0 end_idx=12
+rank3 Communicate time consumption 0.0013 seconds
+rank0 Communicate time consumption 0.0012 seconds
+rank1 Communicate time consumption 0.0012 seconds
+rank2 Communicate time consumption 0.0012 seconds
+WARNING, rank 0 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+self.rank=0 After redistribution: active_indices=[[], [], [1], [2]] global_indices=[[0], [3], [1], [2]]
+self.rank=2 After redistribution: active_indices=[[], [], [1], [2]] global_indices=[[0], [3], [1], [2]]
+self.rank=1 After redistribution: active_indices=[[], [], [1], [2]] global_indices=[[0], [3], [1], [2]]
+self.rank=3 After redistribution: active_indices=[[], [], [1], [2]] global_indices=[[0], [3], [1], [2]]
+ 91%|█████████▏| 32/35 [00:59<00:06,  2.27s/it]self.rank=3 start_idx=0 end_idx=0
+ 91%|█████████▏| 32/35 [00:59<00:06,  2.27s/it]self.rank=2 start_idx=0 end_idx=0
+self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+rank3 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0005 secondsrank0 Communicate time consumption 0.0005 seconds
+
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 32: k=2.40625, raw_input_change=0.0322265625, output_norm=0.69921875, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 32: k=2.25, raw_input_change=0.031982421875, output_norm=0.69140625, k_fresh=True
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 32: k=2.359375, raw_input_change=0.031494140625, output_norm=0.70703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache hit, step 32 is skipped for tile 1
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache hit, step 32 is skipped for tile 2
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache hit, step 32 is skipped for tile 0
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 32: k=2.3125, raw_input_change=0.033935546875, output_norm=0.71875, k_fresh=False
+self.rank=0 start_idx=0 end_idx=12
+self.rank=3 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache hit, step 32 is skipped for tile 3
+self.rank=1 start_idx=0 end_idx=12
+rank2 Communicate time consumption 0.0015 seconds
+rank0 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0017 seconds
+rank1 Communicate time consumption 0.0015 seconds
+WARNING, rank 3 is idle after work redistribution.
+WARNING, rank 1 is idle after work redistribution.
+WARNING, rank 2 is idle after work redistribution.
+WARNING, rank 0 is idle after work redistribution.
+self.rank=3 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=2 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[], [], [], []] global_indices=[[0], [1], [2], [3]]
+self.rank=2 start_idx=0 end_idx=0self.rank=1 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+
+self.rank=3 start_idx=0 end_idx=0
+rank0 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0004 seconds
+rank1 Communicate time consumption 0.0004 seconds
+rank3 Communicate time consumption 0.0004 seconds
+INFO:modules.cogvideo_transformer_3d:Tile 0 at step 33: k=2.359375, raw_input_change=0.0299072265625, output_norm=0.70703125, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 1 at step 33: k=3.34375, raw_input_change=0.033203125, output_norm=0.69921875, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:Tile 2 at step 33: k=2.359375, raw_input_change=0.032958984375, output_norm=0.69140625, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 33 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 33 should recalculate tile 1
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 33 should recalculate tile 2
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:Tile 3 at step 33: k=3.265625, raw_input_change=0.031982421875, output_norm=0.71484375, k_fresh=False
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 33 should recalculate tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank0 Communicate time consumption 0.0015 seconds
+rank1 Communicate time consumption 0.0015 seconds
+rank2 Communicate time consumption 0.0015 seconds
+rank3 Communicate time consumption 0.0016 seconds
+self.rank=2 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]self.rank=1 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+
+self.rank=3 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+ 97%|█████████▋| 34/35 [01:02<00:01,  1.96s/it]self.rank=1 start_idx=0 end_idx=0
+ 97%|█████████▋| 34/35 [01:02<00:01,  1.96s/it]self.rank=2 start_idx=0 end_idx=0
+self.rank=3 start_idx=0 end_idx=0
+self.rank=0 start_idx=0 end_idx=0
+rank1 Communicate time consumption 0.0005 seconds
+rank0 Communicate time consumption 0.0004 seconds
+rank2 Communicate time consumption 0.0005 seconds
+rank3 Communicate time consumption 0.0005 seconds
+INFO:modules.cogvideo_transformer_3d:rank=1 Cache miss, step 34 should recalculate tile 1
+self.rank=1 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=0 Cache miss, step 34 should recalculate tile 0
+self.rank=0 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=2 Cache miss, step 34 should recalculate tile 2
+self.rank=2 start_idx=0 end_idx=12
+INFO:modules.cogvideo_transformer_3d:rank=3 Cache miss, step 34 should recalculate tile 3
+self.rank=3 start_idx=0 end_idx=12
+rank1 Communicate time consumption 0.0016 seconds
+rank0 Communicate time consumption 0.0016 seconds
+rank2 Communicate time consumption 0.0017 seconds
+rank3 Communicate time consumption 0.0017 seconds
+self.rank=2 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=3 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=1 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+self.rank=0 After redistribution: active_indices=[[0], [1], [2], [3]] global_indices=[[0], [1], [2], [3]]
+100%|██████████| 35/35 [01:05<00:00,  1.88s/it]
+100%|██████████| 35/35 [01:05<00:00,  1.88s/it]
+100%|██████████| 35/35 [01:05<00:00,  1.87s/it]
+100%|██████████| 35/35 [01:05<00:00,  1.87s/it]
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0] Second Stage Running time: 66.63683223724365 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2] Second Stage Running time: 66.53571271896362 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1] Second Stage Running time: 66.41981911659241 seconds
+INFO:modules.cogvideo_transformer_3d:CACHE_SKIP_RATE 0.4571 skipped=16 checked=35
+INFO:modules.cogvideo_transformer_3d:CACHE_SKIP_RATE 0.5714 skipped=20 checked=35
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3] Second Stage Running time: 66.3134536743164 seconds
+INFO:modules.cogvideo_transformer_3d:CACHE_SKIP_RATE 0.4857 skipped=17 checked=35
+INFO:modules.cogvideo_transformer_3d:CACHE_SKIP_RATE 0.6286 skipped=22 checked=35
+INFO:pipeline_cogvideox_i2v_TVG:[rank=2]: === Two-Stage Generation Completed ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=1]: === Two-Stage Generation Completed ===
+INFO:pipeline_cogvideox_i2v_TVG:[rank=3]: === Two-Stage Generation Completed ===
+INFO:root:Total running time is 149.56 seconds
+INFO:root:Total running time is 149.57 seconds
+INFO:root:Total running time is 149.61 seconds
+INFO:pipeline_cogvideox_i2v_TVG:[rank=0]: === Two-Stage Generation Completed ===
+INFO:root:Saved final video to: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/runs/T7/fig10__cog__2k__parcache__4gpu__a_person_is_putting_sauce_on_a_burger/video.mp4
+INFO:root:Total running time is 186.83 seconds
+[rank0]:[W1109 01:46:23.150193876 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+exit=0

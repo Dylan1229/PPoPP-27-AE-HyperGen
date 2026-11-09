@@ -1,0 +1,19 @@
+{
+  "key": "cinescale__4k__a_white_and_blue_airplane_flying_in_the_sky",
+  "video_sha256": "119cf51f0c568d457b2398d51f41cb32c039fe3a64312f5bdf744431fbcc4a3d",
+  "host": "node3",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "e7bd6bc01d3828b4ced17affba06e007293250d2",
+  "experiments_commit": "875c73d44af48a4142abb128030bbf04a6969b32",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T12:40:22Z",
+  "remote_script": "",
+  "baseline": {"method": "cinescale", "resolution": "4k", "lora": false}
+}

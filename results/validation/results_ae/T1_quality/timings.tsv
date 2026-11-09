@@ -1,0 +1,5 @@
+config	res	variant	prompt	host	gpus	wall_s	rc	collected	stage1_s	stage2_s	upscale_s
+cog	2k	nocache	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	0,1,2,3	232	0	1		105.09433460235596	24.598681926727295
+cog	2k	cache	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	0,1,2,3	193	0	1		60.67179846763611	24.66476273536682
+wan_t2v	2k	nocache	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	0,1,2,3	648	0	1	0.0089	466.7406749725342	42.0514
+wan_t2v	2k	cache	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	0,1,2,3	551	0	1	0.0085	371.9210367202759	41.6351

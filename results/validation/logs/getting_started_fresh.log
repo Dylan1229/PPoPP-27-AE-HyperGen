@@ -1,0 +1,67 @@
+######## 1/5  pre-flight check
+== hardware
+  [ ok ] 8 GPU(s): 8 NVIDIA H100 80GB HBM3, 81559 MiB 
+     GPU_LIST=0,1,2,3 (4 usable by the runners)
+  [ ok ] ffmpeg / ffprobe on PATH (VBench downscales 4K videos with them)
+     disk: 598G free on /
+== environments (/home/fanjiang/ae/PPoPP-27-AE-HyperGen/envs)
+  [ ok ] cogvideo  (torch, diffusers 0.33.1)
+  [ ok ] hunyuan   (torch 2.4, flash-attn)
+  [ ok ] wan       (torch, flash-attn, Wan2.1 runtime at /home/fanjiang/ae/PPoPP-27-AE-HyperGen/third_party/Wan2.1)
+  [ ok ] vbench    (VBench)
+  [ ok ] metrics   (lpips, scikit-image, PyAV, matplotlib)
+  [ ok ] cinescale (Table 3 baseline; optional)
+  [ ok ] freeswim  (Table 3 baseline; optional)
+== weights (/home/fanjiang/ckpts)
+  [ ok ] CogVideoX1.5-5B-I2V      /home/fanjiang/ckpts/CogVideoX1.5-5B-I2V
+  [ ok ] HunyuanVideo-I2V         /home/fanjiang/ckpts/HunyuanVideo-I2V
+  [ ok ] Wan2.1-I2V-14B-720P      /home/fanjiang/ckpts/Wan2.1-I2V-14B-720P
+  [ ok ] Wan2.1-T2V-14B           /home/fanjiang/ckpts/Wan2.1-T2V-14B
+  [ ok ] Wan2.1-T2V-14B-Diffusers /home/fanjiang/ckpts/Wan2.1-T2V-14B-Diffusers (FreeSwim only; optional)
+== input data
+  [ ok ] prompt lists and conditioning images (50 images)
+
+== what can run
+  getting started / --quick Tables 4-5, Figs 11-14 yes
+  Table 3 --quick (CogVideoX)                      yes
+  Table 3 --full (CogVideoX, Hunyuan, Wan T2V)     yes
+  Table 4 / Figure 11 --full (+ Wan I2V)           yes
+  Figures 13-14 --full (+ Hunyuan)                 yes
+  Table 3 baselines: CineScale                     yes
+  Table 3 baselines: FreeSwim                      yes
+
+15 ok, 0 missing
+
+######## 2/5  tables and figures from the paper's raw data (no GPU)
+generated: Table 3 Table 4 Table 5 Figure 11 Figure 12 Figure 13 (published values) Figure 14 (published values) Figure 13 (measured, final code)
+tables:  /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/paper/tables    figures: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/paper/figures    previews: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/paper/previews
+   (full log: /home/fanjiang/ae/work_gs/make_all_paper.log; compare out/paper/tables/*.tex with the PDF)
+
+######## 3-4/5  CogVideoX 2K on 4 GPUs, without and with the cache, then scoring
+================================================================================
+ Table 4: cache speedup and retention   (mode: quick)
+ host=hypergen-rebuttal-h100x8 gpu=NVIDIA H100 80GB HBM3 x8 driver=580.178.04 torch(cogvideo)=2.5.1+cu124 artifact=e8c18a5 date=2026-11-09T05:10:23Z
+ results -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/gs    videos -> /home/fanjiang/ae/work_gs/videos
+================================================================================
+[05:10:23] run   fig11  cog 2k nocache 4GPU ENABLE_REDISTRIBUTE=0
+[05:10:23]       first use of this Stage-1 sketch: generating it in a preparatory run (4 GPU, output discarded)
+[05:20:34]       rc=0  stage2=105.06712007522583s  skip=n/a  wall=233s
+[05:20:34] run   fig11  cog 2k cache 4GPU ENABLE_REDISTRIBUTE=0
+[05:23:43]       rc=0  stage2=60.7135272026062s  skip=0.4286  wall=188s
+[05:24:55] retention cog 2k 4GPU: psnr,ssim,lpips = 37.044,0.963,0.039
+[vbench] cog__2k__4__nocache: 1 video(s)
+    v1_subject=97.72  v2_background=95.39  v3_motion=98.90  v4_aesthetic=75.38  v5_imaging=72.89  avg=88.06
+[vbench] cog__2k__4__cache: 1 video(s)
+    v1_subject=97.38  v2_background=94.32  v3_motion=98.88  v4_aesthetic=74.16  v5_imaging=73.41  avg=87.63
+[05:25:31] done. Next: bash plots/make_all.sh --results /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/gs
+
+######## 5/5  Table 4 from this run
+## Table 4 - cache: Stage-2 latency w/ / w/o, speedup, retention
+
+| backbone | setting | this run: s (w/ / w/o) | speedup | PSNR | LPIPS | paper: speedup | PSNR | LPIPS |
+|---|---|---|---|---|---|---|---|---|
+| cog | 2k 4 GPU | 61 / 105 | 1.73x | 37.04 | 0.039 | 1.74x | 37.08 | 0.039 |
+
+generated table: /home/fanjiang/ae/PPoPP-27-AE-HyperGen/out/gs/tables/table4_cache_speedup.tex
+videos:          /home/fanjiang/ae/work_gs/videos/T7/
+getting started finished in 15 min

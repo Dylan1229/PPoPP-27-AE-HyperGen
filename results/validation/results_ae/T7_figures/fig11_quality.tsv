@@ -1,0 +1,5 @@
+config	res	ngpu	prompt	psnr	ssim	lpips
+cog	2k	1	a_person_is_putting_sauce_on_a_burger	39.619	0.970	0.021
+hunyuan	2k	4	a_mountain_range_with_a_sky_background	34.246	0.962	0.020
+wan_i2v	2k	4	a_person_is_putting_sauce_on_a_burger	31.526	0.956	0.047
+cog	2k	4	a_person_is_putting_sauce_on_a_burger	37.061	0.963	0.039

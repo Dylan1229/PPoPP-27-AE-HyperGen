@@ -1,0 +1,19 @@
+{
+  "key": "cog__2k__cache__a_person_is_putting_sauce_on_a_burger",
+  "video_sha256": "a56de09bdae55ba3f9694265c85130340c92ade0e0593b75ed3946fb1ccc8e96",
+  "host": "node1",
+  "gpus": "4,5,6,7",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "6ddb1cbf5b75715afa7bbef176e24627e24f792d",
+  "experiments_commit": "0c59aa1b8da3afc24912c5995cf42d41b2ee9e6b",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-02T07:19:03Z",
+  "remote_script": "",
+  "cell": {"config": "cog"}
+}

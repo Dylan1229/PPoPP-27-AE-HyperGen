@@ -1,0 +1,43 @@
+[note] 2560x1440 exceeds the 1.3B guard; using the 14B model as upstream advises.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s][A
+Loading weights:  30%|███       | 73/242 [00:00<00:00, 705.03it/s][A
+Loading weights:  60%|█████▉    | 144/242 [00:00<00:00, 706.40it/s][A
+Loading weights: 100%|██████████| 242/242 [00:00<00:00, 556.15it/s]
+Loading pipeline components...:  80%|████████  | 4/5 [00:02<00:00,  1.91it/s]
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s][A
+Loading checkpoint shards:   8%|▊         | 1/12 [00:00<00:01,  7.25it/s][A
+Loading checkpoint shards:  17%|█▋        | 2/12 [00:00<00:01,  8.45it/s][A
+Loading checkpoint shards:  25%|██▌       | 3/12 [00:00<00:01,  8.65it/s][A
+Loading checkpoint shards:  33%|███▎      | 4/12 [00:00<00:00,  8.60it/s][A
+Loading checkpoint shards:  42%|████▏     | 5/12 [00:00<00:00,  8.66it/s][A
+Loading checkpoint shards:  50%|█████     | 6/12 [00:00<00:00,  8.72it/s][A
+Loading checkpoint shards:  58%|█████▊    | 7/12 [00:00<00:00,  8.53it/s][A
+Loading checkpoint shards:  67%|██████▋   | 8/12 [00:00<00:00,  8.70it/s][A
+Loading checkpoint shards:  75%|███████▌  | 9/12 [00:01<00:00,  8.54it/s][A
+Loading checkpoint shards:  83%|████████▎ | 10/12 [00:01<00:00,  8.56it/s][A
+Loading checkpoint shards: 100%|██████████| 12/12 [00:01<00:00,  8.82it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:03<00:00,  1.30it/s]
+100%|██████████| 50/50 [23:38<00:00, 28.37s/it]
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s][A
+Loading weights:  23%|██▎       | 55/242 [00:00<00:00, 531.41it/s][A
+Loading weights:  48%|████▊     | 115/242 [00:00<00:00, 562.12it/s][A
+Loading weights:  73%|███████▎  | 177/242 [00:00<00:00, 565.94it/s][A
+Loading weights: 100%|██████████| 242/242 [00:00<00:00, 445.39it/s]
+Loading pipeline components...:  80%|████████  | 4/5 [00:01<00:00,  2.22it/s]
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s][A
+Loading checkpoint shards:   8%|▊         | 1/12 [00:00<00:01,  6.02it/s][A
+Loading checkpoint shards:  17%|█▋        | 2/12 [00:00<00:01,  7.43it/s][A
+Loading checkpoint shards:  25%|██▌       | 3/12 [00:00<00:01,  8.17it/s][A
+Loading checkpoint shards:  33%|███▎      | 4/12 [00:00<00:00,  8.57it/s][A
+Loading checkpoint shards:  42%|████▏     | 5/12 [00:00<00:00,  8.78it/s][A
+Loading checkpoint shards:  50%|█████     | 6/12 [00:00<00:00,  8.86it/s][A
+Loading checkpoint shards:  58%|█████▊    | 7/12 [00:00<00:00,  8.88it/s][A
+Loading checkpoint shards:  67%|██████▋   | 8/12 [00:00<00:00,  9.18it/s][A
+Loading checkpoint shards:  75%|███████▌  | 9/12 [00:01<00:00,  9.16it/s][A
+Loading checkpoint shards:  83%|████████▎ | 10/12 [00:01<00:00,  8.96it/s][A
+Loading checkpoint shards: 100%|██████████| 12/12 [00:01<00:00,  8.97it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:03<00:00,  1.48it/s]
+Loading checkpoint shards: 100%|██████████| 12/12 [00:01<00:00,  9.28it/s]
+100%|██████████| 35/35 [2:58:27<00:00, 305.94s/it]

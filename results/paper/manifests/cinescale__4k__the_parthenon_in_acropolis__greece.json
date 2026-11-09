@@ -1,0 +1,19 @@
+{
+  "key": "cinescale__4k__the_parthenon_in_acropolis__greece",
+  "video_sha256": "fa6087fb9b3744c1e720b6121702b368c0d712eb9628aa991f6daffc57b01d45",
+  "host": "node4",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "e7bd6bc01d3828b4ced17affba06e007293250d2",
+  "experiments_commit": "9b0abad62ae3e2b1e5158c2164a5d6adf2714d0e",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T14:23:35Z",
+  "remote_script": "",
+  "baseline": {"method": "cinescale", "resolution": "4k", "lora": false}
+}

@@ -1,0 +1,19 @@
+{
+  "key": "wan_i2v__4k__nocache__a_bunch_of_houses_that_are_on_a_hillside",
+  "video_sha256": "f6e30db0343776366cc0d76641ba8eab8f87592198df9891c0122287852b5f11",
+  "host": "node1",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "2eceb659f5117708d48cdb0244d3f12cd4101e76",
+  "experiments_commit": "d2e2538605c9d825e553c9c572ae167e957d1339",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-02T10:40:37Z",
+  "remote_script": "#!/usr/bin/env bash\nset -uo pipefail\nmkdir -p \"/tmp/T1/wan_i2v_4k_nocache/a_bunch_of_houses_that_are_on_a_hillside\" \"/home/ubuntu/stage1_cache\"\ncd /home/ubuntu/repo/SuperGen\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \\\nCUDA_VISIBLE_DEVICES=0,1,2,3 \\\n/home/ubuntu/envs/easycache/bin/torchrun --nproc_per_node=$(echo 0,1,2,3 | tr ',' '\\n' | wc -l) \\\n  --master_port 36262 WanI2V/pipeline.py \\\n  --prompt \"a bunch of houses that are on a hillside\" --image_path \"/home/ubuntu/repo/UltraGen-PPoPP-experiments/inputs/4k_2160x3840/a bunch of houses that are on a hillside.jpg\" \\\n  --ckpt_dir /home/ubuntu/ckpts/Wan2.1-I2V-14B-720P \\\n  --width 3840 --height 2160 --upscale_factor 3 \\\n  --num_frames 41 --num_inference_steps 50 --upscale_res_steps 35 --seed 0 \\\n  --output_path \"/tmp/T1/wan_i2v_4k_nocache/a_bunch_of_houses_that_are_on_a_hillside/out.mp4\" --stage1_latents_path \"/home/ubuntu/stage1_cache/wan_i2v_4k_a_bunch_of_houses_that_are_on_a_hillside.pt\" --rope_mode local \\\n  --loop_step 16 \\\n   > \"/tmp/T1/wan_i2v_4k_nocache/a_bunch_of_houses_that_are_on_a_hillside/run_log.log\" 2>&1\nrc=$?; echo \"exit=$rc\" >> \"/tmp/T1/wan_i2v_4k_nocache/a_bunch_of_houses_that_are_on_a_hillside/run_log.log\"; exit $rc\n",
+  "cell": {"config": "wan_i2v", "resolution": "4k", "variant": "nocache", "prompt": "a bunch of houses that are on a hillside"}
+}

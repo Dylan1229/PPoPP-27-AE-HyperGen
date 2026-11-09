@@ -1,0 +1,27 @@
+block	config	res	variant	ngpu	stage2_s	source
+fig13	cog	2k	nocache	1	531	Figure 13
+fig13	cog	2k	nocache	2	267	Figure 13
+fig13	cog	2k	nocache	4	135	Figure 13
+fig13	cog	4k	nocache	1	1408	Figure 13
+fig13	cog	4k	nocache	2	667	Figure 13
+fig13	cog	4k	nocache	4	400	Figure 13
+fig13	cog	4k	nocache	8	321	Figure 13
+fig13	hunyuan	2k	nocache	1	949	Figure 13
+fig13	hunyuan	2k	nocache	2	479	Figure 13
+fig13	hunyuan	2k	nocache	4	240	Figure 13
+fig13	hunyuan	4k	nocache	1	2129	Figure 13
+fig13	hunyuan	4k	nocache	2	1187	Figure 13
+fig13	hunyuan	4k	nocache	4	704	Figure 13
+fig13	hunyuan	4k	nocache	8	542	Figure 13
+fig14	cog	4k	cache_reb0	2	506	Figure 14
+fig14	cog	4k	cache_reb1	2	439	Figure 14
+fig14	cog	4k	cache_reb0	4	340	Figure 14
+fig14	cog	4k	cache_reb1	4	252	Figure 14
+fig14	cog	4k	cache_reb0	8	264	Figure 14
+fig14	cog	4k	cache_reb1	8	187	Figure 14
+fig14	hunyuan	4k	cache_reb0	2	921	Figure 14
+fig14	hunyuan	4k	cache_reb1	2	796	Figure 14
+fig14	hunyuan	4k	cache_reb0	4	573	Figure 14
+fig14	hunyuan	4k	cache_reb1	4	432	Figure 14
+fig14	hunyuan	4k	cache_reb0	8	411	Figure 14
+fig14	hunyuan	4k	cache_reb1	8	289	Figure 14

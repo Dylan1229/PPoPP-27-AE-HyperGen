@@ -1,0 +1,15 @@
+================================================================================
+ Figure 11: end-to-end latency   (mode: quick)
+ host=hypergen-rebuttal-h100x8 gpu=NVIDIA H100 80GB HBM3 x8 driver=580.178.04 torch(cogvideo)=2.5.1+cu124 artifact=7ec924c date=2026-11-09T01:24:06Z
+ results -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae    videos -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/videos
+================================================================================
+[01:24:06] run   fig10  cog 2k stage1 4GPU ENABLE_REDISTRIBUTE=0
+[01:30:30]       rc=0  stage2=105.18741655349731s  skip=n/a  wall=384s
+[01:30:30] run   fig10  cog 2k origin 1GPU ENABLE_REDISTRIBUTE=0
+[01:39:17]       rc=0  stage2=416.8245677947998s  skip=n/a  wall=527s
+[01:39:17] run   fig10  cog 2k parallel 4GPU ENABLE_REDISTRIBUTE=1
+[01:43:10]       rc=0  stage2=105.23147177696228s  skip=n/a  wall=233s
+[01:43:10] run   fig10  cog 2k parcache 4GPU ENABLE_REDISTRIBUTE=1
+[01:46:25]       rc=0  stage2=66.63683223724365s  skip=0.6286  wall=195s
+[01:46:25] Stage 1 (cog): 149.25982975959778s (median of 1 fresh runs)
+[01:46:25] done. Next: bash plots/make_all.sh --results /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae

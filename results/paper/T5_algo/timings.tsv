@@ -1,0 +1,18 @@
+method	res	prompt	host	gpus	wall_s	rc	collected	clocks	note
+cinescale	2k	a person is putting sauce on a burger	node3	0,1,2,3	1594	0	1	345/345/0	
+cinescale	2k	a man and a child riding bumper cars in an amusement park	node3	0,1,2,3	1597	0	1	345/345/0	
+cinescale	2k	a mountain range with a sky background	node3	0,1,2,3	1586	0	1	345/360/0	
+cinescale	2k	a room with a desk and a chair in it	node3	0,1,2,3	1593	0	1	345/375/0	
+cinescale	2k	a close up of leaves with water droplets on them	node3	0,1,2,3	1604	0	1	345/360/0	
+cinescale	4k	the parthenon in acropolis, greece	node2	0,1,2,3	6	1	0	345/1980/0	no fresh artifact
+cinescale	4k	a bunch of houses that are on a hillside	node4	0,1,2,3	103	255	0	1980/1980/0	no fresh artifact
+cinescale	4k	a white and blue airplane flying in the sky	node6	0,1,2,3	102	255	0	1980/1980/0	no fresh artifact
+freeswim	4k	the parthenon in acropolis, greece	node2	4	1638	1	0	1980/1980/0	no fresh artifact
+freeswim	4k	a white and blue airplane flying in the sky	node2	5	1638	1	0	1980/1980/0	no fresh artifact
+freeswim	4k	a bunch of houses that are on a hillside	node1	7	1647	1	0	1980/1980/0	no fresh artifact
+cinescale	4k	a bunch of houses that are on a hillside	node1	0,1,2,3	5975	0	1	345/345/0	
+cinescale	4k	a white and blue airplane flying in the sky	node3	0,1,2,3	5979	0	1	345/360/0	
+cinescale	4k	the parthenon in acropolis, greece	node4	0,1,2,3	5974	0	1	345/345/0	
+freeswim	2k	a close up of leaves with water droplets on them	node1	6	12520	0	1	450/450/0	
+freeswim	2k	a room with a desk and a chair in it	node1	5	12539	0	1	450/450/0	
+freeswim	2k	a person is putting sauce on a burger	node1	4	12605	0	1	435/435/0	

@@ -1,0 +1,14 @@
+================================================================================
+ Table 3: CineScale / FreeSwim baselines   (mode: quick)
+ host=hypergen-rebuttal-h100x8 gpu=NVIDIA H100 80GB HBM3 x8 driver=580.178.04 torch(cogvideo)=2.5.1+cu124 artifact=7ec924c date=2026-11-09T01:46:27Z
+ results -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae    videos -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/videos
+================================================================================
+[01:46:27] run   cinescale 2k 4GPU :: a person is putting sauce on a burger
+[02:12:03]       rc=0  high-res stage=1s  wall=1535s
+[02:12:03] run   freeswim 2k 1GPU :: a person is putting sauce on a burger
+[02:34:48] WARNING: no video from freeswim 2k (rc=1)
+[02:34:48]       rc=1  high-res stage=1s  wall=1365s
+[vbench] cinescale__2k__baseline: 1 video(s)
+    v1_subject=89.78  v2_background=96.62  v3_motion=99.39  v4_aesthetic=60.82  v5_imaging=72.91  avg=83.90
+wrote /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae/T5_algo/latency.tsv (2 HyperGen cell(s), 1 baseline cell(s))
+[02:35:06] done. Next: bash plots/make_all.sh --results /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae

@@ -1,0 +1,19 @@
+{
+  "key": "freeswim__4k__a_bunch_of_houses_that_are_on_a_hillside",
+  "video_sha256": "e023daaabf122bbb4198766d205522c63c8a4224e219b9c4eedec6bb4bbf7a98",
+  "host": "node1",
+  "gpus": "4",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "bc3dc73ed587cbb3576c1cc149d7565746faf05f",
+  "experiments_commit": "fc28b311cfb8f85668630c189a65e73633b5782a",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T05:58:58Z",
+  "remote_script": "",
+  "baseline": {"method": "freeswim", "resolution": "4k", "lora": false}
+}

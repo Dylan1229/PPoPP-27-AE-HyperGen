@@ -1,0 +1,19 @@
+{
+  "key": "freeswim__2k__a_mountain_range_with_a_sky_background",
+  "video_sha256": "e5497d5b546b49433ce03db7723619f554569d48cd7953e39fd2a8293e9076d9",
+  "host": "node1",
+  "gpus": "4",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "bc3dc73ed587cbb3576c1cc149d7565746faf05f",
+  "experiments_commit": "fc28b311cfb8f85668630c189a65e73633b5782a",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T04:49:51Z",
+  "remote_script": "",
+  "baseline": {"method": "freeswim", "resolution": "2k", "lora": false}
+}

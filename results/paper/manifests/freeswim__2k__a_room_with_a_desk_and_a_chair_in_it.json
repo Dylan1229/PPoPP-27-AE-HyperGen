@@ -1,0 +1,19 @@
+{
+  "key": "freeswim__2k__a_room_with_a_desk_and_a_chair_in_it",
+  "video_sha256": "8f1ccfa2b43c45473fd60520b58a190aaf55eb53fcd886a33a919c37d4dfa9b0",
+  "host": "node1",
+  "gpus": "5",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "e7bd6bc01d3828b4ced17affba06e007293250d2",
+  "experiments_commit": "9b0abad62ae3e2b1e5158c2164a5d6adf2714d0e",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T14:26:01Z",
+  "remote_script": "",
+  "baseline": {"method": "freeswim", "resolution": "2k", "lora": false}
+}

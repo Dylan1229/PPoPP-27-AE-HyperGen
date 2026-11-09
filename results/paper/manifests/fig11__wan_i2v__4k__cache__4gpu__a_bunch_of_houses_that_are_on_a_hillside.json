@@ -1,0 +1,19 @@
+{
+  "key": "fig11__wan_i2v__4k__cache__4gpu__a_bunch_of_houses_that_are_on_a_hillside",
+  "video_sha256": "669aee37ae50926c81912fd2318084946ce1b6807be6967d0d9145a6dc6d563a",
+  "host": "node4",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "bc3dc73ed587cbb3576c1cc149d7565746faf05f",
+  "experiments_commit": "dd1a99f5a604be6d83d4b3141b7457a59d87c69f",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T09:02:34Z",
+  "remote_script": "#!/usr/bin/env bash\nset -uo pipefail\nmkdir -p \"/tmp/T7/fig11__wan_i2v__4k__cache__4gpu__a_bunch_of_houses_that_are_on_a_hillside\" \"/home/ubuntu/stage1_cache\"\ncd /home/ubuntu/repo/SuperGen\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True ENABLE_REDISTRIBUTE=0 \\\nCUDA_VISIBLE_DEVICES=0,1,2,3 \\\n/home/ubuntu/envs/easycache/bin/torchrun --nproc_per_node=$(echo 0,1,2,3 | tr ',' '\\n' | wc -l) \\\n  --master_port 57745 WanI2V/pipeline.py \\\n  --prompt \"a bunch of houses that are on a hillside\" --image_path \"/home/ubuntu/repo/UltraGen-PPoPP-experiments/inputs/4k_2160x3840/a bunch of houses that are on a hillside.jpg\" \\\n  --ckpt_dir /home/ubuntu/ckpts/Wan2.1-I2V-14B-720P \\\n  --width 3840 --height 2160 --upscale_factor 3 \\\n  --num_frames 41 --num_inference_steps 50 --upscale_res_steps 35 --seed 0 \\\n  --output_path \"/tmp/T7/fig11__wan_i2v__4k__cache__4gpu__a_bunch_of_houses_that_are_on_a_hillside/out.mp4\" --stage1_latents_path \"/home/ubuntu/stage1_cache/wan_i2v_4k_a_bunch_of_houses_that_are_on_a_hillside.pt\" --rope_mode local \\\n  --loop_step 16 \\\n  --enable_cache --cache_thresh 0.15 > \"/tmp/T7/fig11__wan_i2v__4k__cache__4gpu__a_bunch_of_houses_that_are_on_a_hillside/run_log.log\" 2>&1\nrc=$?; echo \"exit=$rc\" >> \"/tmp/T7/fig11__wan_i2v__4k__cache__4gpu__a_bunch_of_houses_that_are_on_a_hillside/run_log.log\"; exit $rc\n",
+  "figure": {"block": "fig11", "variant": "cache", "ngpu": 4, "env": "ENABLE_REDISTRIBUTE=0"}
+}

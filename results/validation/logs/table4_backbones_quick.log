@@ -1,0 +1,26 @@
+================================================================================
+ Table 4: cache speedup and retention   (mode: quick)
+ host=hypergen-rebuttal-h100x8 gpu=NVIDIA H100 80GB HBM3 x8 driver=580.178.04 torch(cogvideo)=2.5.1+cu124 artifact=7ec924c date=2026-11-09T03:16:44Z
+ results -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae    videos -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/videos
+================================================================================
+[03:16:44] run   fig11  hunyuan 2k nocache 4GPU ENABLE_REDISTRIBUTE=0
+[03:16:44]       first use of this Stage-1 sketch: generating it in a preparatory run (4 GPU, output discarded)
+[03:31:08]       rc=0  stage2=189.2455108165741s  skip=n/a  wall=298s
+[03:31:08] run   fig11  hunyuan 2k cache 4GPU ENABLE_REDISTRIBUTE=0
+[03:35:19]       rc=0  stage2=140.97507548332214s  skip=0.2571  wall=251s
+[03:35:19] run   fig11  wan_i2v 2k nocache 4GPU ENABLE_REDISTRIBUTE=0
+[03:35:19]       first use of this Stage-1 sketch: generating it in a preparatory run (4 GPU, output discarded)
+[04:08:49]       rc=0  stage2=488.6061728000641s  skip=n/a  wall=638s
+[04:08:49] run   fig11  wan_i2v 2k cache 4GPU ENABLE_REDISTRIBUTE=0
+[04:18:10]       rc=0  stage2=409.307076215744s  skip=0.3429  wall=561s
+[04:19:23] retention hunyuan 2k 4GPU: psnr,ssim,lpips = 34.246,0.962,0.020
+[vbench] hunyuan__2k__4__nocache: 1 video(s)
+    v1_subject=99.28  v2_background=98.47  v3_motion=99.69  v4_aesthetic=64.91  v5_imaging=76.62  avg=87.79
+[vbench] hunyuan__2k__4__cache: 1 video(s)
+    v1_subject=99.31  v2_background=98.96  v3_motion=99.66  v4_aesthetic=66.11  v5_imaging=76.66  avg=88.14
+[04:21:16] retention wan_i2v 2k 4GPU: psnr,ssim,lpips = 31.526,0.956,0.047
+[vbench] wan_i2v__2k__4__nocache: 1 video(s)
+    v1_subject=96.15  v2_background=94.66  v3_motion=98.54  v4_aesthetic=78.21  v5_imaging=74.31  avg=88.37
+[vbench] wan_i2v__2k__4__cache: 1 video(s)
+    v1_subject=95.93  v2_background=93.99  v3_motion=98.55  v4_aesthetic=75.36  v5_imaging=74.75  avg=87.72
+[04:21:52] done. Next: bash plots/make_all.sh --results /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae

@@ -1,0 +1,19 @@
+{
+  "key": "cog__2k__thr0.09_scale0.2",
+  "video_sha256": "2ca9a6f6a1f359954049a98cc4bf16a12dda0b995b3cb2b083d3c1d773cc54e2",
+  "host": "node6",
+  "gpus": "4,5,6,7",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "2eceb659f5117708d48cdb0244d3f12cd4101e76",
+  "experiments_commit": "aae40a000789a2c5c30a5ab942cf5f4ac39540c2",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-02T09:43:33Z",
+  "remote_script": "#!/usr/bin/env bash\nset -uo pipefail\nmkdir -p \"/tmp/T4/cog__2k__thr0.09_scale0.2\" \"/home/ubuntu/stage1_cache\"\ncd /home/ubuntu/repo/SuperGen\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \\\nLOW_RES_SAVE_PATH=\"/home/ubuntu/stage1_cache/cog_2k_a_person_is_putting_sauce_on_a_burger.pt\" \\\nCUDA_VISIBLE_DEVICES=4,5,6,7 TP_SIZE=$(echo 4,5,6,7 | tr ',' '\\n' | wc -l) \\\n/home/ubuntu/envs/cogvideo/bin/torchrun --nproc_per_node=$(echo 4,5,6,7 | tr ',' '\\n' | wc -l) \\\n  --master_port 43002 CogvideoI2V/pipeline.py \\\n  --prompt \"a person is putting sauce on a burger\" --model_path /home/ubuntu/ckpts/CogVideoX1.5-5B-I2V --generate_type i2v \\\n  --image_or_video_path \"/home/ubuntu/repo/UltraGen-PPoPP-experiments/inputs/2k_1440x2560/a person is putting sauce on a burger.jpg\" \\\n  --width 2560 --height 1440 --upscale_factor 2 \\\n  --num_inference_steps 50 --upscale_res_steps 35 --guidance_scale 6.0 \\\n  --num_frames 41 --fps 8 --seed 0 \\\n  --output_path \"/tmp/T4/cog__2k__thr0.09_scale0.2/video.mp4\" \\\n  --low_res_latents_path \"/home/ubuntu/stage1_cache/cog_2k_a_person_is_putting_sauce_on_a_burger.pt\" \\\n  --loop_step 16 --shift_timesteps $(seq -s, 0 $((35 - 1))) \\\n  --detail_reinject_scale 2.0 --attn_scale_coef 1.0 \\\n  --cache_method ours --enable_region_aware_cache --enable_intra_tile_cache --cache_thresh 0.09 --static_tile_cache_scale_factor 0.2 > \"/tmp/T4/cog__2k__thr0.09_scale0.2/run_log.log\" 2>&1\nrc=$?; echo \"exit=$rc\" >> \"/tmp/T4/cog__2k__thr0.09_scale0.2/run_log.log\"; exit $rc\n",
+  "grid": {"cache_thresh": 0.09, "static_tile_cache_scale_factor": 0.2}
+}

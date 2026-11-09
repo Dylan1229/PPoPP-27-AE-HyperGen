@@ -1,0 +1,14 @@
+================================================================================
+ Figure 12: technique breakdown (CogVideoX 4K)   (mode: quick)
+ host=hypergen-rebuttal-h100x8 gpu=NVIDIA H100 80GB HBM3 x8 driver=580.178.04 torch(cogvideo)=2.5.1+cu124 artifact=85e5eb2 date=2026-11-09T00:32:30Z
+ results -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae    videos -> /home/fanjiang/ae/PPoPP-27-AE-HyperGen/work/videos
+================================================================================
+[00:32:30] run   fig12  cog 4k tilepar 4GPU ENABLE_REDISTRIBUTE=0
+[00:43:36]       rc=0  stage2=313.1722548007965s  skip=n/a  wall=666s
+[00:43:36] run   fig12  cog 4k cache 4GPU ENABLE_REDISTRIBUTE=0
+[00:50:36]       rc=0  stage2=224.72832012176514s  skip=0.3429  wall=419s
+[00:50:36] run   fig12  cog 4k regionaware 4GPU ENABLE_REDISTRIBUTE=0
+[00:56:59]       rc=0  stage2=186.14374041557312s  skip=0.4429  wall=383s
+[00:56:59] run   fig12  cog 4k rebalance 4GPU ENABLE_REDISTRIBUTE=1
+[01:02:59]       rc=0  stage2=162.5511589050293s  skip=0.4429  wall=359s
+[01:02:59] done. Next: bash plots/make_all.sh --results /home/fanjiang/ae/PPoPP-27-AE-HyperGen/results/ae

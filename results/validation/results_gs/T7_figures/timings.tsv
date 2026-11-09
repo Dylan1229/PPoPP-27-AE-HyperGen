@@ -1,0 +1,3 @@
+block	config	res	variant	ngpu	prompt	host	wall_s	stage1_s	upscale_s	stage2_s	skip_rate	rc	collected	clocks	exclusive	thresh	rebalance
+fig11	cog	2k	nocache	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	233		24.636946201324463	105.06712007522583		0	1	345/1980/0	1		0
+fig11	cog	2k	cache	4	a person is putting sauce on a burger	hypergen-rebuttal-h100x8	188		24.676839590072632	60.7135272026062	0.4286	0	1	345/1980/0	1	0.20	0

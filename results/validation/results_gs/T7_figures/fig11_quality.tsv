@@ -1,0 +1,2 @@
+config	res	ngpu	prompt	psnr	ssim	lpips
+cog	2k	4	a_person_is_putting_sauce_on_a_burger	37.044	0.963	0.039

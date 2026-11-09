@@ -1,0 +1,10 @@
+# Wan2.1's requirements.txt only gives lower bounds, so a fresh install picks up packages released
+# after the paper. diffusers >= 0.35 calls torch.accelerator (torch >= 2.6) and breaks the torch 2.5.1
+# runtime the paper used. These are the versions of the environment the artifact was validated with.
+diffusers==0.33.1
+transformers==4.51.3
+accelerate==1.6.0
+tokenizers==0.21.1
+numpy==1.26.4
+opencv-python==4.11.0.86
+huggingface-hub==0.36.2

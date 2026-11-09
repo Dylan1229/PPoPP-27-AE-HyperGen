@@ -1,0 +1,19 @@
+{
+  "key": "cinescale__2k__a_close_up_of_leaves_with_water_droplets_on_them",
+  "video_sha256": "211e80b30e5762b8bc83bd51561810f189fd200ae033b476463844fed521ef26",
+  "host": "node3",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "e7bd6bc01d3828b4ced17affba06e007293250d2",
+  "experiments_commit": "dd1a99f5a604be6d83d4b3141b7457a59d87c69f",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T09:37:50Z",
+  "remote_script": "",
+  "baseline": {"method": "cinescale", "resolution": "2k", "lora": false}
+}

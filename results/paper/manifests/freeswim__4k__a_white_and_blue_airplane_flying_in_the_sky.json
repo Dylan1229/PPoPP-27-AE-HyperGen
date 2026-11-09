@@ -1,0 +1,19 @@
+{
+  "key": "freeswim__4k__a_white_and_blue_airplane_flying_in_the_sky",
+  "video_sha256": "d30d276be5a579b75dc18f75c28c4ad4b892c83946df41902f9f01fb47c7687a",
+  "host": "node1",
+  "gpus": "4",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "bc3dc73ed587cbb3576c1cc149d7565746faf05f",
+  "experiments_commit": "fc28b311cfb8f85668630c189a65e73633b5782a",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T06:45:04Z",
+  "remote_script": "",
+  "baseline": {"method": "freeswim", "resolution": "4k", "lora": false}
+}

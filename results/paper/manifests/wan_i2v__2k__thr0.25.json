@@ -1,0 +1,19 @@
+{
+  "key": "wan_i2v__2k__thr0.25",
+  "video_sha256": "0ce0e4c72d6d043ce755b19fa7bdabd1a966ec9c513cf8074a9cea6e74220c4d",
+  "host": "node2",
+  "gpus": "0,1,2,3",
+  "gpu_model_and_driver": "NVIDIA H100 80GB HBM3|580.126.16",
+  "supergen_commit": "bc3dc73ed587cbb3576c1cc149d7565746faf05f",
+  "experiments_commit": "a8315a86fb2c9bed19d0f135dcfb1bc7c0c2869e",
+  "config": {
+    "seed": 0,
+    "num_frames": 41,
+    "num_inference_steps": 50,
+    "upscale_res_steps": 35,
+    "loop_step": 16
+  },
+  "generated_at_utc": "2026-08-03T00:59:30Z",
+  "remote_script": "#!/usr/bin/env bash\nset -uo pipefail\nmkdir -p \"/tmp/T6/wan_i2v__2k__thr0.25\" \"/home/ubuntu/stage1_cache\"\ncd /home/ubuntu/repo/SuperGen\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True  \\\nCUDA_VISIBLE_DEVICES=0,1,2,3 \\\n/home/ubuntu/envs/easycache/bin/torchrun --nproc_per_node=$(echo 0,1,2,3 | tr ',' '\\n' | wc -l) \\\n  --master_port 53307 WanI2V/pipeline.py \\\n  --prompt \"a person is putting sauce on a burger\" --image_path \"/home/ubuntu/repo/UltraGen-PPoPP-experiments/inputs/2k_1440x2560/a person is putting sauce on a burger.jpg\" \\\n  --ckpt_dir /home/ubuntu/ckpts/Wan2.1-I2V-14B-720P \\\n  --width 2560 --height 1440 --upscale_factor 2 \\\n  --num_frames 41 --num_inference_steps 50 --upscale_res_steps 35 --seed 0 \\\n  --output_path \"/tmp/T6/wan_i2v__2k__thr0.25/out.mp4\" --stage1_latents_path \"/home/ubuntu/stage1_cache/wan_i2v_2k_a_person_is_putting_sauce_on_a_burger.pt\" --rope_mode local \\\n  --loop_step 16 \\\n  --enable_cache --cache_thresh 0.25 > \"/tmp/T6/wan_i2v__2k__thr0.25/run_log.log\" 2>&1\nrc=$?; echo \"exit=$rc\" >> \"/tmp/T6/wan_i2v__2k__thr0.25/run_log.log\"; exit $rc\n",
+  "sweep": {"cache_thresh": "0.25", "scale": 0.5}
+}

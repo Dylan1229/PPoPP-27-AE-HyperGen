@@ -47,6 +47,16 @@ Software: Linux x86-64, an NVIDIA driver that supports CUDA 12.4, `git`, `curl`,
 `env/setup_envs.sh` installs if needed. Our test machine was a GCP `a3-megagpu-8g` (8x H100 80GB
 HBM3) with Ubuntu 22.04. The paper's numbers were measured on nodes of the same GPU type.
 
+**Google Cloud Deep Learning VM images:** their `/etc/profile.d/nccl_env.sh` configures NCCL
+for multi-node RDMA: it sets `NCCL_NET=gIB` and puts `/usr/local/gib/lib64` on
+`LD_LIBRARY_PATH`. In a login shell this makes single-node runs fail, with one rank exiting at its
+first collective. Clear it before running:
+
+```bash
+for v in $(compgen -e | grep '^NCCL_'); do unset "$v"; done
+export LD_LIBRARY_PATH="$(echo "$LD_LIBRARY_PATH" | tr ':' '\n' | grep -v /usr/local/gib | paste -sd:)"
+```
+
 **No such machine?** Artifact evaluators can ask us on HotCRP for SSH access to an 8x H100 node
 with the environments, weights and artifact pre-installed, and a one-command runner.
 

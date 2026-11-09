@@ -1,9 +1,15 @@
 # HyperGen: PPoPP 2027 Artifact
 
 **Paper:** *HyperGen: Empowering Ultra-high-resolution Video Generation Framework with Sketch-Tile
-Collaboration*, PPoPP 2027.
+Collaboration*, PPoPP 2027. Section, table and figure numbers refer to the PDF submitted with this
+artifact (the accepted paper with its supplementary material appended).
+
 **Archived artifact (DOI):** [10.5281/zenodo.24079619](https://doi.org/10.5281/zenodo.24079619) (v1.0, the evaluated version).
-**Badges sought:** Artifacts Available, Artifacts Evaluated (Functional / Reusable).
+
+**Badges sought:** Artifacts Available, Artifacts Evaluated – Reusable.
+
+**No 8x H100 machine?** Use our pre-installed node: see
+[Without an 8x H100 machine](#without-an-8x-h100-machine-our-evaluation-node).
 
 HyperGen generates 2K and 4K video with pretrained 720p video diffusion models and no retraining.
 A 720p *sketch* is generated first (Stage 1). It is upsampled, re-noised, and refined tile by tile at
@@ -57,8 +63,8 @@ for v in $(compgen -e | grep '^NCCL_'); do unset "$v"; done
 export LD_LIBRARY_PATH="$(echo "$LD_LIBRARY_PATH" | tr ':' '\n' | grep -v /usr/local/gib | paste -sd:)"
 ```
 
-**No such machine?** Artifact evaluators can ask us on HotCRP for SSH access to an 8x H100 node
-with the environments, weights and artifact pre-installed, and a one-command runner.
+**No such machine?** Evaluators can use our 8x H100 node, with everything pre-installed; see
+[Without an 8x H100 machine](#without-an-8x-h100-machine-our-evaluation-node).
 
 Every path is configurable through environment variables (`scripts/config.sh`), e.g.
 `CKPT_ROOT=/mnt/ckpts ENV_ROOT=/mnt/envs WORK=/mnt/work`. Use `GPU_LIST=0,1,2,3` to restrict the GPUs.
@@ -96,6 +102,41 @@ On our validation machine the script took 15 minutes and printed:
 |---|---|---|---|---|---|---|---|---|
 | cog | 2k 4 GPU | 61 / 105 | 1.73x | 37.04 | 0.039 | 1.74x | 37.08 | 0.039 |
 ```
+
+### Without an 8x H100 machine: our evaluation node
+
+Evaluators can use an 8x H100 80 GB node on Google Cloud. It has the environments, the upstream
+code, all model weights, and this artifact (the evaluated version) pre-installed, so no
+installation is needed.
+
+1. **Request access.** Generate a key pair just for this evaluation, so that it cannot be linked
+   to you, and post the *public* key in a HotCRP comment, with the dates you would like to use
+   the node:
+   ```bash
+   ssh-keygen -t ed25519 -f ~/.ssh/hypergen_ae     # then post ~/.ssh/hypergen_ae.pub
+   ```
+2. **Log in.** We start the node, create an account for you with no administrator rights, and
+   reply on HotCRP with the login command, `ssh -i ~/.ssh/hypergen_ae ae-<id>@<address>`.
+3. **Run.** The commands replace the three in the getting-started section above:
+   ```
+   ae-run getting-started    # pre-flight check + the Table 4 measurement above (~15 min)
+   ae-run quick              # every experiment in --quick mode (~3 h), then the tables and figures
+   ae-run full               # the paper's configurations (~1.5 days)
+   ae-run scripts/run_table4.sh --quick      # any single runner, with its options
+   ae-run status | attach | stop
+   ```
+   - **Disconnects:** runs execute in a tmux session and continue if you disconnect.
+     `ae-run attach` shows a run; Ctrl-b d detaches again.
+   - **Where things are:** results go to `~/PPoPP-27-AE-HyperGen/results/ae`, logs to
+     `~/ae-run-logs/`, and `~/README.txt` on the node has the details.
+
+Other things to know about the node:
+- **Anonymity:** the node keeps no record of client addresses. SSH logging and login records are
+  disabled, nothing on it runs analytics, and we do not monitor connections.
+- **Sharing:** several evaluators may share the node. Only one run uses the GPUs at a time;
+  `ae-run status` shows who holds them.
+- **Preemption:** it is a preemptible cloud instance. If it stops mid-run, tell us on HotCRP. After
+  the restart, rerun the same command; finished runs are skipped.
 
 ---
 
@@ -193,7 +234,10 @@ while timing.
 - one prompt each of CineScale and FreeSwim.
 
 [`results/validation/`](results/validation/README.md) has the results, together with every command
-and log.
+and log. **Expected output** of `run_all.sh --quick`: an `out/ae/summary.md` like
+[`results/validation/out_ae/summary.md`](results/validation/out_ae/summary.md). That file comes
+from our run and also includes the other backbones and the baselines. Speedups and retention should
+be close to it. Single-prompt VBench scores differ from the paper's 5-prompt means by a few points.
 
 ---
 

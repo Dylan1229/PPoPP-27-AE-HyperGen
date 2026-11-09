@@ -4,7 +4,7 @@
 Collaboration*, PPoPP 2027. Section, table and figure numbers refer to the PDF submitted with this
 artifact (the accepted paper with its supplementary material appended).
 
-**Archived artifact (DOI):** [10.5281/zenodo.24079618](https://doi.org/10.5281/zenodo.24079618) (Zenodo; resolves to the latest version). The evaluated version is v1.1.
+**Archived artifact (DOI):** [10.5281/zenodo.24093816](https://doi.org/10.5281/zenodo.24093816) (v1.1, the evaluated version; all versions: [10.5281/zenodo.24079618](https://doi.org/10.5281/zenodo.24079618)).
 
 **Badges sought:** Artifacts Available, Artifacts Evaluated – Reusable.
 
